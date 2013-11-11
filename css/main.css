@@ -108,7 +108,7 @@ h1 {
   height: 3500px; }
 
 .content-science-height {
-  height: 1000px; }
+  height: 1500px; }
 
 .content-development-height {
   height: 1000px; }
@@ -756,8 +756,13 @@ h1 {
   margin: 10px 0px 10px 30px; }
   #content-resume div ul li, #content-science div ul li {
     font-size: 0.9em; }
-  #content-resume div ul ul li, #content-science div ul ul li {
-    list-style-type: none; }
+    #content-resume div ul li ul li, #content-science div ul li ul li {
+      list-style-type: none; }
+#content-resume div ol.publication-list, #content-science div ol.publication-list {
+  margin: 15px; }
+  #content-resume div ol.publication-list li, #content-science div ol.publication-list li {
+    margin: 10px;
+    font-size: 0.9em; }
 
 .thumbnails-wrapper {
   position: relative;

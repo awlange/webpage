@@ -157,7 +157,7 @@ h1 {
 }
 .content-home-height { height: 200px; }
 .content-resume-height { height: 3500px; }
-.content-science-height { height: 1000px; }
+.content-science-height { height: 1500px; }
 .content-development-height { height: 1000px; }
 .content-contact-height { height: 500px; }
 
@@ -355,9 +355,16 @@ $offscreen-right: translateX($offscreen-position);
       margin: 10px 0px 10px 3*$side-pad;
       li {
         font-size: 0.9em;
+        ul li {
+          list-style-type: none;
+        }
       }
-      ul li {
-        list-style-type: none;
+    }
+    ol.publication-list {
+      margin: 15px;
+      li {
+        margin: 10px;
+        font-size: 0.9em;
       }
     }
   }
