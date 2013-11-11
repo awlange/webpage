@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Oxygen);
+//@import url(http://fonts.googleapis.com/css?family=Oxygen);
 
 // ----------------------------------------------------------------------
 // Reset
@@ -22,6 +22,8 @@ fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
 $palette-white: #fefefe;
 $palette-black: #0a0a0a;
 $palette-blue: #0976e0;
+$palette-blue-transparent: rgba(9, 118, 240, 0.9);
+$palette-black-transparent: rgba(10, 10, 10, 0.7);
 
 // ----------------------------------------------------------------------
 //  Sizes
@@ -36,22 +38,8 @@ $side-pad: 10px;
 $transition-time-slow: 0.8s;
 $transition-time-medium: 0.4s;
 $transition-time-fast: 0.2s;
-@mixin css-transition-slow {
-  $transition-value: all $transition-time-slow ease;
-  -webkit-transition: $transition-value;
-  -moz-transition: $transition-value;
-  -o-transition: $transition-value;
-  transition: $transition-value;  
-}
-@mixin css-transition-medium {
-  $transition-value: all $transition-time-medium ease;
-  -webkit-transition: $transition-value;
-  -moz-transition: $transition-value;
-  -o-transition: $transition-value;
-  transition: $transition-value;  
-}
-@mixin css-transition-fast {
-  $transition-value: all $transition-time-fast ease;
+@mixin css-transition($transition-time, $transition-style) {
+  $transition-value: all $transition-time $transition-style;
   -webkit-transition: $transition-value;
   -moz-transition: $transition-value;
   -o-transition: $transition-value;
@@ -92,6 +80,11 @@ h3 {
   color: $palette-blue;
   clear: both;
 }
+h4 {
+  font-weight: 100;
+  font-size: 2.0em;
+  padding-top: 40px;  
+}
 a:link, a:visited {
   color: $palette-blue;
 }
@@ -114,7 +107,6 @@ h1 {
   strong {
     font-size: 0.5em; 
     font-weight: normal;
-    padding: 0 0 0 0;
   }
 }
 
@@ -179,7 +171,6 @@ h1 {
 .nav-secondary {
   margin: 0 auto;
   font-size: 1.5em;
-  clear: right;
   text-align: center;
   a {
     color: $palette-black;
@@ -194,7 +185,7 @@ h1 {
 // ----------------------------------------------------------------------
 // Content and nav transition animations
 //
-$offscreen-position: 100%;
+$offscreen-position: 105%;
 $offscreen-left: translateX(-$offscreen-position);
 $offscreen-center: translateX(0);
 $offscreen-right: translateX($offscreen-position);
@@ -352,7 +343,7 @@ $offscreen-right: translateX($offscreen-position);
 // ----------------------------------------------------------------------
 // Content specific stylings
 //
-#content-resume {
+#content-resume, #content-science {
   div {
     div p {
       margin: 0;
@@ -372,11 +363,13 @@ $offscreen-right: translateX($offscreen-position);
   }
 }
 
+
 // ----------------------------------------------------------------------
 // Science and development thumbnails
 //
 
 .thumbnails-wrapper {
+  position: relative;
   margin: 50px 50px 0 50px;
   width: 700px;
 }
@@ -384,28 +377,89 @@ $offscreen-right: translateX($offscreen-position);
 .thumbnail {
   margin: 50px;
   width: 600px;
-  border-radius: 5px;
-  background: $palette-blue;
+  border-radius: 3px;
+  background: transparent;
   overflow: hidden;
+  position: relative;
 }
 
 #thumbnail-FMO {
-  padding: 10px;
-  width: 580px;
-  z-index: 1;
+  width: 600px;
+  height: 195px;
 }
 #thumbnail-DESMO {
-  padding: 10px;
-  width: 580px;
+  padding: 50px 50px;
+  width: 500px;
 }
 
-.thumbnail-shade {
-  background: $palette-black;
-  opacity: 0.0;
+.thumbnail-mask {
+  background: $palette-blue-transparent;
+  opacity: 0;
   width: 600px;
-  height: 200px;
-  z-index: 2;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  @include css-transition($transition-time-medium, linear);
+  
+  h4 {
+    //margin-top: 30px;
+    // background: $palette-black;
+    background: transparent;
+    color: $palette-white;
+    padding: 10px;
+    position: relative;
+    @include css-transition($transition-time-medium, ease-in-out);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  p {
+    padding: 10px;
+    position: relative;
+    color: $palette-white;
+    @include css-transition($transition-time-medium, ease-in-out);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    @include css-transition($transition-time-medium, ease-in-out);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+    div {
+      background: $palette-black;
+      color: $palette-white;
+      border-radius: 3px;
+      width: 120px;
+      p {
+        text-align: center;
+      }
+    }
+  }
 }
+
+.thumbnail-mask:hover {
+  @include css-transition($transition-time-medium, linear);
+  opacity: 1;
+
+  h4, p, a {
+    @include css-transition($transition-time-medium, ease-in-out);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
 
 // ----------------------------------------------------------------------
 // Miscellaneous

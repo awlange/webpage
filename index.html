@@ -13,7 +13,8 @@
         <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> -->
     	<script src="js/jquery-1.10.2.js"></script>
     	<script src="js/main.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css"/>
 	</head>
 	
 	<body>
@@ -172,19 +173,19 @@
 		              <div class="line"> </div>
 		              <p> To see some code I have written, <a href="https://github.com/awlange" target="_blank">visit my GitHub account</a>. </p>
 		              <p>
-		                <strong>Q-Chem v4.0</strong> <span class="right">2009 &mdash; 2013</span><br>
+		                <strong>Q-Chem v4.0</strong> <span class="float-right">2009 &mdash; 2013</span><br>
 		                 Lead author of polarizable continuum model and QM/MM codes in commercial software package,
 		                 <a href="http://www.q-chem.com/qchem-website/about-qchem4.html" target="_blank">Q-Chem</a>;
 		                 one of six software design committee members (C++, C, Fortran)
 		              </p>
 		              <p>
-		                <strong>LAMMPS Ensembles</strong> <span class="right">2013</span><br>
+		                <strong>LAMMPS Ensembles</strong> <span class="float-right">2013</span><br>
 		                Multi-copy communication interface to open-source software,
 		                <a href="http://lammps.sandia.gov/" target="_blank">LAMMPS</a>;
 		                contributions to main LAMMPS source code (C++, C, MPI, OpenMP, Python)
 		              </p>
 		              <p>
-		                <strong>DESMO</strong> <span class="right">2011</span><br>
+		                <strong>DESMO</strong> <span class="float-right">2011</span><br>
 		                Highly parallel solvent model code; genetic algorithm dynamic load balancing (C++, OpenMP, MPI)
 		              </p>
 		            </div>
@@ -286,23 +287,41 @@
 				<article id="content-science" class="content setToRight">
 					<h2>science</h2>
 					<nav class="nav-secondary">
-						<a href="#">interests</a> |
-						<a href="#resume-publications">publications</a> |
-						<a href="#">informal</a>
+						<a id="scroller-highlights" href="#">highlights</a> |
+						<a id="scroller-publications-science" href="#resume-publications">publications</a>
 					</nav>
 					
 					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<div class="thumbnails-wrapper">
-						<div class="thumbnail"> 
-							<div class="thumbnail-shade">
-								<img src="img/FMO-MS-RMD_TOC.png" id="thumbnail-FMO"/>
+					<div id="science-highlights">
+						<h3>highlights</h3>
+		              	<div class="line"> </div>
+		              	
+						<div class="thumbnails-wrapper">
+							<div class="thumbnail">
+								<img src="img/FMO-MS-RMD_TOC.png" id="thumbnail-FMO"/> 
+								<div class="thumbnail-mask">
+									<h4> FMO-MS-RMD </h4>
+									<p> About this thingy. Blah blah blah. </p>
+									<a href="#">
+										<div class="button-read-more">
+											<p>read more</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="thumbnail"> 
+								<img src="img/eqDESMO.png" id="thumbnail-DESMO"/>
+								<div class="thumbnail-mask">
+									<h4> DESMO </h4>
+									<p> About this thingy. Blah blah blah. </p>
+									<a href="#">
+										<div class="button-read-more">
+											<p>read more</p>
+										</div>
+									</a>
+								</div>	
 							</div>
 						</div>
-						<div class="thumbnail"> 
-							<img src="img/eqDESMO.png" id="thumbnail-DESMO"/>	
-						</div>
-						<div class="thumbnail"> </div>
-						<div class="thumbnail"> </div>
 					</div>
 				</article>
 				<!-- ==================================================================== -->	

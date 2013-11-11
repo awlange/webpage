@@ -20,12 +20,15 @@ var heights = {
   "#content-contact": "content-contact-height"
 };
 var scrollers = {
-  // clicked scroller link  // link to scroll to      // nav container of dropdown 
+  // clicked scroller link  // link to scroll to      // nav container that scroll to is in 
   "#scroller-employment": [ "#resume-employment", "#nav-resume" ],
   "#scroller-education": [ "#resume-education", "#nav-resume" ],
   "#scroller-skills": [ "#resume-skills", "#nav-resume" ],
   "#scroller-awards": [ "#resume-awards", "#nav-resume" ],
   "#scroller-publications": [ "#resume-publications", "#nav-resume" ],
+  // "#scroller-interests": [ "#science-interests", "#nav-science" ],
+  // "#scroller-highlights": [ "#science-highlights", "#nav-science" ],
+  "#scroller-publications-science": [ "#resume-publications", "#nav-resume" ]
 };
 
 
@@ -50,11 +53,11 @@ function navClick(navClick) {
   $(navClick).click( function(e) { 	 	
     // Prevent jumping to anchor (top of page) when clicked. e is for event.
     e.preventDefault();
-  	switchPage(navClick);
+  	switchPage(navClick, true);
   });
 };
 
-function switchPage(navClick) {	
+function switchPage(navClick, wiggleOn) {	
   	var contentClick = navs[navClick];
     var contentCurrent = getCurrentContent(); 	
   	var contentChanged = false;
@@ -83,7 +86,7 @@ function switchPage(navClick) {
         $(contentClick).addClass("content-moveFromLeft").addClass("content-current"); 
         navTransition(navCurrent, navClick);	
       }            
-   } else {
+   } else if (wiggleOn) {
      animateIcon(navClick, "wiggle");
    }
    return contentChanged;
@@ -171,10 +174,14 @@ function scrollTo(link) {
   $(link).click( function(e) {
   	// First make sure we are on the right displayed page
   	var navClick = scrollers[link][1];
-  	var doDelay = switchPage(navClick);
+  	var doDelay = switchPage(navClick, false);
+  	var delay = doDelay ? 200 : 0;
   	// Then scroll
   	var goToElement = scrollers[link][0]; 
-    $('html,body').animate({scrollTop: $(goToElement).offset().top});
+  	console.log(navClick, doDelay, goToElement);
+    $('html,body').animate({
+    	scrollTop: $(goToElement).offset().top
+    }, 1000);
   });
 };
 
