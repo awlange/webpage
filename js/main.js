@@ -7,9 +7,9 @@ var navs = {
 };
 var contents = {
   "#content-home": 0,
-  "#content-resume": 1,
-  "#content-science": 2,
-  "#content-development": 3,
+  "#content-science": 1,
+  "#content-development": 2,
+  "#content-resume": 3,
   "#content-contact": 4
 };
 var heights = {
@@ -52,8 +52,9 @@ $(document).ready( function(){
 function navClick(navClick) {	
   $(navClick).click( function(e) { 	 	
     // Prevent jumping to anchor (top of page) when clicked. e is for event.
-    e.preventDefault();
   	switchPage(navClick, true);
+  	e.preventDefault();
+  	return false;
   });
 };
 
@@ -163,9 +164,9 @@ function animateIcon(nav, animateClass) {
 function introAnimation() {
   var delay = 80;
   setTimeout(function() { animateIcon("#nav-home", "bounce"); }, 0*delay);
-  setTimeout(function() { animateIcon("#nav-resume", "bounce"); }, 1*delay);
-  setTimeout(function() { animateIcon("#nav-science", "bounce"); }, 2*delay);
-  setTimeout(function() { animateIcon("#nav-development", "bounce"); }, 3*delay);
+  setTimeout(function() { animateIcon("#nav-science", "bounce"); }, 1*delay);
+  setTimeout(function() { animateIcon("#nav-development", "bounce"); }, 2*delay);
+    setTimeout(function() { animateIcon("#nav-resume", "bounce"); }, 3*delay);
   setTimeout(function() { animateIcon("#nav-contact", "bounce"); }, 4*delay);
 }
 
@@ -188,3 +189,4 @@ function scrollTo(link) {
 function scrollToTop() {
   $('html,body').animate({scrollTop: 0});
 };
+

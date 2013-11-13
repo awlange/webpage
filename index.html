@@ -29,11 +29,7 @@
 				<nav id="icons">
 					<div class="icon-wrapper">
 						<!-- <div class="icon nav-current" id="nav-home"> </div> -->
-						<img src="img/icon-home-small2.svg" class="icon" id="nav-home" alt="home" title="home"/>
-					</div>
-					<div class="icon-wrapper">
-						<!-- <div class="icon" id="nav-resume"> </div> -->
-						<img src="img/icon-resume-small2.svg" class="icon" id="nav-resume" alt="resume" title="resume"/>
+						<img src="img/icon-home-small2.svg" class="icon cursor-pointer" id="nav-home" alt="home" title="home"/>
 					</div>
 					<div class="icon-wrapper">
 						<!-- <div class="icon" id="nav-science"> </div> -->
@@ -42,6 +38,10 @@
 					<div class="icon-wrapper">
 						<!-- <div class="icon" id="nav-development"> </div> -->
 						<img src="img/icon-dev-small2.svg" class="icon" id="nav-development" alt="development" title="development"/>
+					</div>
+					<div class="icon-wrapper">
+						<!-- <div class="icon" id="nav-resume"> </div> -->
+						<img src="img/icon-resume-small2.svg" class="icon" id="nav-resume" alt="resume" title="resume"/>
 					</div>
 					<div class="icon-wrapper-right">
 						<!-- <div class="icon" id="nav-contact"> </div> -->
@@ -130,8 +130,8 @@
 		                    <li><strong>Graduate/Undergraduate</strong>
 		                    	<ul>
 		                        	<li>Quantum mechanics, Statistical thermodynamics, Computational chemistry,
-		                           		 Multivariable calculus, Linear algebra, Differential equations,
-		                           	 	Computer programming, Numerical methods, Parallel computing
+		                           		Multivariable calculus, Linear algebra, Differential equations,
+		                           	 	Computer programming, Numerical methods
 		                           	</li>
 		                    	</ul>
 		                    </li>
@@ -282,51 +282,96 @@
 				<!-- ==================================================================== -->	
 				<article id="content-science" class="content setToRight">
 					<h2>science</h2>
-					<nav class="nav-secondary">
-						<a id="scroller-highlights" href="#foo">highlights</a> |
-						<a id="scroller-publications-science" href="#resume-publications">publications</a>
-					</nav>
-					
-					<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-					<div id="foo">
-						<h3>highlights</h3>
-		              	<div class="line"> </div>
-		              	
-						<div class="thumbnails-wrapper">
-							<div class="thumbnail">
-								<img src="img/FMO-MS-RMD_TOC.png" id="thumbnail-FMO" alt="FMO-MS-RMD"/> 
-								<div class="thumbnail-mask">
-									<h4> FMO-MS-RMD </h4>
-									<p> About this thingy. Blah blah blah. </p>
-									<a href="#">
-										<div class="button-read-more">
-											<p>read more</p>
-										</div>
-									</a>
-								</div>
+					<div class="thumbnails-wrapper">
+						<div class="thumbnail"> 
+							<img src="img/ade2orbital.png" id="thumbnail-ade" alt="adenine dimer"/>
+							<div class="thumbnail-mask">
+								<h4>Excited Electrons in DNA</h4>
+								<p> 
+									The red-blue blob here is a depiction of how the three dimensional
+                    wave (or, orbital) of an electron spreads out between two adenine molecules when it is excited by
+                    ultraviolet light, with the red and blue indicating the phase of the wave. The adenine
+                    dimer is somewhat hidden by the orbital, but the dimer is in the stacking geometry found in DNA 
+                    and surrounded by water, serving as a model to understand electronic excitation in solvated DNA. 
+                    			</p>
+								<a href="#">
+									<div class="button-read-more">
+										<p>read more</p>
+									</div>
+								</a>
+							</div>	
+						</div>
+						<div class="thumbnail">
+							<img src="img/FMO-MS-RMD_TOC.png" id="thumbnail-FMO" alt="FMO-MS-RMD"/> 
+							<div class="thumbnail-mask">
+								<h4>Fragment Molecular Orbital Multi-state Reactive Molecular Dynamics</h4>
+								<p>
+									This is a cute idea I had to combine Fragment Molecular Orbital (FMO) theory with
+                   Greg Voth's Multi-state Empirical Valence Bond (MS-EVB) theory. FMO divides a molecular system into some 
+                   set of smaller fragments, but this division can be ambiguous in chemically reactive systems. MS-EVB theory
+                   deals exactly with that issue by assuming a linear combination of reactive states, like what is
+                   shown in the schematic here. Combining MS-EVB and FMO results in a new powerful
+                   model that incorporates quantum electronic structure theory into the MS-EVB approach. 
+								</p>
+								<a href="#">
+									<div class="button-read-more">
+										<p>read more</p>
+									</div>
+								</a>
 							</div>
-							<div class="thumbnail"> 
-								<img src="img/eqDESMO.png" id="thumbnail-DESMO" alt="DESMO equation"/>
-								<div class="thumbnail-mask">
-									<h4> DESMO </h4>
-									<p> About this thingy. Blah blah blah. </p>
-									<a href="#">
-										<div class="button-read-more">
-											<p>read more</p>
-										</div>
-									</a>
-								</div>	
-							</div>
+						</div>
+						<div class="thumbnail"> 
+							<img src="img/eqDESMO.png" id="thumbnail-DESMO" alt="DESMO equation"/>
+							<div class="thumbnail-mask">
+								<h4>Debye-H&uuml;ckel-like Screening Model</h4>
+								<p>
+									This is an equation I invented/discovered 
+					to model continuum electrostatics of salty solvents characterized by a Debye screening length
+                    and a dielectric constant. I called the equation the "Debye-H&uuml;ckel-like Screening Model" (DESMO)
+                    because it generalizes the classic Debye-H&uuml;kel model&mdash;a point charge centered in a spherical
+                    solute cavity surrounded by solvent continuum&mdash;to arbitrary charge densities and solute cavities.
+                    DESMO reduces to the more familiar "Conductor-like Screening Model" (COSMO) in the limit of zero
+                    salt concentration. DESMO is a simple, fast approximation to much more complicated models.
+								</p>
+								<a href="#">
+									<div class="button-read-more">
+										<p>read more</p>
+									</div>
+								</a>
+							</div>	
 						</div>
 					</div>
 				</article>
 				<!-- ==================================================================== -->	
 				<article id="content-development" class="content setToRight">
 					<h2>development</h2>
+					<div class="youtube">
+						<iframe class="youtube" src="//www.youtube.com/embed/5U9J3zKKbOI?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                	</div>
+                	<p> 
+                		This is an example run of a genetic algorithm I wrote for dynamic load balancing
+	                    in parallel implicit solvent calculations. (C++, MPI, OpenMP) 
+	                    <br>
+	                    The molecule is a single stranded DNA polyadenine.
+	                	Spheres are located at atomic coordinates and are colored by which
+	                    node "owns" it. There are 4 nodes here, hence 4 colors.
+	                    <br>
+	                    The implicit solvent calculation is based on a parallel fast multipole method. The calculation
+	                    is load balanced and runs faster when atoms belonging to a given node are close to each
+	                    other and far away from atoms belonging to other processors. The fitness function for the
+	                    genetic algorithm reflects that.
+	                    The run starts with a randomized ownership of the atoms across the 4 nodes,
+	                    which is essentially the worst load balance. Interestingly, the genetic algorithm finds a solution
+	                    that is very close to the ideal solution for this system. 
+                    </p>
 				</article>
 				<!-- ==================================================================== -->	
 				<article id="content-contact" class="content setToRight">
 					<h2>contact</h2>
+					<p class="center"> email: <a href="mailto:adrianwlange@gmail.com" target="_blank">adrianwlange@gmail.com</a></p>
+					<div>
+						<p> LinkedIn, BuiltInChicago, anything else? </p>
+					</div>
 				</article>
 			</div>
 		</div>

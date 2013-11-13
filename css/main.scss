@@ -83,7 +83,6 @@ h3 {
 h4 {
   font-weight: 100;
   font-size: 2.0em;
-  padding-top: 40px;  
 }
 a:link, a:visited {
   color: $palette-blue;
@@ -139,6 +138,7 @@ h1 {
   margin: 0px;
   border-radius: 3px;
   background: $palette-blue;
+  cursor: pointer;
 }
 
 // ----------------------------------------------------------------------
@@ -155,10 +155,10 @@ h1 {
   position: absolute;
   width: $page-width;
 }
-.content-home-height { height: 200px; }
-.content-resume-height { height: 3500px; }
+.content-home-height { height: 800px; }
+.content-resume-height { height: 3200px; }
 .content-science-height { height: 1500px; }
-.content-development-height { height: 1000px; }
+.content-development-height { height: 1500px; }
 .content-contact-height { height: 500px; }
 
 // ----------------------------------------------------------------------
@@ -377,13 +377,13 @@ $offscreen-right: translateX($offscreen-position);
 
 .thumbnails-wrapper {
   position: relative;
-  margin: 50px 50px 0 50px;
-  width: 700px;
+  margin-top: 10px;
+  width: 800px;
 }
 
 .thumbnail {
-  margin: 50px;
-  width: 600px;
+  margin: 30px 50px;
+  width: 700px;
   border-radius: 3px;
   background: transparent;
   overflow: hidden;
@@ -391,18 +391,22 @@ $offscreen-right: translateX($offscreen-position);
 }
 
 #thumbnail-FMO {
-  width: 600px;
-  height: 195px;
+  padding: 70px 25px;
+  width: 650px;
 }
 #thumbnail-DESMO {
-  padding: 50px 50px;
+  padding: 100px 100px;
   width: 500px;
+}
+#thumbnail-ade {
+  padding: 10px 175px;
+  width: 350px;
 }
 
 .thumbnail-mask {
   background: $palette-blue-transparent;
   opacity: 0;
-  width: 600px;
+  width: 700px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -411,11 +415,9 @@ $offscreen-right: translateX($offscreen-position);
   @include css-transition($transition-time-medium, linear);
   
   h4 {
-    //margin-top: 30px;
-    // background: $palette-black;
     background: transparent;
     color: $palette-white;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     @include css-transition($transition-time-medium, ease-in-out);
     -webkit-transform: translateY(-100px);
@@ -447,6 +449,12 @@ $offscreen-right: translateX($offscreen-position);
       color: $palette-white;
       border-radius: 3px;
       width: 120px;
+      position: relative;
+      @include css-transition($transition-time-medium, ease-in-out);
+      -webkit-transform: translateY(100px);
+      -moz-transform: translateY(100px);
+      -o-transform: translateY(100px);
+      transform: translateY(100px);
       p {
         text-align: center;
       }
@@ -458,7 +466,7 @@ $offscreen-right: translateX($offscreen-position);
   @include css-transition($transition-time-medium, linear);
   opacity: 1;
 
-  h4, p, a {
+  h4, p, a, a div {
     @include css-transition($transition-time-medium, ease-in-out);
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -495,3 +503,11 @@ $offscreen-right: translateX($offscreen-position);
 .float-left { float: left; }
 .clear { clear: both; }
 .spacer { height: 50px; }
+.youtube {
+  margin: 10px auto;
+  width: 640px;
+  height: 360px;
+}
+.center {
+  text-align: center;
+}
