@@ -19,7 +19,10 @@
 	
 	<body>
 		<!--[if lt IE 7]>
-      		<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      		<p class="chromeframe">You are using an <strong>outdated</strong> browser. 
+      			Please <a href="http://browsehappy.com/">upgrade your browser</a> or 
+      			<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> 
+      			to improve your experience.</p>
     	<![endif]-->
 		<div id="page-wrapper">
 			<div id="title_nav">
@@ -28,34 +31,31 @@
 				</h1>
 				<nav id="icons">
 					<div class="icon-wrapper">
-						<!-- <div class="icon nav-current" id="nav-home"> </div> -->
-						<img src="img/icon-home-small2.svg" class="icon cursor-pointer" id="nav-home" alt="home" title="home"/>
+						<img src="img/icon-home-small2.svg" class="icon cursor-pointer" id="nav-home" alt="home"/>
 					</div>
 					<div class="icon-wrapper">
-						<!-- <div class="icon" id="nav-science"> </div> -->
-						<img src="img/icon-science-small2.svg" class="icon" id="nav-science" alt="science" title="science"/>
+						<img src="img/icon-science-small2.svg" class="icon" id="nav-science" alt="science"/>
 					</div>
 					<div class="icon-wrapper">
-						<!-- <div class="icon" id="nav-development"> </div> -->
-						<img src="img/icon-dev-small2.svg" class="icon" id="nav-development" alt="development" title="development"/>
+						<img src="img/icon-dev-small2.svg" class="icon" id="nav-development" alt="development"/>
 					</div>
 					<div class="icon-wrapper">
-						<!-- <div class="icon" id="nav-resume"> </div> -->
-						<img src="img/icon-resume-small2.svg" class="icon" id="nav-resume" alt="resume" title="resume"/>
+						<img src="img/icon-resume-small2.svg" class="icon" id="nav-resume" alt="resume"/>
 					</div>
 					<div class="icon-wrapper-right">
-						<!-- <div class="icon" id="nav-contact"> </div> -->
-						<img src="img/icon-contact-small.svg" class="icon" id="nav-contact" alt="contact" title="contact"/>
+						<img src="img/icon-contact-small.svg" class="icon" id="nav-contact" alt="contact"/>
 					</div>
 				</nav>
 			</div>
 		
 			<div id="content-wrapper" class="content-home-height">
-				<!-- ==================================================================== -->
+				
 				<article id="content-home" class="content setToCenter content-current">
 					<!-- blank -->
 				</article>
+				
 				<!-- ==================================================================== -->
+				
 				<article id="content-resume" class="content setToRight">
 					<h2>resum&eacute;</h2>
 					<nav class="nav-secondary">
@@ -63,7 +63,8 @@
      	      			<a id="scroller-education" href="#resume-education">education</a> |
      	      			<a id="scroller-skills" href="#resume-skills">skills</a> |
      	      			<a id="scroller-awards" href="#resume-awards">awards</a> |
-     	    			<a id="scroller-publications" href="#resume-publications">publications</a> |
+     	    			<!-- <a id="scroller-publications" href="#resume-publications">publications</a> | -->
+     	    			<span id="scroller-publications" class="fake-anchor">publications</span> |
      	    			<a href="file/AWL_resume_052413.pdf" target="_blank">download</a>
 					</nav>
 					
@@ -278,8 +279,11 @@
 		              </ol>           	
 		            </div>
             
+              		<p class="backToTop">back to top</p>
 				</article>
+				
 				<!-- ==================================================================== -->	
+				
 				<article id="content-science" class="content setToRight">
 					<h2>science</h2>
 					<div class="thumbnails-wrapper">
@@ -290,7 +294,7 @@
 								<p> 
 									The red-blue blob here is a depiction of how the three dimensional
                     wave (or, orbital) of an electron spreads out between two adenine molecules when it is excited by
-                    ultraviolet light, with the red and blue indicating the phase of the wave. The adenine
+                    ultraviolet light. The red and blue indicates the phase of the wave. The adenine
                     dimer is somewhat hidden by the orbital, but the dimer is in the stacking geometry found in DNA 
                     and surrounded by water, serving as a model to understand electronic excitation in solvated DNA. 
                     			</p>
@@ -328,7 +332,7 @@
 									This is an equation I invented/discovered 
 					to model continuum electrostatics of salty solvents characterized by a Debye screening length
                     and a dielectric constant. I called the equation the "Debye-H&uuml;ckel-like Screening Model" (DESMO)
-                    because it generalizes the classic Debye-H&uuml;kel model&mdash;a point charge centered in a spherical
+                    because it generalizes the classic Debye-H&uuml;ckel model&mdash;a point charge centered in a spherical
                     solute cavity surrounded by solvent continuum&mdash;to arbitrary charge densities and solute cavities.
                     DESMO reduces to the more familiar "Conductor-like Screening Model" (COSMO) in the limit of zero
                     salt concentration. DESMO is a simple, fast approximation to much more complicated models.
@@ -341,8 +345,11 @@
 							</div>	
 						</div>
 					</div>
+					<p class="backToTop">back to top</p>
 				</article>
+				
 				<!-- ==================================================================== -->	
+				
 				<article id="content-development" class="content setToRight">
 					<h2>development</h2>
 					<div class="youtube">
@@ -364,13 +371,25 @@
 	                    which is essentially the worst load balance. Interestingly, the genetic algorithm finds a solution
 	                    that is very close to the ideal solution for this system. 
                     </p>
+					<p class="backToTop">back to top</p>
 				</article>
+				
 				<!-- ==================================================================== -->	
+				
 				<article id="content-contact" class="content setToRight">
 					<h2>contact</h2>
-					<p class="center"> email: <a href="mailto:adrianwlange@gmail.com" target="_blank">adrianwlange@gmail.com</a></p>
-					<div>
-						<p> LinkedIn, BuiltInChicago, anything else? </p>
+					<p class="center"> <a href="mailto:adrianwlange@gmail.com" target="_blank">adrianwlange@gmail.com</a></p>
+					<div id="contact-icons">
+						<div class="icon-wrapper">
+							<a href="http://www.linkedin.com/pub/adrian-lange/59/b53/57" target="_blank">
+								<img src="img/LinkedIn_icon.png" class="cursor-pointer" id="icon-LinkedIn" alt="LinkedIn"/>
+							</a>
+						</div>
+						<div class="icon-wrapper">
+							<a href="http://www.builtinchicago.org/member/adrian-lange" target="_blank">
+								<img src="img/BuiltInChicago_icon.jpg" class="cursor-pointer" id="icon-BuiltInChicago" alt="BuiltInChicago"/>
+							</a>
+						</div>
 					</div>
 				</article>
 			</div>

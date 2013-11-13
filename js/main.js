@@ -26,8 +26,6 @@ var scrollers = {
   "#scroller-skills": [ "#resume-skills", "#nav-resume" ],
   "#scroller-awards": [ "#resume-awards", "#nav-resume" ],
   "#scroller-publications": [ "#resume-publications", "#nav-resume" ],
-  // "#scroller-interests": [ "#science-interests", "#nav-science" ],
-  // "#scroller-highlights": [ "#science-highlights", "#nav-science" ],
   "#scroller-publications-science": [ "#resume-publications", "#nav-resume" ]
 };
 
@@ -36,12 +34,18 @@ var scrollers = {
 // Main ready function
 //
 $(document).ready( function(){
+  
   for (var nav in navs) {
     navClick(nav);
   }
+  
   for (var link in scrollers) {
   	scrollTo(link);
-  }
+  } 
+    
+  $(".backToTop").click(scrollToTop);
+  
+  // Leave this as last
   setTimeout( function() { introAnimation(); }, 500);
 });
 
@@ -179,14 +183,14 @@ function scrollTo(link) {
   	var delay = doDelay ? 200 : 0;
   	// Then scroll
   	var goToElement = scrollers[link][0]; 
-  	console.log(navClick, doDelay, goToElement);
     $('html,body').animate({
     	scrollTop: $(goToElement).offset().top
-    }, 1000);
+    }, 800);
   });
 };
 
-function scrollToTop() {
-  $('html,body').animate({scrollTop: 0});
+var scrollToTop = function() {
+  $('html,body').animate({
+  	scrollTop: 0
+  }, 800);
 };
-

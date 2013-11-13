@@ -91,30 +91,59 @@ h1 {
   background: #0976e0;
   cursor: pointer; }
 
+#contact-icons {
+  margin: 20px auto;
+  height: 70px;
+  width: 140px; }
+
+#icon-LinkedIn {
+  position: absolute;
+  top: -1px;
+  height: 52px;
+  width: 52px;
+  margin: 0px;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer; }
+
+#icon-BuiltInChicago {
+  position: absolute;
+  top: 0px;
+  height: 50px;
+  width: 50px;
+  margin: 0px;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer; }
+
 #content-wrapper {
   overflow: hidden;
   position: relative;
   width: 800px;
-  clear: both; }
+  clear: both;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease; }
 
 .content {
   position: absolute;
   width: 800px; }
 
 .content-home-height {
-  height: 800px; }
+  height: 50px; }
 
 .content-resume-height {
   height: 3200px; }
 
 .content-science-height {
-  height: 1500px; }
+  height: 1400px; }
 
 .content-development-height {
   height: 1500px; }
 
 .content-contact-height {
-  height: 500px; }
+  height: 300px; }
 
 .h2-nav-wrapper {
   height: 40px;
@@ -871,6 +900,19 @@ h1 {
     -moz-transform: translateY(0px);
     -o-transform: translateY(0px);
     transform: translateY(0px); }
+
+.fake-anchor {
+  color: #0976e0;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.backToTop {
+  margin: 50px auto;
+  width: 100px;
+  color: #0976e0;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer; }
 
 .line {
   margin: 3px 0px;
