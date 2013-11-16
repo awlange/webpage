@@ -18,7 +18,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: Oxygen, Lucida Grande, Arial, sans-serif;
+  font-family: 'Pontano Sans', sans-serif;
   color: #0a0a0a;
   background: #fefefe; }
 
@@ -806,20 +806,8 @@ h1 {
   overflow: hidden;
   position: relative; }
 
-#thumbnail-FMO {
-  padding: 70px 25px;
-  width: 650px; }
-
-#thumbnail-DESMO {
-  padding: 100px 100px;
-  width: 500px; }
-
-#thumbnail-ade {
-  padding: 10px 175px;
-  width: 350px; }
-
 .thumbnail-mask {
-  background: rgba(9, 118, 240, 0.9);
+  background: rgba(9, 118, 240, 0.95);
   opacity: 0;
   width: 700px;
   height: 100%;
@@ -872,7 +860,7 @@ h1 {
       background: #0a0a0a;
       color: #fefefe;
       border-radius: 3px;
-      width: 120px;
+      padding: 0px 5px;
       position: relative;
       -webkit-transition: all 0.4s ease-in-out;
       -moz-transition: all 0.4s ease-in-out;
@@ -901,10 +889,38 @@ h1 {
     -o-transform: translateY(0px);
     transform: translateY(0px); }
 
+#thumbnail-FMO {
+  padding: 70px 25px;
+  width: 650px; }
+
+#thumbnail-DESMO {
+  padding: 100px 100px;
+  width: 500px; }
+
+#thumbnail-ade {
+  padding: 0px 175px;
+  width: 350px; }
+
+#thumbnail-genetic {
+  padding: 0px 150px 40px 150px;
+  width: 400px; }
+
+#thumbnail-scaling {
+  padding: 30px 100px;
+  width: 500px; }
+
+#thumbnail-qchem {
+  padding: 80px 100px;
+  width: 500px; }
+
 .fake-anchor {
-  color: #0976e0;
-  text-decoration: underline;
-  cursor: pointer; }
+  color: #0a0a0a;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center; }
+
+.fake-anchor:hover {
+  color: #0976e0; }
 
 .backToTop {
   margin: 50px auto;

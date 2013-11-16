@@ -26,7 +26,7 @@ var scrollers = {
   "#scroller-skills": [ "#resume-skills", "#nav-resume" ],
   "#scroller-awards": [ "#resume-awards", "#nav-resume" ],
   "#scroller-publications": [ "#resume-publications", "#nav-resume" ],
-  "#scroller-publications-science": [ "#resume-publications", "#nav-resume" ]
+  "#scroller-publications2": [ "#resume-publications", "#nav-resume" ]
 };
 
 
