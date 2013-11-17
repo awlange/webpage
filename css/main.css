@@ -30,7 +30,7 @@ body {
 h2 {
   font-weight: 100;
   font-size: 2.2em;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
   text-align: center; }
 
@@ -134,7 +134,7 @@ h1 {
   height: 50px; }
 
 .content-resume-height {
-  height: 3200px; }
+  height: 3600px; }
 
 .content-science-height {
   height: 1400px; }
@@ -795,7 +795,6 @@ h1 {
 
 .thumbnails-wrapper {
   position: relative;
-  margin-top: 10px;
   width: 800px; }
 
 .thumbnail {
