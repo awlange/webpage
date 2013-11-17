@@ -30,6 +30,7 @@ $palette-black-transparent: rgba(10, 10, 10, 0.7);
 //
 $page-width: 800px;
 $title_nav-pad-top: 150px;
+$title_nav-height: $title_nav-pad-top + 50px; 
 $side-pad: 10px;
 
 // ----------------------------------------------------------------------
@@ -97,7 +98,7 @@ a:link, a:visited {
 //
 #title_nav {
   width: $page-width;
-  height: $title_nav-pad-top + 50px;
+  height: $title_nav-height;
 }
 h1 {
   font-size: 3.25em;
@@ -452,10 +453,11 @@ $offscreen-right: translateX($offscreen-position);
     -o-transform: translateY(100px);
     transform: translateY(100px);
   }
-  a {
+  a, .modal-button {
     display: inline-block;
     text-decoration: none;
     margin-top: 20px;
+    cursor: pointer;
     @include css-transition($transition-time-medium, ease-in-out);
     -webkit-transform: translateY(100px);
     -moz-transform: translateY(100px);
@@ -483,7 +485,7 @@ $offscreen-right: translateX($offscreen-position);
   @include css-transition($transition-time-medium, linear);
   opacity: 1;
 
-  h4, p, a, a div {
+  h4, p, a, a div, .modal-button, .modal-button div {
     @include css-transition($transition-time-medium, ease-in-out);
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -540,6 +542,60 @@ $offscreen-right: translateX($offscreen-position);
 }
 
 // ----------------------------------------------------------------------
+// Modal
+//
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: $palette-black-transparent;
+  height: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  $transition-value: opacity 0.8s ease;
+  -webkit-transition: $transition-value;
+  -moz-transition: $transition-value;
+  -o-transition: $transition-value;
+  transition: $transition-value;
+}
+.modal-active {
+  height: $title_nav-height + 1500px + 30px; // plus dev page height plus margin
+  visibility: visible;
+  opacity: 1;
+  $transition-value: opacity 0.8s ease;
+  -webkit-transition: $transition-value;
+  -moz-transition: $transition-value;
+  -o-transition: $transition-value;
+  transition: $transition-value;
+}
+.modal-body {
+  background: $palette-black;
+  color: $palette-white;
+  height: 0px;
+  width: 700px;
+  margin: $title_nav-height + 50px auto;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.modal-body-active {
+  height: 500px;
+}
+.modal-close {
+  padding: 20px 30px;
+  font-size: 2em;
+  cursor: pointer;
+  float: right;
+}
+.youtube {
+  clear: both;
+  margin: 10px auto;
+  width: 640px;
+  height: 360px;
+}
+
+// ----------------------------------------------------------------------
 // Miscellaneous
 //
 .line {
@@ -566,11 +622,6 @@ $offscreen-right: translateX($offscreen-position);
 .float-left { float: left; }
 .clear { clear: both; }
 .spacer { height: 50px; }
-.youtube {
-  margin: 10px auto;
-  width: 640px;
-  height: 360px;
-}
 .center {
   text-align: center;
 }

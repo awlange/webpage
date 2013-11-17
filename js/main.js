@@ -37,17 +37,21 @@ var scrollers = {
 //
 $(document).ready( function(){
   
+  // Nav icon clicks
   for (var nav in navs) {
     navClick(nav);
   }
   
+  // Scrollers
   for (var link in scrollers) {
   	scrollTo(link);
   } 
-    
   $(".backToTop").click(scrollToTop);
   
-  // Leave this as last
+  // Modals
+  modalHandler();
+  
+  // Intro animation, leave this as last
   setTimeout( function() { introAnimation(); }, 500);
 });
 
@@ -196,3 +200,15 @@ var scrollToTop = function() {
   	scrollTop: 0
   }, 800);
 };
+
+function modalHandler() {
+  $(".modal-button").click( function() {
+  	if ($(".modal").hasClass("modal-active")) {
+  	    $(".modal").removeClass("modal-active");
+  	    $(".modal-body").removeClass("modal-body-active");
+  	} else {
+        $(".modal").addClass("modal-active");
+        $(".modal-body").addClass("modal-body-active");
+  	}
+  });
+}

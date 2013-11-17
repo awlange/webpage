@@ -843,10 +843,11 @@ h1 {
     -moz-transform: translateY(100px);
     -o-transform: translateY(100px);
     transform: translateY(100px); }
-  .thumbnail-mask a {
+  .thumbnail-mask a, .thumbnail-mask .modal-button {
     display: inline-block;
     text-decoration: none;
     margin-top: 20px;
+    cursor: pointer;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -855,7 +856,7 @@ h1 {
     -moz-transform: translateY(100px);
     -o-transform: translateY(100px);
     transform: translateY(100px); }
-    .thumbnail-mask a div {
+    .thumbnail-mask a div, .thumbnail-mask .modal-button div {
       background: #0a0a0a;
       color: #fefefe;
       border-radius: 3px;
@@ -869,7 +870,7 @@ h1 {
       -moz-transform: translateY(100px);
       -o-transform: translateY(100px);
       transform: translateY(100px); }
-      .thumbnail-mask a div p {
+      .thumbnail-mask a div p, .thumbnail-mask .modal-button div p {
         text-align: center; }
 
 .thumbnail-mask:hover {
@@ -878,7 +879,7 @@ h1 {
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
   opacity: 1; }
-  .thumbnail-mask:hover h4, .thumbnail-mask:hover p, .thumbnail-mask:hover a, .thumbnail-mask:hover a div {
+  .thumbnail-mask:hover h4, .thumbnail-mask:hover p, .thumbnail-mask:hover a, .thumbnail-mask:hover a div, .thumbnail-mask:hover .modal-button, .thumbnail-mask:hover .modal-button div {
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -929,6 +930,54 @@ h1 {
   text-align: center;
   cursor: pointer; }
 
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(10, 10, 10, 0.7);
+  height: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  -o-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease; }
+
+.modal-active {
+  height: 1730px;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  -o-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease; }
+
+.modal-body {
+  background: #0a0a0a;
+  color: #fefefe;
+  height: 0px;
+  width: 700px;
+  margin: 250px auto;
+  border-radius: 3px;
+  overflow: hidden; }
+
+.modal-body-active {
+  height: 500px; }
+
+.modal-close {
+  padding: 20px 30px;
+  font-size: 2em;
+  cursor: pointer;
+  float: right; }
+
+.youtube {
+  clear: both;
+  margin: 10px auto;
+  width: 640px;
+  height: 360px; }
+
 .line {
   margin: 3px 0px;
   height: 1px;
@@ -964,11 +1013,6 @@ h1 {
 
 .spacer {
   height: 50px; }
-
-.youtube {
-  margin: 10px auto;
-  width: 640px;
-  height: 360px; }
 
 .center {
   text-align: center; }
