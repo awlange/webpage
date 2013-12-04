@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+   Author: Adrian Lange 
+
+# THANKS
+
+    For everything: Everybody
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery
