@@ -28,8 +28,8 @@ $palette-black-transparent: rgba(10, 10, 10, 0.7);
 // ----------------------------------------------------------------------
 //  Sizes
 //
-$page-width: 800px;
-$title_nav-pad-top: 150px;
+$page-width: 680px;
+$title_nav-pad-top: 100px;
 $title_nav-height: $title_nav-pad-top + 50px; 
 $side-pad: 10px;
 
@@ -302,23 +302,23 @@ $offscreen-right: translateX($offscreen-position);
 //
 @mixin bounce-keyframes {
   0%   { top: 0px; }
-  5%   { top: -9px; }
+  //5%   { top: -9px; }
   10%  { top: -16px; }
-  15%  { top: -21px; }
+  //15%  { top: -21px; }
   20%  { top: -24px; }
-  25%  { top: -25px; }
+  //25%  { top: -25px; }
   30%  { top: -24px; }
-  35%  { top: -21px; }
+  //35%  { top: -21px; }
   40%  { top: -16px; }
-  45%  { top: -9px; }
+  //45%  { top: -9px; }
   50%  { top: 0px; }
-  55%  { top: -3px; }
+  //55%  { top: -3px; }
   60%  { top: -6px; }
-  65%  { top: -7px; }
-  70%  { top: -8px; }
-  75%  { top: -7px; }
+  //65%  { top: -7px; }
+  70%  { top: -9px; }
+  //75%  { top: -7px; }
   80%  { top: -6px; }
-  85%  { top: -3px; }
+  //85%  { top: -3px; }
   90%  { top: 0px; }
   100% { top: 0px; }
 }
@@ -336,23 +336,23 @@ $offscreen-right: translateX($offscreen-position);
 
 @mixin wiggle-keyframes {
   0%   { left: 0px; }
-  5%   { left: 2px; }
+  //5%   { left: 2px; }
   10%  { left: 4px; }
-  15%  { left: 8px; }
+  //15%  { left: 8px; }
   20%  { left: 14px; }
-  25%  { left: 8px; }
+  //25%  { left: 8px; }
   30%  { left: 0px; }
-  35%  { left: -6px; }
+  //35%  { left: -6px; }
   40%  { left: -10px; }
-  45%  { left: -7px; }
+  //45%  { left: -7px; }
   50%  { left: -2px; }
-  55%  { left: 0px; }
+  //55%  { left: 0px; }
   60%  { left: 2px; }
-  65%  { left: 3px; }
+  //65%  { left: 3px; }
   70%  { left: 2px; }
-  75%  { left: 0px; }
+  //75%  { left: 0px; }
   80%  { left: -1px; }
-  85%  { left: -2px; }
+  //85%  { left: -2px; }
   90%  { left: -1px; }
   100% { left: 0px; }
 }
@@ -409,12 +409,12 @@ $offscreen-right: translateX($offscreen-position);
 
 .thumbnails-wrapper {
   position: relative;
-  width: 800px;
+  width: $page-width;
 }
 
 .thumbnail {
-  margin: 30px 50px;
-  width: 700px;
+  margin: 30px 0px;
+  width: $page-width;
   border-radius: 3px;
   background: transparent;
   overflow: hidden;
@@ -424,7 +424,7 @@ $offscreen-right: translateX($offscreen-position);
 .thumbnail-mask {
   background: $palette-blue-transparent;
   opacity: 0;
-  width: 700px;
+  width: $page-width;
   height: 100%;
   position: absolute;
   top: 0;
@@ -494,29 +494,35 @@ $offscreen-right: translateX($offscreen-position);
   }
 }
 
+$FMO-width: 600px;
 #thumbnail-FMO {
-  padding: 70px 25px;
-  width: 650px;
+  width: $FMO-width;
+  padding: 80px ($page-width - $FMO-width)/2;
 }
+$DESMO-width: 480px;
 #thumbnail-DESMO {
-  padding: 100px 100px;
-  width: 500px;
+  width: $DESMO-width;
+  padding: 110px ($page-width - $DESMO-width)/2;
 }
+$ade-width: 320px;
 #thumbnail-ade {
-  padding: 0px 175px;
-  width: 350px;
+  width: $ade-width;
+  padding: 10px ($page-width - $ade-width)/2;
 }
+$genetic-width: 400px;
 #thumbnail-genetic {
-  padding: 0px 150px 40px 150px;
-  width: 400px;
+  width: $genetic-width;
+  padding: 0px ($page-width - $genetic-width)/2 40px ($page-width - $genetic-width)/2;
 }
+$scaling-width: 500px;
 #thumbnail-scaling {
-  padding: 30px 100px;
-  width: 500px;
+  width: $scaling-width;
+  padding: 50px ($page-width - $scaling-width)/2;
 }
+$qchem-width: 500px;
 #thumbnail-qchem {
-  padding: 80px 100px;
-  width: 500px;
+  width: $qchem-width;
+  padding: 70px ($page-width - $qchem-width)/2;
 }
 
 // ----------------------------------------------------------------------
@@ -574,7 +580,7 @@ $offscreen-right: translateX($offscreen-position);
   background: $palette-black;
   color: $palette-white;
   height: 0px;
-  width: 700px;
+  width: $page-width;
   margin: $title_nav-height + 50px auto;
   border-radius: 3px;
   overflow: hidden;
