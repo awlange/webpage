@@ -13,7 +13,7 @@ fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 html {
   width: 100%;
   height: 100%;
-  min-width: 680px; }
+  min-width: 800px; }
 
 body {
   width: 100%;
@@ -23,7 +23,7 @@ body {
   background: #fefefe; }
 
 #page-wrapper {
-  width: 680px;
+  width: 800px;
   margin: 0 auto;
   overflow: auto; }
 
@@ -49,7 +49,7 @@ a:link, a:visited {
   color: #0976e0; }
 
 #title_nav {
-  width: 680px;
+  width: 800px;
   height: 150px; }
 
 h1 {
@@ -70,22 +70,22 @@ h1 {
 .icon-wrapper {
   position: relative;
   float: left;
-  height: 50px;
-  width: 50px;
-  margin: 10px; }
+  height: 60px;
+  width: 60px;
+  margin: 10px 10px 12px 10px; }
 
 .icon-wrapper-right {
   position: relative;
   float: left;
-  height: 50px;
-  width: 50px;
-  margin: 10px 0px 10px 10px; }
+  height: 60px;
+  width: 60px;
+  margin: 10px 0px 12px 10px; }
 
 .icon {
   position: absolute;
   top: 0px;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   margin: 0px;
   border-radius: 3px;
   background: #0976e0;
@@ -94,13 +94,13 @@ h1 {
 #contact-icons {
   margin: 20px auto;
   height: 70px;
-  width: 140px; }
+  width: 160px; }
 
 #icon-LinkedIn {
   position: absolute;
   top: -1px;
-  height: 52px;
-  width: 52px;
+  height: 62px;
+  width: 62px;
   margin: 0px;
   border-radius: 3px;
   background: transparent;
@@ -109,8 +109,8 @@ h1 {
 #icon-BuiltInChicago {
   position: absolute;
   top: 0px;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   margin: 0px;
   border-radius: 3px;
   background: transparent;
@@ -119,7 +119,7 @@ h1 {
 #content-wrapper {
   overflow: hidden;
   position: relative;
-  width: 680px;
+  width: 800px;
   clear: both;
   -webkit-transition: all 0.8s ease;
   -moz-transition: all 0.8s ease;
@@ -128,7 +128,7 @@ h1 {
 
 .content {
   position: absolute;
-  width: 680px; }
+  width: 800px; }
 
 .content-home-height {
   height: 50px; }
@@ -567,10 +567,8 @@ h1 {
   margin: 30px 0px; }
 #content-resume div ul, #content-science div ul {
   margin: 10px 0px 10px 30px; }
-  #content-resume div ul li, #content-science div ul li {
-    font-size: 0.9em; }
-    #content-resume div ul li ul li, #content-science div ul li ul li {
-      list-style-type: none; }
+  #content-resume div ul li ul li, #content-science div ul li ul li {
+    list-style-type: none; }
 #content-resume div ol.publication-list, #content-science div ol.publication-list {
   margin: 15px; }
   #content-resume div ol.publication-list li, #content-science div ol.publication-list li {
@@ -579,11 +577,11 @@ h1 {
 
 .thumbnails-wrapper {
   position: relative;
-  width: 680px; }
+  width: 800px; }
 
 .thumbnail {
   margin: 30px 0px;
-  width: 680px;
+  width: 800px;
   border-radius: 3px;
   background: transparent;
   overflow: hidden;
@@ -592,7 +590,7 @@ h1 {
 .thumbnail-mask {
   background: rgba(9, 118, 240, 0.95);
   opacity: 0;
-  width: 680px;
+  width: 800px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -675,27 +673,27 @@ h1 {
 
 #thumbnail-FMO {
   width: 600px;
-  padding: 80px 40px; }
+  padding: 80px 100px; }
 
 #thumbnail-DESMO {
   width: 480px;
-  padding: 110px 100px; }
+  padding: 110px 160px; }
 
 #thumbnail-ade {
   width: 320px;
-  padding: 10px 180px; }
+  padding: 10px 240px; }
 
 #thumbnail-genetic {
   width: 400px;
-  padding: 0px 140px 40px 140px; }
+  padding: 0px 200px 40px 200px; }
 
 #thumbnail-scaling {
   width: 500px;
-  padding: 50px 90px; }
+  padding: 50px 150px; }
 
 #thumbnail-qchem {
   width: 500px;
-  padding: 70px 90px; }
+  padding: 70px 150px; }
 
 .fake-anchor {
   color: #0a0a0a;
@@ -742,7 +740,7 @@ h1 {
   background: #0a0a0a;
   color: #fefefe;
   height: 0px;
-  width: 680px;
+  width: 800px;
   margin: 200px auto;
   border-radius: 3px;
   overflow: hidden; }
@@ -765,7 +763,7 @@ h1 {
 .line {
   margin: 3px 0px;
   height: 1px;
-  width: 680px;
+  width: 800px;
   background-color: #0976e0; }
 
 .superscript {

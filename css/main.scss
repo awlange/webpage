@@ -28,10 +28,11 @@ $palette-black-transparent: rgba(10, 10, 10, 0.7);
 // ----------------------------------------------------------------------
 //  Sizes
 //
-$page-width: 680px;
+$page-width: 800px;
 $title_nav-pad-top: 100px;
 $title_nav-height: $title_nav-pad-top + 50px; 
 $side-pad: 10px;
+$icon-size: 60px;
 
 // ----------------------------------------------------------------------
 //  Transitions
@@ -123,22 +124,22 @@ h1 {
 .icon-wrapper {
   position: relative;
   float: left;
-  height: 50px;
-  width: 50px;
-  margin: 10px;
+  height: $icon-size;
+  width: $icon-size;
+  margin: 10px 10px 12px 10px;
 }
 .icon-wrapper-right {
   position: relative;
   float: left;
-  height: 50px;
-  width: 50px;
-  margin: 10px 0px 10px 10px;
+  height: $icon-size;
+  width: $icon-size;
+  margin: 10px 0px 12px 10px;
 }
 .icon {
   position: absolute;
   top: 0px;
-  height: 50px;
-  width: 50px;
+  height: $icon-size;
+  width: $icon-size;
   margin: 0px;
   border-radius: 3px;
   background: $palette-blue;
@@ -147,13 +148,13 @@ h1 {
 #contact-icons {
   margin: 20px auto;
   height: 70px;
-  width: 140px;
+  width: 160px;
 }
 #icon-LinkedIn {
   position: absolute;
   top: -1px;
-  height: 52px;
-  width: 52px;
+  height: $icon-size + 2px;
+  width: $icon-size + 2px;
   margin: 0px;
   border-radius: 3px;
   background: transparent;
@@ -162,8 +163,8 @@ h1 {
 #icon-BuiltInChicago {
   position: absolute;
   top: 0px;
-  height: 50px;
-  width: 50px;
+  height: $icon-size;
+  width: $icon-size;
   margin: 0px;
   border-radius: 3px;
   background: transparent;
@@ -386,7 +387,7 @@ $offscreen-right: translateX($offscreen-position);
     ul {
       margin: 10px 0px 10px 3*$side-pad;
       li {
-        font-size: 0.9em;
+        //font-size: 0.9em;
         ul li {
           list-style-type: none;
         }
