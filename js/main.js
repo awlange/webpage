@@ -26,6 +26,7 @@ var scrollers = {
   "#scroller-employment": [ "#resume-employment", "#nav-resume" ],
   "#scroller-education": [ "#resume-education", "#nav-resume" ],
   "#scroller-skills": [ "#resume-skills", "#nav-resume" ],
+  "#scroller-projects": [ "#resume-projects", "#nav-resume" ],
   "#scroller-awards": [ "#resume-awards", "#nav-resume" ],
   "#scroller-publications": [ "#resume-publications", "#nav-resume" ],
   "#scroller-publications2": [ "#resume-publications", "#nav-resume" ]
@@ -61,7 +62,7 @@ $(document).ready( function(){
 
 function navClick(navClick) {	
   $(navClick).click( function(e) { 	 	
-    // Prevent jumping to anchor (top of page) when clicked. e is for event.
+    // Prevent jumping to anchor (top of page) when clicked
   	switchPage(navClick, true);
   	e.preventDefault();
   	return false;
