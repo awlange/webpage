@@ -561,19 +561,34 @@ h1 {
   -moz-animation: wiggle 0.65s linear 1;
   -webkit-animation: wiggle 0.65s linear 1; }
 
-#content-resume div div p, #content-science div div p {
+#content-resume div div p {
   margin: 0; }
-#content-resume div p, #content-science div p {
+#content-resume div p {
+  font-size: 1.2em;
   margin: 30px 0px; }
-#content-resume div ul, #content-science div ul {
+#content-resume div ul {
   margin: 10px 0px 10px 30px; }
-  #content-resume div ul li ul li, #content-science div ul li ul li {
+  #content-resume div ul li ul li {
     list-style-type: none; }
-#content-resume div ol.publication-list, #content-science div ol.publication-list {
+#content-resume div ol.publication-list {
   margin: 15px; }
-  #content-resume div ol.publication-list li, #content-science div ol.publication-list li {
+  #content-resume div ol.publication-list li {
     margin: 10px;
-    font-size: 0.9em; }
+    font-size: 1.0em; }
+
+.resume-subtext {
+  font-size: 16px;
+  margin: 30px 0px; }
+
+#content-science div div p {
+  margin: 0; }
+#content-science div p {
+  font-size: 1.0em;
+  margin: 30px 0px; }
+#content-science div ul {
+  margin: 10px 0px 10px 30px; }
+  #content-science div ul li ul li {
+    list-style-type: none; }
 
 .thumbnails-wrapper {
   position: relative;

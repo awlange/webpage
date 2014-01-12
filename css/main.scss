@@ -376,12 +376,43 @@ $offscreen-right: translateX($offscreen-position);
 // ----------------------------------------------------------------------
 // Content specific stylings
 //
-#content-resume, #content-science {
+#content-resume {
   div {
     div p {
       margin: 0;
     }
     p {
+      font-size: 1.2em;
+      margin: 30px 0px;
+    }
+    ul {
+      margin: 10px 0px 10px 3*$side-pad;
+      li {
+        ul li {
+          list-style-type: none;
+        }
+      }
+    }
+    ol.publication-list {
+      margin: 15px;
+      li {
+        margin: 10px;
+        font-size: 1.0em;
+      }
+    }
+  }
+}
+.resume-subtext {
+  font-size: 16px;
+  margin: 30px 0px;
+}
+#content-science {
+  div {
+    div p {
+      margin: 0;
+    }
+    p {
+      font-size: 1.0em;
       margin: 30px 0px;
     }
     ul {
@@ -393,16 +424,8 @@ $offscreen-right: translateX($offscreen-position);
         }
       }
     }
-    ol.publication-list {
-      margin: 15px;
-      li {
-        margin: 10px;
-        font-size: 0.9em;
-      }
-    }
   }
 }
-
 
 // ----------------------------------------------------------------------
 // Science and development thumbnails
