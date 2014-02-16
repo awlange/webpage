@@ -780,7 +780,10 @@ h1 {
 #content-resume div div p {
   margin: 0; }
 #content-resume div p {
-  font-size: 1.1em;
+  font-size: 1.2em;
+  margin: 30px 0px; }
+#content-resume div p.award-text {
+  font-size: 1.0em;
   margin: 30px 0px; }
 #content-resume div ul {
   margin: 10px 0px 10px 30px; }

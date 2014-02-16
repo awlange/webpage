@@ -381,7 +381,11 @@ $offscreen-right: translateX($offscreen-position);
       margin: 0;
     }
     p {
-      font-size: 1.1em;
+      font-size: 1.2em;
+      margin: 30px 0px;
+    }
+    p.award-text {
+      font-size: 1.0em;
       margin: 30px 0px;
     }
     ul {
