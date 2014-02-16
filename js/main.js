@@ -81,6 +81,10 @@ function navClick(navClick) {
     // Prevent jumping to anchor (top of page) when clicked
   	switchPage(navClick, true);
   	e.preventDefault();
+  	
+  	// Push to analytics
+  	_gaq.push(['_trackEvent', 'click', 'nav', navClick]);
+  	
   	return false;
   });
 };
