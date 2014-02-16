@@ -29,8 +29,19 @@ var scrollers = {
   "#scroller-projects": [ "#resume-projects", "#nav-resume" ],
   "#scroller-awards": [ "#resume-awards", "#nav-resume" ],
   "#scroller-publications": [ "#resume-publications", "#nav-resume" ],
-  "#scroller-publications2": [ "#resume-publications", "#nav-resume" ]
+  "#scroller-publications2": [ "#resume-publications", "#nav-resume" ],
+  "#scroller-electrons": [ "#science-electrons", "#nav-science" ],
+  "#scroller-dynamics": [ "#science-dynamics", "#nav-science" ],
+  "#scroller-solvent": [ "#science-solvent", "#nav-science" ],
+  "#scroller-genetic": [ "#development-genetic", "#nav-development" ],
+  "#scroller-scaling": [ "#development-scaling", "#nav-development" ],
+  "#scroller-quantum": [ "#development-quantum", "#nav-development" ]
 };
+
+var maskIds = [
+  "#mask-electrons", "#mask-dynamics", "#mask-solvent",
+  "#mask-genetic", "#mask-scaling", "#mask-quantum"
+];
 
 
 // -------------------------------------------------
@@ -49,11 +60,16 @@ $(document).ready( function(){
   } 
   $(".backToTop").click(scrollToTop);
   
+  // Scroll mask transitions
+  for (var i=0; i < maskIds.length; i++) {
+    scrollThumbnailMask(maskIds[i]);
+  }
+  
   // Modals
   modalHandler();
   
   // Intro animation, leave this as last
-  //setTimeout( function() { introAnimation(); }, 500);
+  setTimeout( function() { introAnimation(); }, 600);
 });
 
 // -------------------------------------------------
@@ -200,6 +216,21 @@ var scrollToTop = function() {
   $('html,body').animate({
   	scrollTop: 0
   }, 800);
+};
+
+function scrollThumbnailMask(maskId) {
+  $(window).scroll( function() {
+    var mask = $(maskId);
+    var window_y = window.pageYOffset;
+    var mask_y = mask.offset().top;
+    var buffer = 200;
+  	  	
+    if (mask_y - buffer <= window_y && window_y <= mask_y) {
+      mask.addClass("thumbnail-mask-opaque").removeClass("thumbnail-mask-transparent");	
+    } else if(mask.hasClass("thumbnail-mask-opaque")) {
+      mask.removeClass("thumbnail-mask-opaque").addClass("thumbnail-mask-transparent");
+    }
+  });    
 };
 
 function modalHandler() {

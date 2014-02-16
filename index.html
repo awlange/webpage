@@ -1,26 +1,20 @@
 <!DOCTYPE HTML>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
 	<head>
-		<title>Adrian Lange</title>
 		<meta charset="utf-8">
-        	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        	<meta name="description" content="Adrian Lange | scientist + developer">
-        	<meta name="keywords" content="Adrian, Lange, scientist, developer, BrightTag, Argonne, Ohio State">
-        	<meta name="viewport" content="width=device-width">
-        	<link href="css/main.css" rel="stylesheet" type="text/css"/>
-        	<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Adrian Lange</title>
+        <meta name="description" content="Adrian Lange | scientist + developer">
+        <meta name="keywords" content="Adrian, Lange, scientist, developer, BrightTag, Argonne, Ohio State">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
-		<!--[if lt IE 7]>
-      		<p class="chromeframe">You are using an <strong>outdated</strong> browser. 
-      			Please <a href="http://browsehappy.com/">upgrade your browser</a> or 
-      			<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> 
-      			to improve your experience.</p>
-    		<![endif]-->
+		<!--[if lt IE 8]> 
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    	<![endif]-->
 		<div id="page-wrapper">
 			<div id="title_nav">
 				<h1>Adrian Lange <br><strong>scientist + developer</strong></h1>
@@ -50,11 +44,18 @@
 
 				<article id="content-science" class="content setToRight">
 					<h2>science</h2>
+					<nav class="nav-secondary">
+						<span id="scroller-electrons" class="fake-anchor">excited electrons</span> |
+						<span id="scroller-dynamics" class="fake-anchor">molecular dynamics</span> |
+						<span id="scroller-solvent" class="fake-anchor">solvent modeling</span>
+					</nav>
+					
 					<div class="thumbnails-wrapper">
+						<h3 id="science-electrons">excited electrons in DNA</h3>
+						<div class="line"> </div>
 						<div class="thumbnail">
 							<img src="img/ade2orbital.png" id="thumbnail-ade" alt="adenine dimer"/>
-							<div class="thumbnail-mask">
-								<h4>Excited Electrons In DNA</h4>
+							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-electrons">
 								<p>
 									As part of my dissertation, I studied excited electrons in DNA using quantum chemistry simulations.
 									The red-blue blob here is a depiction of how the three dimensional
@@ -73,17 +74,22 @@
 
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+						<h3 id="science-dynamics">reactive molecular dynamics</h3>
+						<div class="line"> </div>
 						<div class="thumbnail">
 							<img src="img/FMO-MS-RMD_TOC.png" id="thumbnail-FMO" alt="FMO-MS-RMD"/>
-							<div class="thumbnail-mask">
-								<h4>Fragment Molecular Orbital Multi-state Reactive Molecular Dynamics</h4>
+							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-dynamics">
 								<p>
-									This is a cute idea I had to combine Fragment Molecular Orbital (FMO) theory with
-									Prof. Greg Voth's Multi-state Empirical Valence Bond (MS-EVB) theory. FMO divides a molecular system into some
-									set of smaller fragments, but this division can be ambiguous in chemically reactive systems. MS-EVB theory
-									deals exactly with that issue by assuming a linear combination of reactive states, like what is
-									shown in the schematic here. Combining MS-EVB and FMO results in a new powerful
+									This is a schematic of the model Fragment Molecular Orbital Multi-state Reactive Molecular Dynamics (FMO-MS-RMD),
+									which is a cute idea I had to combine Fragment Molecular Orbital (FMO) theory with
+									Prof. Greg Voth's Multi-state Empirical Valence Bond (MS-EVB) theory. 
+									FMO divides a molecular system into some
+									set of smaller fragments, but this division can be ambiguous in chemically reactive systems. 
+									MS-EVB theory deals exactly with that issue by assuming a linear combination of reactive states, 
+									like what is shown in the schematic here. Combining MS-EVB and FMO results in a new powerful
 									model that incorporates quantum electronic structure theory into the MS-EVB approach.
+									In addition, because the states and the moleculsr fragments can be calculated independently,
+									FMO-MS-RMD can be computed in parallel to achieve considerable speedups.
 								</p>
 								<a href="file/papers/JCTC_9_4018.pdf" target="_blank">
 									<div class="button-read-more">
@@ -95,10 +101,11 @@
 
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+						<h3 id="science-solvent">solvent electrostatics modeling</h3>
+						<div class="line"> </div>
 						<div class="thumbnail">
 							<img src="img/eqDESMO.png" id="thumbnail-DESMO" alt="DESMO equation"/>
-							<div class="thumbnail-mask">
-								<h4>Debye-H&uuml;ckel-like Screening Model</h4>
+							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-solvent">
 								<p>
 									This is an equation I invented
 									to model continuum electrostatics of salty solvents characterized by a Debye screening length
@@ -123,19 +130,27 @@
 
 				<article id="content-development" class="content setToRight">
 					<h2>development</h2>
-					<div class="thumbnail">
+					<nav class="nav-secondary">
+						<span id="scroller-genetic" class="fake-anchor">genetic algorithm</span> |
+						<span id="scroller-scaling" class="fake-anchor">massively parallel computing</span> |
+						<span id="scroller-quantum" class="fake-anchor">quantum chemistry</span>
+					</nav>
+					
+					<div class="thumbnails-wrapper">
+						
+						<h3 id="development-genetic">genetic algorithm load balancing</h3>
+						<div class="line"> </div>
+						<div class="thumbnail">
 							<img src="img/genetic.png" id="thumbnail-genetic" alt="genetic algorithm"/>
-
-							<div class="thumbnail-mask">
-								<h4>Genetic Algorithm Load Balancer</h4>
+							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-genetic">
 								<p>
-									The implicit solvent calculation here is based on a parallel fast multipole method, which
+									The molecules depicted here are part of an implicit solvent 
+									calculation based on a parallel fast multipole method, which
 									runs faster when atoms belonging to a given node are spatially close to each
 									other and also far away from atoms belonging to other nodes. The fitness function for the
 									genetic algorithm reflects that, and it also tends to ensure that no nodes have
 									far more/less work than other nodes.
-								</p>
-								<p>
+									<br/><br/>
 									The molecule depicted is a single stranded DNA polyadenine, and each sphere represents an atom.
 									Spheres are colored by which node is responsible for its computation.
 									(There are 4 nodes in this example.)
@@ -143,8 +158,7 @@
 									which is essentially the worst load balance.
 									Interestingly, the genetic algorithm finds a solution
 									that is very close to the ideal solution for this system.
-								</p>
-								<p>
+									<br/><br/>
 									C++, MPI, OpenMP
 								</p>
 								<div class="modal-button">
@@ -157,24 +171,23 @@
 
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+						<h3 id="development-scaling">massively parallel computing</h3>
+						<div class="line"> </div>
 						<div class="thumbnail">
 							<img src="img/scalingGraph.png" id="thumbnail-scaling" alt="scaling"/>
-							<div class="thumbnail-mask">
-								<h4>Massively Parallel Computing</h4>
+							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-scaling">
 									<p>
 										My primary focus as a postdoc was improve the scalability of a code on
 										(at the time) the 4th fastest supercomputer in the world, Mira,
 										the Blue Gene/Q machine at Argonne National Laboratory Leadership Computing Facility.
-									</p>
-									<p>
+										<br/><br/>
 										I managed to do this well for a specialized molecular dynamics code used to simulate proton transport.
 										The original code scaled to only about 64 nodes, but I turned it into one
 										that scales to 24,576 nodes (393,216 cores). To achieve this, I built up a replica exchange external driver to
 										the molecular dynamics code LAMMPS, exposed some untapped parallelism in the multi-state proton transport calculations,
 										multithreaded several compute-intensive loops, and did plenty of other little code optimizations. I also managed to
 										contribute a handful of lines of code to the open-source LAMMPS software during this time.
-									</p>
-									<p>
+										<br/><br/>
 										C++, C, MPI, OpenMP
 									</p>
 								<a href="http://www.alcf.anl.gov/sites/www.alcf.anl.gov/files/MiraCon_030613_0.pdf" target="_blank">
@@ -187,16 +200,16 @@
 
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+						<h3 id="development-quantum">quantum chemistry software</h3>
+						<div class="line"> </div>
 						<div class="thumbnail">
 							<img src="img/Qchem-logo.gif" id="thumbnail-qchem" alt="qchem"/>
-							<div class="thumbnail-mask">
-								<h4>Quantum Chemistry Software</h4>
+							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-quantum">
 									<p>
 										I am a contributing author for Q&#8209;Chem, a popular quantum chemistry software package.
 										I was the main author of the polarizable continuum model code and also of the internal QM/MM code.
 										These fun features are now updated and expanded by other Q&#8209;Chem authors.
-									</p>
-									<p>
+										<br/><br/>
 										C++, C, Fortran
 									</p>
 								<a href="http://www.q-chem.com/qchem-website/about-qchem4.html" target="_blank">
@@ -206,7 +219,7 @@
 								</a>
 							</div>
 						</div>
-
+					</div>
 					<p class="backToTop">back to top</p>
 				</article>
 
@@ -351,7 +364,7 @@
 								<span class="resume-subtext">
 									Recreational mathematics and programming problems from
 									<a href="http://projecteuler.net/" target="_blank">Project Euler</a>;
-									currently solved 52 problems (C++, Python)
+									currently solved 58 problems (C++, Python)
 								</span>
 							</p>
 							<p>
@@ -400,7 +413,7 @@
 							<h3>publications</h3>
 							<div class="line"> </div>
 							<p>
-								<a href="http://scholar.google.com/citations?user=gQTKB5YAAAAJ&amp;hl=en" target="_blank">Google Scholar Statistics</a>: 260+ total citations, h-index 6
+								<a href="http://scholar.google.com/citations?user=gQTKB5YAAAAJ&amp;hl=en" target="_blank">Google Scholar Statistics</a>: 290+ total citations, h-index 6
 							</p>
 							<ol reversed="reversed" class="publication-list">
 								<li>
@@ -517,9 +530,9 @@
 		</div>
 
 		<!-- Scripts -->
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<!-- Local copy -->
-		<!-- <script src="js/jquery-1.10.2.js"></script> -->
+		<!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>');</script>
 		<script src="js/main.js"></script>
 
 		<!-- Modal -->
@@ -527,7 +540,7 @@
 			<div class="modal-body">
 				<div class="modal-button modal-close">X</div>
 				<div class="youtube">
-					<iframe class="youtube" src="//www.youtube.com/embed/5U9J3zKKbOI?feature=player_detailpage" frameborder="0" allowfullscreen> </iframe>
+					<iframe width="420" height="315" src="//www.youtube.com/embed/5U9J3zKKbOI" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
