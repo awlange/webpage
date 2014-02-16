@@ -966,7 +966,7 @@ h1 {
   transition: opacity 0.8s ease; }
 
 .modal-active {
-  height: 1680px;
+  height: 2090px;
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.8s ease;
@@ -979,7 +979,7 @@ h1 {
   color: #fefefe;
   height: 0px;
   width: 700px;
-  margin: 200px auto;
+  margin: 350px auto;
   border-radius: 3px;
   overflow: hidden; }
 
@@ -995,6 +995,7 @@ h1 {
 .youtube {
   clear: both;
   margin: 10px auto;
+  padding: 10px 160px;
   width: 640px;
   height: 360px; }
 

@@ -223,7 +223,7 @@ function scrollThumbnailMask(maskId) {
     var mask = $(maskId);
     var window_y = window.pageYOffset;
     var mask_y = mask.offset().top;
-    var buffer = 200;
+    var buffer = 150;
   	  	
     if (mask_y - buffer <= window_y && window_y <= mask_y) {
       mask.addClass("thumbnail-mask-opaque").removeClass("thumbnail-mask-transparent");	

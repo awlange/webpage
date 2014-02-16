@@ -603,7 +603,7 @@ $qchem-width: 500px;
   transition: $transition-value;
 }
 .modal-active {
-  height: $title_nav-height + 1500px + 30px; // plus dev page height plus margin
+  height: $title_nav-height + 1900px + 40px; // plus dev page height plus margin
   visibility: visible;
   opacity: 1;
   $transition-value: opacity 0.8s ease;
@@ -617,7 +617,7 @@ $qchem-width: 500px;
   color: $palette-white;
   height: 0px;
   width: $page-width;
-  margin: $title_nav-height + 50px auto;
+  margin: $title_nav-height + 200px auto; // vertical position of modal
   border-radius: 3px;
   overflow: hidden;
 }
@@ -633,6 +633,7 @@ $qchem-width: 500px;
 .youtube {
   clear: both;
   margin: 10px auto;
+  padding: 10px 160px;
   width: 640px;
   height: 360px;
 }
