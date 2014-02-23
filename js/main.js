@@ -69,7 +69,7 @@ $(document).ready( function(){
   modalHandler();
   
   // Intro animation, leave this as last
-  setTimeout( function() { introAnimation(); }, 600);
+  //setTimeout( function() { introAnimation(); }, 600);
 });
 
 // -------------------------------------------------
