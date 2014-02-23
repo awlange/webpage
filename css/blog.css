@@ -1,0 +1,71 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+html {
+  width: 100%;
+  height: 100%;
+  min-width: 700px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Pontano Sans', sans-serif;
+  color: #0a0a0a;
+  background: #fefefe; }
+
+#page-wrapper {
+  width: 700px;
+  margin: 0 auto;
+  overflow: auto; }
+
+#title_nav {
+  width: 700px;
+  height: 150px; }
+
+h1 {
+  font-size: 3.25em;
+  font-weight: 100;
+  padding: 100px 0 10px 0;
+  margin-right: 20px;
+  line-height: 0.65;
+  float: left; }
+  h1 strong {
+    font-size: 0.5em;
+    font-weight: normal; }
+
+#icons {
+  float: right;
+  padding: 100px 0 10px 0; }
+
+.icon-wrapper {
+  position: relative;
+  float: left;
+  height: 60px;
+  width: 60px;
+  margin: 10px 10px 12px 10px; }
+
+.icon-wrapper-right {
+  position: relative;
+  float: left;
+  height: 60px;
+  width: 60px;
+  margin: 10px 0px 12px 10px; }
+
+.icon {
+  position: absolute;
+  top: 0px;
+  height: 60px;
+  width: 60px;
+  margin: 0px;
+  border-radius: 3px;
+  background: #0976e0;
+  cursor: pointer; }
