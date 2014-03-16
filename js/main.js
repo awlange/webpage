@@ -8,11 +8,11 @@ var navs = {
 // This map determines the page left/right order
 var contents = {
   "#none": 0,
-  "#content-science": 1,
-  "#content-development": 2,
-  "#content-resume": 3,
-  "#content-contact": 4,
-  "#content-home": 5
+  "#content-home": 1,
+  "#content-science": 2,
+  "#content-development": 3,
+  "#content-resume": 4,
+  "#content-contact": 5,
 };
 var heights = {
   "#content-home": "content-home-height",
@@ -23,6 +23,10 @@ var heights = {
 };
 var scrollers = {
   // clicked scroller link  // link to scroll to      // nav container that scroll to is in 
+  "#scroller-science": [ "#", "#nav-science" ],
+  "#scroller-development": [ "#", "#nav-development" ],
+  "#scroller-resume": [ "#", "#nav-resume" ],
+  "#scroller-contact": [ "#", "#nav-contact" ],
   "#scroller-employment": [ "#resume-employment", "#nav-resume" ],
   "#scroller-education": [ "#resume-education", "#nav-resume" ],
   "#scroller-skills": [ "#resume-skills", "#nav-resume" ],
@@ -83,7 +87,8 @@ function navClick(navClick) {
   	e.preventDefault();
   	
   	// Push to analytics
-  	_gaq.push(['_trackEvent', 'click', 'nav', navClick]);
+  	// TODO
+  	// _gaq.push(['_trackEvent', 'click', 'nav', navClick]);
   	
   	return false;
   });

@@ -28,11 +28,16 @@ $palette-black-transparent: rgba(10, 10, 10, 0.7);
 // ----------------------------------------------------------------------
 //  Sizes
 //
-$page-width: 700px;
-$title_nav-pad-top: 100px;
+$page-width: 750px;
+$title_nav-pad-top: 50px;
 $title_nav-height: $title_nav-pad-top + 50px; 
 $side-pad: 10px;
 $icon-size: 60px;
+.content-home-height { height: 500px; }
+.content-resume-height { height: 4000px; }
+.content-science-height { height: 1700px; }
+.content-development-height { height: 1900px; }
+.content-contact-height { height: 300px; }
 
 // ----------------------------------------------------------------------
 //  Transitions
@@ -74,7 +79,7 @@ body {
 h2 {
   font-weight: 100;
   font-size: 2.5em;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-bottom: 10px;
   text-align: center;
 }
@@ -187,11 +192,6 @@ h1 {
   position: absolute;
   width: $page-width;
 }
-.content-home-height { height: 50px; }
-.content-resume-height { height: 4000px; }
-.content-science-height { height: 1700px; }
-.content-development-height { height: 1900px; }
-.content-contact-height { height: 300px; }
 
 // ----------------------------------------------------------------------
 // Secondary navs
@@ -640,6 +640,21 @@ $qchem-width: 500px;
   padding: 10px 160px;
   width: 640px;
   height: 360px;
+}
+
+// ----------------------------------------------------------------------
+// Blog stuff
+//
+.blog-summary {
+  margin: 10px 0 40px 0;
+  .blog-summary-title, .blog-summary-date {
+    font-size: 1.2em;
+  }
+}
+.blog-article {
+  p {
+    margin: 20px 0;
+  }
 }
 
 // ----------------------------------------------------------------------
