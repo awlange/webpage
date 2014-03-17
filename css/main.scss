@@ -28,7 +28,7 @@ $palette-black-transparent: rgba(10, 10, 10, 0.7);
 // ----------------------------------------------------------------------
 //  Sizes
 //
-$page-width: 750px;
+$page-width: 800px;
 $title_nav-pad-top: 50px;
 $title_nav-height: $title_nav-pad-top + 50px; 
 $side-pad: 10px;
@@ -646,9 +646,10 @@ $qchem-width: 500px;
 // Blog stuff
 //
 .blog-summary {
-  margin: 10px 0 40px 0;
+  margin: 20px 0 20px 0;
   .blog-summary-title, .blog-summary-date {
     font-size: 1.2em;
+    margin: 10px 0 0 0;
   }
 }
 .blog-article {
