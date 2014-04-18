@@ -688,3 +688,12 @@ $qchem-width: 500px;
 .center {
   text-align: center;
 }
+
+// ----------------------------------------------------------------------
+// Blog images, etc.
+//
+#PE-level-3 {
+  padding: 10px ($page-width - 534px)/2;
+  height: 438px;
+  width: 534px;
+}
