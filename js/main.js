@@ -23,6 +23,7 @@ var heights = {
 };
 var scrollers = {
   // clicked scroller link  // link to scroll to      // nav container that scroll to is in 
+  "#scroller-home": [ "#", "#nav-home" ],
   "#scroller-science": [ "#", "#nav-science" ],
   "#scroller-development": [ "#", "#nav-development" ],
   "#scroller-resume": [ "#", "#nav-resume" ],
@@ -211,13 +212,15 @@ function scrollTo(link) {
   $(link).click( function(e) {
   	// First make sure we are on the right displayed page
   	var navClick = scrollers[link][1];
-  	var doDelay = switchPage(navClick, false);
+  	var doDelay = switchPage(navClick, navClick == "#nav-home");
   	var delay = doDelay ? 200 : 0;
   	// Then scroll
-  	var goToElement = scrollers[link][0]; 
-    $('html,body').animate({
-    	scrollTop: $(goToElement).offset().top
-    }, 800);
+  	var goToElement = scrollers[link][0];
+  	if (goToElement !== "#") { 
+      $('html,body').animate({
+    	  scrollTop: $(goToElement).offset().top
+      }, 800);
+    }
   });
 };
 
@@ -232,7 +235,7 @@ function scrollThumbnailMask(maskId) {
     var mask = $(maskId);
     var window_y = window.pageYOffset;
     var mask_y = mask.offset().top;
-    var buffer = 150;
+    var buffer = 180;
   	  	
     if (mask_y - buffer <= window_y && window_y <= mask_y) {
       mask.addClass("thumbnail-mask-opaque").removeClass("thumbnail-mask-transparent");	

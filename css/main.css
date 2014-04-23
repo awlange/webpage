@@ -34,7 +34,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Pontano Sans', sans-serif;
-  color: #0a0a0a;
+  color: #34495e;
   background: #fefefe; }
 
 #page-wrapper {
@@ -43,6 +43,7 @@ body {
   overflow: auto; }
 
 h2 {
+  color: #3498db;
   font-weight: 100;
   font-size: 2.5em;
   padding-top: 30px;
@@ -53,7 +54,7 @@ h3 {
   font-weight: 100;
   font-size: 2.0em;
   padding-top: 20px;
-  color: #0976e0;
+  color: #3498db;
   clear: both; }
 
 h4 {
@@ -61,21 +62,30 @@ h4 {
   font-size: 2.0em; }
 
 a:link, a:visited {
-  color: #0976e0; }
+  color: #3498db; }
+
+#title_nav_background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 175px;
+  background-color: #3498db;
+  z-index: -1; }
 
 #title_nav {
   width: 800px;
-  height: 100px; }
+  height: 175px; }
 
 h1 {
-  font-size: 3.25em;
+  color: #fefefe;
+  font-size: 3.7em;
   font-weight: 100;
   padding: 50px 0 10px 0;
   margin-right: 20px;
   line-height: 0.65;
   float: left; }
   h1 strong {
-    font-size: 0.5em;
+    font-size: 0.4em;
     font-weight: normal; }
 
 #icons {
@@ -85,25 +95,23 @@ h1 {
 .icon-wrapper {
   position: relative;
   float: left;
-  height: 60px;
-  width: 60px;
-  margin: 10px 10px 12px 10px; }
+  height: 65px;
+  width: 65px;
+  margin: -15px 0px 12px 10px; }
 
 .icon-wrapper-right {
   position: relative;
   float: left;
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
   margin: 10px 0px 12px 10px; }
 
 .icon {
   position: absolute;
   top: 0px;
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
   margin: 0px;
-  border-radius: 3px;
-  background: #0976e0;
   cursor: pointer; }
 
 #contact-icons {
@@ -114,8 +122,8 @@ h1 {
 #icon-LinkedIn {
   position: absolute;
   top: -1px;
-  height: 62px;
-  width: 62px;
+  height: 67px;
+  width: 67px;
   margin: 0px;
   border-radius: 3px;
   background: transparent;
@@ -124,8 +132,8 @@ h1 {
 #icon-BuiltInChicago {
   position: absolute;
   top: 0px;
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
   margin: 0px;
   border-radius: 3px;
   background: transparent;
@@ -150,14 +158,14 @@ h1 {
   padding: 20px 0; }
 
 .nav-secondary {
-  margin: 0 auto 20px;
+  margin: 25px auto 20px;
   font-size: 1.35em;
   text-align: center; }
   .nav-secondary a {
-    color: #0a0a0a;
+    color: #34495e;
     text-decoration: none; }
   .nav-secondary a:hover {
-    color: #0976e0; }
+    color: #3498db; }
 
 .setToLeft {
   -webkit-transform: translateX(-105%);
@@ -822,7 +830,7 @@ h1 {
   position: relative; }
 
 .thumbnail-mask {
-  background: rgba(9, 118, 240, 0.95);
+  background: rgba(52, 152, 219, 0.96);
   width: 800px;
   height: 100%;
   position: absolute;
@@ -844,7 +852,7 @@ h1 {
     margin-top: 20px;
     cursor: pointer; }
     .thumbnail-mask a div, .thumbnail-mask .modal-button div {
-      background: #0a0a0a;
+      background: #2c3e50;
       color: #fefefe;
       border-radius: 3px;
       padding: 0px 5px;
@@ -937,18 +945,18 @@ h1 {
   padding: 70px 150px; }
 
 .fake-anchor {
-  color: #0a0a0a;
+  color: #34495e;
   text-decoration: none;
   cursor: pointer;
   text-align: center; }
 
 .fake-anchor:hover {
-  color: #0976e0; }
+  color: #3498db; }
 
 .backToTop {
   margin: 50px auto;
   width: 100px;
-  color: #0976e0;
+  color: #3498db;
   text-decoration: underline;
   text-align: center;
   cursor: pointer; }
@@ -958,7 +966,7 @@ h1 {
   top: 0;
   left: 0;
   z-index: 10;
-  background: rgba(10, 10, 10, 0.7);
+  background: rgba(44, 62, 80, 0.8);
   height: 0;
   width: 100%;
   visibility: hidden;
@@ -969,7 +977,7 @@ h1 {
   transition: opacity 0.8s ease; }
 
 .modal-active {
-  height: 2040px;
+  height: 2115px;
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.8s ease;
@@ -978,11 +986,11 @@ h1 {
   transition: opacity 0.8s ease; }
 
 .modal-body {
-  background: #0a0a0a;
+  background: #34495e;
   color: #fefefe;
   height: 0px;
   width: 800px;
-  margin: 300px auto;
+  margin: 375px auto;
   border-radius: 3px;
   overflow: hidden; }
 
@@ -1015,7 +1023,7 @@ h1 {
   margin: 3px 0px;
   height: 1px;
   width: 800px;
-  background-color: #0976e0; }
+  background-color: #3498db; }
 
 .superscript {
   position: relative;
@@ -1024,7 +1032,7 @@ h1 {
 
 .underline {
   text-decoration: underline;
-  color: #0976e0; }
+  color: #3498db; }
 
 .italic {
   font-style: italic; }
