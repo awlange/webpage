@@ -585,13 +585,18 @@ $qchem-width: 500px;
   color: $palette-blue;
 }
 
-.backToTop {
+div.backToTop, #content-resume div.backToTop {
   margin: 50px auto;
   width: 100px;
-  color: $palette-blue;
-  text-decoration: underline;
-  text-align: center;
+  border-radius: 3px;
+  background: $palette-blue;
   cursor: pointer;
+  p {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    color: $palette-white;
+  }
 }
 
 // ----------------------------------------------------------------------

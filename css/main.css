@@ -953,13 +953,17 @@ h1 {
 .fake-anchor:hover {
   color: #3498db; }
 
-.backToTop {
+div.backToTop, #content-resume div.backToTop {
   margin: 50px auto;
   width: 100px;
-  color: #3498db;
-  text-decoration: underline;
-  text-align: center;
+  border-radius: 3px;
+  background: #3498db;
   cursor: pointer; }
+  div.backToTop p, #content-resume div.backToTop p {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    color: #fefefe; }
 
 .modal {
   position: absolute;
