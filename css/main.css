@@ -139,6 +139,25 @@ h1 {
   background: transparent;
   cursor: pointer; }
 
+.icon-wrapper p {
+  vertical-align: middle;
+  margin: 40px 0px;
+  color: #fefefe;
+  font-size: 23.6833px;
+  text-align: center;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+.icon-wrapper:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(30px);
+  -moz-transform: translateY(30px);
+  transform: translateY(30px); }
+
 #content-wrapper {
   overflow: hidden;
   position: relative;

@@ -152,8 +152,6 @@ h1 {
   height: $icon-size;
   width: $icon-size;
   margin: 0px;
-  // border-radius: 3px;
-  // background: $palette-black;
   cursor: pointer;
 }
 #contact-icons {
@@ -180,6 +178,24 @@ h1 {
   border-radius: 3px;
   background: transparent;
   cursor: pointer;
+}
+// moving nav label
+.icon-wrapper p {
+  vertical-align: middle;
+  margin: 40px 0px;
+  color: $palette-white;
+  font-size: 23.6833px;
+  text-align: center;
+  opacity: 0;
+  z-index: -1;
+  @include css-transition($transition-time-medium, ease);
+}
+$label-down: translateY(30px);
+.icon-wrapper:hover p {
+  opacity: 1;
+  -webkit-transform: $label-down;
+  -moz-transform: $label-down;
+  transform: $label-down; 
 }
 
 // ----------------------------------------------------------------------
