@@ -21,8 +21,9 @@ $palette-white: #fefefe;
 $palette-blue: #3498DB;
 $palette-black: #34495E;
 $palette-dark-black: #2C3E50;
+$palette-real-black: #0a0a0a;
 $palette-blue-transparent: rgba(52, 152, 219, 0.96);
-$palette-black-transparent: rgba(44, 62, 80, 0.8);
+$palette-black-transparent: rgba(11, 11, 11, 0.8);
 $palette-gray: #BDC3C7;
 
 // ----------------------------------------------------------------------
@@ -33,10 +34,10 @@ $title_nav-pad-top: 50px;
 $title_nav-height: $title_nav-pad-top + 125px; 
 $side-pad: 10px;
 $icon-size: 65px;
-.content-home-height { height: 600px; }
-.content-resume-height { height: 4000px; }
-.content-science-height { height: 1700px; }
-.content-development-height { height: 1900px; }
+.content-home-height { height: 800px; }
+.content-resume-height { height: 3900px; }
+.content-science-height { height: 1800px; }
+.content-development-height { height: 2000px; }
 .content-contact-height { height: 300px; }
 
 // ----------------------------------------------------------------------
@@ -100,9 +101,7 @@ a:link, a:visited {
 // Title
 //
 #title_nav_background {
-  position: absolute;
-  top: 0;
-  width: 100%;
+  margin-bottom: -$title_nav-height;
   height: $title_nav-height;
   background-color: $palette-blue;
   z-index: -1;
@@ -153,6 +152,7 @@ h1 {
   width: $icon-size;
   margin: 0px;
   cursor: pointer;
+  z-index: 1;
 }
 #contact-icons {
   margin: 20px auto;
@@ -187,7 +187,6 @@ h1 {
   font-size: 23.6833px;
   text-align: center;
   opacity: 0;
-  z-index: -1;
   @include css-transition($transition-time-medium, ease);
 }
 $label-down: translateY(30px);
@@ -390,10 +389,6 @@ $offscreen-right: translateX($offscreen-position);
   -moz-animation: $animation-value;
   -webkit-animation: $animation-value;
 }
-
-// ----------------------------------------------------------------------
-// Intro animation?
-//
 
 // ----------------------------------------------------------------------
 // Content specific stylings
@@ -645,7 +640,7 @@ div.backToTop, #content-resume div.backToTop {
   transition: $transition-value;
 }
 .modal-body {
-  background: $palette-black;
+  background: $palette-real-black;
   color: $palette-white;
   height: 0px;
   width: $page-width;
@@ -715,6 +710,9 @@ div.backToTop, #content-resume div.backToTop {
 .spacer { height: 50px; }
 .center {
   text-align: center;
+}
+#about-me p {
+  margin-top: 30px;
 }
 
 // ----------------------------------------------------------------------
