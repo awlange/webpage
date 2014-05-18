@@ -1082,6 +1082,9 @@ div.backToTop, #content-resume div.backToTop {
 #about-me p {
   margin-top: 30px; }
 
+.blue-text {
+  color: #3498db; }
+
 #PE-level-3 {
   padding: 10px 133px;
   height: 438px;
