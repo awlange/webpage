@@ -239,7 +239,7 @@ $label-down: translateY(30px);
 // ----------------------------------------------------------------------
 // Content and nav transition animations
 //
-$offscreen-position: 105%;
+$offscreen-position: 120%;
 $offscreen-left: translateX(-$offscreen-position);
 $offscreen-center: translateX(0);
 $offscreen-right: translateX($offscreen-position);
@@ -260,7 +260,7 @@ $offscreen-right: translateX($offscreen-position);
 }
 // ----------------------------------
 @mixin offscreen-transition($motion) {
-  $animation-params: $motion $transition-time-slow ease both;
+  $animation-params: $motion $transition-time-slow ease-in-out both;
   -webkit-animation: $animation-params;
   -moz-animation: $animation-params;
   animation: $animation-params;  

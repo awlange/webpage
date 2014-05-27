@@ -185,9 +185,9 @@ h1 {
     color: #3498db; }
 
 .setToLeft {
-  -webkit-transform: translateX(-105%);
-  -moz-transform: translateX(-105%);
-  transform: translateX(-105%); }
+  -webkit-transform: translateX(-120%);
+  -moz-transform: translateX(-120%);
+  transform: translateX(-120%); }
 
 .setToCenter {
   -webkit-transform: translateX(0);
@@ -195,26 +195,26 @@ h1 {
   transform: translateX(0); }
 
 .setToRight {
-  -webkit-transform: translateX(105%);
-  -moz-transform: translateX(105%);
-  transform: translateX(105%); }
+  -webkit-transform: translateX(120%);
+  -moz-transform: translateX(120%);
+  transform: translateX(120%); }
 
 @-webkit-keyframes moveToLeft {
   to {
-    -webkit-transform: translateX(-105%); } }
+    -webkit-transform: translateX(-120%); } }
 
 @-moz-keyframes moveToLeft {
   to {
-    -moz-transform: translateX(-105%); } }
+    -moz-transform: translateX(-120%); } }
 
 @keyframes moveToLeft {
   to {
-    transform: translateX(-105%); } }
+    transform: translateX(-120%); } }
 
 .content-moveToLeft {
-  -webkit-animation: moveToLeft 0.8s ease both;
-  -moz-animation: moveToLeft 0.8s ease both;
-  animation: moveToLeft 0.8s ease both; }
+  -webkit-animation: moveToLeft 0.8s ease-in-out both;
+  -moz-animation: moveToLeft 0.8s ease-in-out both;
+  animation: moveToLeft 0.8s ease-in-out both; }
 
 @-webkit-keyframes moveToCenter {
   to {
@@ -229,78 +229,78 @@ h1 {
     transform: translateX(0); } }
 
 .content-moveToCenter {
-  -webkit-animation: moveToCenter 0.8s ease both;
-  -moz-animation: moveToCenter 0.8s ease both;
-  animation: moveToCenter 0.8s ease both; }
+  -webkit-animation: moveToCenter 0.8s ease-in-out both;
+  -moz-animation: moveToCenter 0.8s ease-in-out both;
+  animation: moveToCenter 0.8s ease-in-out both; }
 
 @-webkit-keyframes moveToRight {
   to {
-    -webkit-transform: translateX(105%); } }
+    -webkit-transform: translateX(120%); } }
 
 @-moz-keyframes moveToRight {
   to {
-    -moz-transform: translateX(105%); } }
+    -moz-transform: translateX(120%); } }
 
 @keyframes moveToRight {
   to {
-    transform: translateX(105%); } }
+    transform: translateX(120%); } }
 
 .content-moveToRight {
-  -webkit-animation: moveToRight 0.8s ease both;
-  -moz-animation: moveToRight 0.8s ease both;
-  animation: moveToRight 0.8s ease both; }
+  -webkit-animation: moveToRight 0.8s ease-in-out both;
+  -moz-animation: moveToRight 0.8s ease-in-out both;
+  animation: moveToRight 0.8s ease-in-out both; }
 
 @-webkit-keyframes moveFromLeft {
   from {
-    -webkit-transform: translateX(-105%); }
+    -webkit-transform: translateX(-120%); }
 
   to {
     -webkit-transform: translateX(0); } }
 
 @-moz-keyframes moveFromLeft {
   from {
-    -moz-transform: translateX(-105%); }
+    -moz-transform: translateX(-120%); }
 
   to {
     -moz-transform: translateX(0); } }
 
 @keyframes moveFromLeft {
   from {
-    transform: translateX(-105%); }
+    transform: translateX(-120%); }
 
   to {
     transform: translateX(0); } }
 
 .content-moveFromLeft {
-  -webkit-animation: moveFromLeft 0.8s ease both;
-  -moz-animation: moveFromLeft 0.8s ease both;
-  animation: moveFromLeft 0.8s ease both; }
+  -webkit-animation: moveFromLeft 0.8s ease-in-out both;
+  -moz-animation: moveFromLeft 0.8s ease-in-out both;
+  animation: moveFromLeft 0.8s ease-in-out both; }
 
 @-webkit-keyframes moveFromRight {
   from {
-    -webkit-transform: translateX(105%); }
+    -webkit-transform: translateX(120%); }
 
   to {
     -webkit-transform: translateX(0); } }
 
 @-moz-keyframes moveFromRight {
   from {
-    -moz-transform: translateX(105%); }
+    -moz-transform: translateX(120%); }
 
   to {
     -moz-transform: translateX(0); } }
 
 @keyframes moveFromRight {
   from {
-    transform: translateX(105%); }
+    transform: translateX(120%); }
 
   to {
     transform: translateX(0); } }
 
 .content-moveFromRight {
-  -webkit-animation: moveFromRight 0.8s ease both;
-  -moz-animation: moveFromRight 0.8s ease both;
-  animation: moveFromRight 0.8s ease both; }
+  -webkit-animation: moveFromRight 0.8s ease-in-out both;
+  -moz-animation: moveFromRight 0.8s ease-in-out both;
+  animation: moveFromRight 0.8s ease-in-out both; }
 
 @keyframes bounce {
   0% {

@@ -116,12 +116,12 @@ function switchPage(navClick, wiggleOn) {
       // check the pages relative positioning, and then move pages and navs accordingly
   	  if (isALeftOfB(contentCurrent, contentClick)) {
         $(contentCurrent).addClass("content-moveToLeft").removeClass("content-current");
-        $(contentClick).addClass("content-moveFromRight").addClass("content-current");
-        navTransition(navCurrent, navClick);
+      	$(contentClick).addClass("content-moveFromRight").addClass("content-current");
+       	navTransition(navCurrent, navClick);
       }
       else {
         $(contentCurrent).addClass("content-moveToRight").removeClass("content-current");
-        $(contentClick).addClass("content-moveFromLeft").addClass("content-current"); 
+        $(contentClick).addClass("content-moveFromLeft").addClass("content-current");
         navTransition(navCurrent, navClick);	
       }            
    } else if (wiggleOn) {
