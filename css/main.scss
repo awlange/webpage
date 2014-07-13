@@ -724,3 +724,8 @@ div.backToTop, #content-resume div.backToTop {
   height: 438px;
   width: 534px;
 }
+
+.reddit-img {
+  padding: 10px ($page-width - 600px)/2;
+  width: 600px;
+}
