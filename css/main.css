@@ -14,7 +14,7 @@ fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   height: 900px; }
 
 .content-resume-height {
-  height: 3900px; }
+  height: 4100px; }
 
 .content-science-height {
   height: 1800px; }
@@ -1085,9 +1085,19 @@ div.backToTop, #content-resume div.backToTop {
 .blue-text {
   color: #3498db; }
 
-#PE-level-3 {
+#PE-level-3, #PE-level-4, #PE-dozen {
   padding: 10px 133px;
   height: 438px;
+  width: 534px; }
+
+#PE-level-4 {
+  padding: 10px 178px;
+  height: 333px;
+  width: 444px; }
+
+#PE-dozen {
+  padding: 10px 133px;
+  height: 365px;
   width: 534px; }
 
 .reddit-img {

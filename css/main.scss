@@ -31,11 +31,11 @@ $palette-gray: #BDC3C7;
 //
 $page-width: 800px;
 $title_nav-pad-top: 50px;
-$title_nav-height: $title_nav-pad-top + 125px; 
+$title_nav-height: $title_nav-pad-top + 125px;
 $side-pad: 10px;
 $icon-size: 65px;
 .content-home-height { height: 900px; }
-.content-resume-height { height: 3900px; }
+.content-resume-height { height: 4100px; }
 .content-science-height { height: 1800px; }
 .content-development-height { height: 2000px; }
 .content-contact-height { height: 300px; }
@@ -719,9 +719,19 @@ div.backToTop, #content-resume div.backToTop {
 // ----------------------------------------------------------------------
 // Blog images, etc.
 //
-#PE-level-3 {
+#PE-level-3, #PE-level-4, #PE-dozen {
   padding: 10px ($page-width - 534px)/2;
   height: 438px;
+  width: 534px;
+}
+#PE-level-4, {
+  padding: 10px ($page-width - 444px)/2;
+  height: 333px;
+  width: 444px;
+}
+#PE-dozen {
+  padding: 10px ($page-width - 534px)/2;
+  height: 365px;
   width: 534px;
 }
 
