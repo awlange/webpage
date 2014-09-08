@@ -72,9 +72,6 @@ $(document).ready( function(){
   
   // Modals
   modalHandler();
-  
-  // Intro animation, leave this as last
-  //setTimeout( function() { introAnimation(); }, 600);
 });
 
 // -------------------------------------------------
@@ -86,11 +83,11 @@ function navClick(navClick) {
     // Prevent jumping to anchor (top of page) when clicked
   	switchPage(navClick, true);
   	e.preventDefault();
-  	
-  	// Push to analytics
-  	// TODO
-  	// _gaq.push(['_trackEvent', 'click', 'nav', navClick]);
-  	
+    // log nav click  	
+    $.ajax({
+      type: "GET",
+      url: "/nav?n=" + navClick.substring(1, navClick.length)
+    });
   	return false;
   });
 };
@@ -197,16 +194,6 @@ function animateIcon(nav, animateClass) {
   	$(nav).removeClass(animateClass);
   }, 650);
 }	
-
-function introAnimation() {
-  var delay = 80;
-  setTimeout(function() { animateIcon("#nav-science", "bounce"); }, 1*delay);
-  setTimeout(function() { animateIcon("#nav-development", "bounce"); }, 2*delay);
-  setTimeout(function() { animateIcon("#nav-resume", "bounce"); }, 3*delay);
-  setTimeout(function() { animateIcon("#nav-contact", "bounce"); }, 4*delay);
-  setTimeout(function() { animateIcon("#nav-home", "bounce"); }, 5*delay);
-}
-
 
 function scrollTo(link) {
   $(link).click( function(e) {
