@@ -1,0 +1,5 @@
+.DS_Store
+css/.sass-cache/*
+file/.DS_Store
+img/.DS_Store
+img/icon-home-small3.svg
