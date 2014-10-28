@@ -177,8 +177,9 @@ I'm also currently working on creating an open-source JavaScript math library.
 					<h2>development</h2>
 					<nav class="nav-secondary">
 						<span id="scroller-mathworkers" class="fake-anchor">math library</span> |
+						<span id="scroller-cassandra" class="fake-anchor">data modeling</span> |
 						<span id="scroller-genetic" class="fake-anchor">genetic algorithm</span> |
-						<span id="scroller-scaling" class="fake-anchor">massively parallel computing</span> |
+						<span id="scroller-scaling" class="fake-anchor">parallel computing</span> |
 						<span id="scroller-quantum" class="fake-anchor">quantum chemistry</span>
 					</nav>
 					
@@ -210,6 +211,40 @@ I'm also currently working on creating an open-source JavaScript math library.
 								<a href="https://github.com/awlange/mathworkers" target="_blank">
 									<div class="button-read-more">
 										<p>view on GitHub</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+						
+						<h3 id="development-cassandra">data modeling with Cassandra</h3>
+						<div class="line"> </div>
+						<div class="thumbnail">
+							<img src="img/cassandra.png" id="thumbnail-cassandra" alt="cassandra"/>
+							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-cassandra">
+									<p>
+										At Signal, I develop our back-end Java web app that interfaces with
+										a large Cassandra database, which contains billions of records related
+										to our clients' user data. Cassandra is usually conceptualized as one or more
+										rings of nodes (drawn here in red), and each node is responsible for managing
+										a portion of the full data stored on disk. We use multiple rings to
+										support multi-region availability of our data.
+										<br/><br/>
+										I have played a significant role in developing some of our data models
+										as well as providing data analysis using Cassandra.
+										For instance, the data we store arrives to our system from various sources 
+										(<span class="italic">e.g.</span> web, mobile, offline), and
+										our clients would ideally like a complete view of all these channels in real time. 
+										The solution I helped to create is a dynamic network of client user data 
+										stored on Cassandra via our Java web app. This feature is the engine
+										behind much of our new product development at Signal.
+										<br/><br/>
+										Java, Python, Cassandra
+									</p>
+								<a href="http://www.signal.co/products/fuse/" target="_blank">
+									<div class="button-read-more">
+										<p>read more</p>
 									</div>
 								</a>
 							</div>

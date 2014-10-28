@@ -20,7 +20,7 @@ fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   height: 1800px; }
 
 .content-development-height {
-  height: 2600px; }
+  height: 3100px; }
 
 .content-contact-height {
   height: 300px; }
@@ -963,6 +963,10 @@ td, th {
 #thumbnail-mathworkers {
   width: 700px;
   padding: 20px 50px; }
+
+#thumbnail-cassandra {
+  width: 600px;
+  padding: 0px 100px; }
 
 #thumbnail-genetic {
   width: 400px;

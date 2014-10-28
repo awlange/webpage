@@ -37,7 +37,7 @@ $icon-size: 65px;
 .content-home-height { height: 900px; }
 .content-resume-height { height: 4100px; }
 .content-science-height { height: 1800px; }
-.content-development-height { height: 2600px; }
+.content-development-height { height: 3100px; }
 .content-contact-height { height: 300px; }
 
 // ----------------------------------------------------------------------
@@ -584,6 +584,11 @@ $mathworkers-width: 700px;
 #thumbnail-mathworkers {
   width: $mathworkers-width;
   padding: 20px ($page-width - $mathworkers-width)/2;
+}
+$cassandra-width: 600px;
+#thumbnail-cassandra {
+  width: $cassandra-width;
+  padding: 0px ($page-width - $cassandra-width)/2;
 }
 $genetic-width: 400px;
 #thumbnail-genetic {
