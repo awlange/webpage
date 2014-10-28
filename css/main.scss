@@ -34,10 +34,11 @@ $title_nav-pad-top: 50px;
 $title_nav-height: $title_nav-pad-top + 125px;
 $side-pad: 10px;
 $icon-size: 65px;
+$development-height: 3100px;
 .content-home-height { height: 900px; }
 .content-resume-height { height: 4100px; }
 .content-science-height { height: 1800px; }
-.content-development-height { height: 3100px; }
+.content-development-height { height: $development-height; }
 .content-contact-height { height: 300px; }
 
 // ----------------------------------------------------------------------
@@ -653,7 +654,7 @@ div.backToTop, #content-resume div.backToTop {
   transition: $transition-value;
 }
 .modal-active {
-  height: $title_nav-height + 1900px + 40px; // plus dev page height plus margin
+  height: $title_nav-height + $development-height + 40px; // plus dev page height plus margin
   visibility: visible;
   opacity: 1;
   $transition-value: opacity 0.8s ease;
@@ -667,12 +668,13 @@ div.backToTop, #content-resume div.backToTop {
   color: $palette-white;
   height: 0px;
   width: $page-width;
-  margin: $title_nav-height + 200px auto; // vertical position of modal
+  margin: 0 auto;
   border-radius: 3px;
   overflow: hidden;
 }
 .modal-body-active {
   height: 500px;
+  margin-top: $title_nav-height + 1370px; // veritcal position of active modal 
 }
 .modal-close {
   padding: 20px 30px;

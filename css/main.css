@@ -1017,7 +1017,7 @@ div.backToTop, #content-resume div.backToTop {
   transition: opacity 0.8s ease; }
 
 .modal-active {
-  height: 2115px;
+  height: 3315px;
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.8s ease;
@@ -1030,12 +1030,13 @@ div.backToTop, #content-resume div.backToTop {
   color: #fefefe;
   height: 0px;
   width: 800px;
-  margin: 375px auto;
+  margin: 0 auto;
   border-radius: 3px;
   overflow: hidden; }
 
 .modal-body-active {
-  height: 500px; }
+  height: 500px;
+  margin-top: 1545px; }
 
 .modal-close {
   padding: 20px 30px;
