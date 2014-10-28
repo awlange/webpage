@@ -38,6 +38,7 @@ var scrollers = {
   "#scroller-electrons": [ "#science-electrons", "#nav-science" ],
   "#scroller-dynamics": [ "#science-dynamics", "#nav-science" ],
   "#scroller-solvent": [ "#science-solvent", "#nav-science" ],
+  "#scroller-mathworkers": [ "#development-mathworkers", "#nav-development" ],
   "#scroller-genetic": [ "#development-genetic", "#nav-development" ],
   "#scroller-scaling": [ "#development-scaling", "#nav-development" ],
   "#scroller-quantum": [ "#development-quantum", "#nav-development" ]
@@ -45,7 +46,7 @@ var scrollers = {
 
 var maskIds = [
   "#mask-electrons", "#mask-dynamics", "#mask-solvent",
-  "#mask-genetic", "#mask-scaling", "#mask-quantum"
+  "#mask-mathworkers", "#mask-genetic", "#mask-scaling", "#mask-quantum"
 ];
 
 

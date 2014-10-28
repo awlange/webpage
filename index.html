@@ -68,7 +68,11 @@
 						<h3>about me</h3>
 						<div class="line"> </div>
 						<p> 
-I am a back-end software developer with a Ph.D. in computational/physical chemistry living in Chicago. I like math, science, and technology — learning, researching, and applying them to solve difficult problems. A few interesting things I have worked on include developing data models and algorithms for a large NoSQL database (Cassandra), improving massively parallel physics/chemistry simulations, and writing code for a leading quantum chemistry software package. I'm also currently working on creating an open-source JavaScript math library.
+I am a back-end software developer with a Ph.D. in computational/physical chemistry living in Chicago. 
+I like math, science, and technology — learning, researching, and applying them to solve difficult problems. 
+A few interesting things I have worked on include developing data models and algorithms for a large NoSQL database (Cassandra), 
+improving massively parallel physics/chemistry simulations, and writing code for a leading quantum chemistry software package. 
+I'm also currently working on creating an open-source JavaScript math library.
 						 </p>
 					</div>
 					<div class="spacer"> </div>
@@ -172,12 +176,46 @@ I am a back-end software developer with a Ph.D. in computational/physical chemis
 				<article id="content-development" class="content setToRight">
 					<h2>development</h2>
 					<nav class="nav-secondary">
+						<span id="scroller-mathworkers" class="fake-anchor">math library</span> |
 						<span id="scroller-genetic" class="fake-anchor">genetic algorithm</span> |
 						<span id="scroller-scaling" class="fake-anchor">massively parallel computing</span> |
 						<span id="scroller-quantum" class="fake-anchor">quantum chemistry</span>
 					</nav>
 					
 					<div class="thumbnails-wrapper">
+						
+						<h3 id="development-mathworkers">math library</h3>
+						<div class="line"> </div>
+						<div class="thumbnail">
+							<img src="img/mathworkers.png" id="thumbnail-mathworkers" alt="mathworkers"/>
+							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-mathworkers">
+									<p>
+										I am writing a parallel JavaScript math library built around HTML5
+										Web Workers. The project is called MathWorkers, and it's open-source.
+										<br/><br/>
+										The motivation behind MathWorkers is to introduce some degree of 
+										multi-core parallelism into client-side/in-browser mathematical
+										computations. While other good JavaScript math libraries exist, none (as far as I know)
+										seem to take advantage of the fairly recent feature of HTML5 to
+										spawn Web Workers to help with CPU intensive computations. 
+										That's where MathWorkers comes in. 
+										<br/><br/>
+										So far in tests,
+										I have been able to demonstrate 2-3x speedups with 4 workers for some common
+										linear algebra operations, like matrix-matrix multiplies. 
+										More to come in the future!
+										<br/><br/>
+										JavaScript, HTML5
+									</p>
+								<a href="https://github.com/awlange/mathworkers" target="_blank">
+									<div class="button-read-more">
+										<p>view on GitHub</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 						
 						<h3 id="development-genetic">genetic algorithm load balancing</h3>
 						<div class="line"> </div>

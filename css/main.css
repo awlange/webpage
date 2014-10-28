@@ -20,7 +20,7 @@ fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   height: 1800px; }
 
 .content-development-height {
-  height: 2000px; }
+  height: 2600px; }
 
 .content-contact-height {
   height: 300px; }
@@ -959,6 +959,10 @@ td, th {
 #thumbnail-ade {
   width: 300px;
   padding: 10px 250px; }
+
+#thumbnail-mathworkers {
+  width: 700px;
+  padding: 20px 50px; }
 
 #thumbnail-genetic {
   width: 400px;
