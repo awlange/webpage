@@ -89,8 +89,8 @@ I'm also currently working on creating an open-source JavaScript math library.
 					<h2>science</h2>
 					<nav class="nav-secondary">
 						<span id="scroller-electrons" class="fake-anchor">excited electrons</span> |
-						<span id="scroller-dynamics" class="fake-anchor">molecular dynamics</span> |
-						<span id="scroller-solvent" class="fake-anchor">solvent modeling</span>
+						<span id="scroller-solvent" class="fake-anchor">solvent modeling</span> |
+						<span id="scroller-dynamics" class="fake-anchor">reactive molecular dynamics</span>
 					</nav>
 					
 					<div class="thumbnails-wrapper">
@@ -108,6 +108,30 @@ I'm also currently working on creating an open-source JavaScript math library.
 									and surrounded by water, serving as a model to understand electronic excitation in solvated DNA.
 								</p>
 								<a href="file/papers/JACS_131_3913.pdf" target="_blank">
+									<div class="button-read-more">
+										<p>read more</p>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+						<h3 id="science-solvent">solvent electrostatics modeling</h3>
+						<div class="line"> </div>
+						<div class="thumbnail">
+							<img src="img/eqDESMOfull.png" id="thumbnail-DESMO" alt="DESMO equation"/>
+							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-solvent">
+								<p>
+									This is an equation I discovered
+									to model continuum electrostatics of salty solvents characterized by a Debye screening length
+									and a dielectric constant. I called the equation the "Debye-H&uuml;ckel-like Screening Model" (DESMO)
+									because it generalizes the classic Debye-H&uuml;ckel model&mdash;a point charge centered in a spherical
+									solute cavity surrounded by solvent continuum&mdash;to arbitrary charge densities and solute cavities.
+									DESMO reduces to the more familiar "Conductor-like Screening Model" (COSMO) in the limit of zero
+									salt concentration. DESMO is a simple, fast approximation to much more complicated models.
+								</p>
+								<a href="file/papers/JCP_134_204110.pdf" target="_blank">
 									<div class="button-read-more">
 										<p>read more</p>
 									</div>
@@ -142,29 +166,6 @@ I'm also currently working on creating an open-source JavaScript math library.
 							</div>
 						</div>
 
-						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-						<h3 id="science-solvent">solvent electrostatics modeling</h3>
-						<div class="line"> </div>
-						<div class="thumbnail">
-							<img src="img/eqDESMO.png" id="thumbnail-DESMO" alt="DESMO equation"/>
-							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-solvent">
-								<p>
-									This is an equation I discovered
-									to model continuum electrostatics of salty solvents characterized by a Debye screening length
-									and a dielectric constant. I called the equation the "Debye-H&uuml;ckel-like Screening Model" (DESMO)
-									because it generalizes the classic Debye-H&uuml;ckel model&mdash;a point charge centered in a spherical
-									solute cavity surrounded by solvent continuum&mdash;to arbitrary charge densities and solute cavities.
-									DESMO reduces to the more familiar "Conductor-like Screening Model" (COSMO) in the limit of zero
-									salt concentration. DESMO is a simple, fast approximation to much more complicated models.
-								</p>
-								<a href="file/papers/JCP_134_204110.pdf" target="_blank">
-									<div class="button-read-more">
-										<p>read more</p>
-									</div>
-								</a>
-							</div>
-						</div>
 					</div>
 					<div class="backToTop">
 						<p>back to top</p>
@@ -368,8 +369,8 @@ I'm also currently working on creating an open-source JavaScript math library.
 						</p>
 						<ul>
 							<li>Developing data models and algorithms to classify/combine multi-channel user data from millions of requests per day</li>
-                                                        <li>Creating a real-time anomaly detection and network traffic forecasting system using Fourier analysis</li>
-                                                        <li>Improving back-end interface to distributed NoSQL database (Cassandra) containing billions of records</li>
+                            <li>Creating a real-time anomaly detection and network traffic forecasting system using Fourier analysis</li>
+                            <li>Improving back-end interface to distributed NoSQL database (Cassandra) containing billions of records</li>
 						</ul>
 						<p>
 							<strong>Postdoctoral Appointee</strong>
@@ -448,13 +449,13 @@ I'm also currently working on creating an open-source JavaScript math library.
 									</tr>
 									<tr>
 										<td><strong>Proficient:</strong></td>
-										<td>Java, Python, C/C++, Unix/Linux shell (bash)</td>
+										<td>Java, Python, C/C++, Unix/Linux shell (bash), awk</td>
 										<td>NoSQL (Cassandra), git, vim, LaTeX, MPI, OpenMP</td>
 									</tr>
 									<tr>
 										<td><strong>Familiar:</strong></td>
-										<td>R, HTML, CSS, JavaScript (jQuery, node.js), awk</td>
-										<td>SQL (MySQL), Flask, Guava, Guice</td>
+										<td>R, HTML, CSS, JavaScript (jQuery, node.js, D3.js)</td>
+										<td>SQL (MySQL), Redis, Maven, Flask, Guava, Guice</td>
 									</tr>
                                                                 </table>
 							</p>
@@ -469,8 +470,9 @@ I'm also currently working on creating an open-source JavaScript math library.
 							<p>
 								<strong>MathWorkers</strong> <span class="float-right">2014 &mdash; present</span><br>
 								<span class="resume-subtext">
-                                                                        Open-source parallel JavaScript math library built around WebWorkers; intended for
-                                                                        speeding up client-side/in-browser computations. (JavaScript)
+									<a href="http://www.mathworkersjs.org">mathworkersjs.org</a>;
+                                	Open-source parallel JavaScript math library built around WebWorkers; intended for
+                                    speeding up client-side/in-browser computations. (JavaScript)
 								</span>
 							</p>
 							<p>
