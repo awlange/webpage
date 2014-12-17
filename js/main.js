@@ -64,6 +64,7 @@ $(document).ready( function(){
   // Scrollers
   for (var link in scrollers) {
   	scrollTo(link);
+  	scrollerClick(link);
   } 
   $(".backToTop").click(scrollToTop);
   
@@ -89,6 +90,17 @@ function navClick(navClick) {
     $.ajax({
       type: "GET",
       url: "/nav?n=" + navClick.substring(1, navClick.length)
+    });
+  	return false;
+  });
+};
+
+function scrollerClick(scrollerClick) {	
+  $(scrollerClick).click( function(e) { 	 	
+    // log scroller click  	
+    $.ajax({
+      type: "GET",
+      url: "/scroller?n=" + scrollerClick.substring(1, scrollerClick.length)
     });
   	return false;
   });
