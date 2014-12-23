@@ -38,11 +38,11 @@ var scrollers = {
   "#scroller-electrons": [ "#science-electrons", "#nav-science" ],
   "#scroller-dynamics": [ "#science-dynamics", "#nav-science" ],
   "#scroller-solvent": [ "#science-solvent", "#nav-science" ],
+  "#scroller-quantum": [ "#science-quantum", "#nav-science" ],
   "#scroller-mathworkers": [ "#development-mathworkers", "#nav-development" ],
   "#scroller-cassandra": [ "#development-cassandra", "#nav-development" ],
   "#scroller-genetic": [ "#development-genetic", "#nav-development" ],
-  "#scroller-scaling": [ "#development-scaling", "#nav-development" ],
-  "#scroller-quantum": [ "#development-quantum", "#nav-development" ]
+  "#scroller-scaling": [ "#development-scaling", "#nav-development" ]
 };
 
 var maskIds = [

@@ -17,10 +17,10 @@ fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   height: 4100px; }
 
 .content-science-height {
-  height: 1800px; }
+  height: 2200px; }
 
 .content-development-height {
-  height: 3100px; }
+  height: 2700px; }
 
 .content-contact-height {
   height: 300px; }
@@ -864,20 +864,21 @@ td, th {
   position: absolute;
   top: 0;
   left: 0;
-  text-align: center; }
+  text-align: center;
+  padding-top: 30px; }
   .thumbnail-mask h4 {
     background: transparent;
     color: #fefefe;
     padding: 20px;
     position: relative; }
   .thumbnail-mask p {
-    padding: 40px 20px;
+    padding: 10px 20px;
     position: relative;
     color: #fefefe; }
   .thumbnail-mask a, .thumbnail-mask .modal-button {
     display: inline-block;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 40px;
     cursor: pointer; }
     .thumbnail-mask a div, .thumbnail-mask .modal-button div {
       background: #2c3e50;
@@ -1017,7 +1018,7 @@ div.backToTop, #content-resume div.backToTop {
   transition: opacity 0.8s ease; }
 
 .modal-active {
-  height: 3315px;
+  height: 2915px;
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.8s ease;
@@ -1077,6 +1078,9 @@ div.backToTop, #content-resume div.backToTop {
 
 .italic {
   font-style: italic; }
+
+.justify {
+  text-align: justify; }
 
 .hidden {
   display: none; }

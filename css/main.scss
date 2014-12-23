@@ -34,10 +34,10 @@ $title_nav-pad-top: 50px;
 $title_nav-height: $title_nav-pad-top + 125px;
 $side-pad: 10px;
 $icon-size: 65px;
-$development-height: 3100px;
+$development-height: 2700px;
 .content-home-height { height: 900px; }
 .content-resume-height { height: 4100px; }
-.content-science-height { height: 1800px; }
+.content-science-height { height: 2200px; }
 .content-development-height { height: $development-height; }
 .content-contact-height { height: 300px; }
 
@@ -488,6 +488,7 @@ td, th {
   top: 0;
   left: 0;
   text-align: center;
+  padding-top: 30px;
   
   h4 {
     background: transparent;
@@ -496,14 +497,14 @@ td, th {
     position: relative;
   }
   p {
-    padding: 40px 20px;
+    padding: 10px 20px;
     position: relative;
     color: $palette-white;
   }
   a, .modal-button {
     display: inline-block;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 40px;
     cursor: pointer;
     div {
       background: $palette-dark-black;
@@ -725,6 +726,7 @@ div.backToTop, #content-resume div.backToTop {
   color: $palette-blue;
 }
 .italic { font-style: italic; }
+.justify { text-align: justify; }
 .hidden { display: none; }
 .p-pad-top {
   padding-top: 10px;
