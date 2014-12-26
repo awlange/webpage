@@ -28,7 +28,7 @@ fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 html {
   width: 100%;
   height: 100%;
-  min-width: 800px; }
+  min-width: 850px; }
 
 body {
   width: 100%;
@@ -38,7 +38,7 @@ body {
   background: #fefefe; }
 
 #page-wrapper {
-  width: 800px;
+  width: 850px;
   margin: 0 auto;
   overflow: auto; }
 
@@ -71,7 +71,8 @@ a:link, a:visited {
   z-index: -1; }
 
 #title_nav {
-  width: 800px;
+  background-color: #3498db;
+  width: 850px;
   height: 175px; }
 
 h1 {
@@ -159,7 +160,7 @@ h1 {
 #content-wrapper {
   overflow: hidden;
   position: relative;
-  width: 800px;
+  width: 850px;
   clear: both;
   -webkit-transition: all 0.8s ease;
   -moz-transition: all 0.8s ease;
@@ -168,7 +169,7 @@ h1 {
 
 .content {
   position: absolute;
-  width: 800px; }
+  width: 850px; }
 
 .h2-nav-wrapper {
   height: 40px;
@@ -847,11 +848,11 @@ td, th {
 
 .thumbnails-wrapper {
   position: relative;
-  width: 800px; }
+  width: 850px; }
 
 .thumbnail {
   margin: 30px 0px;
-  width: 800px;
+  width: 850px;
   border-radius: 3px;
   background: transparent;
   overflow: hidden;
@@ -859,7 +860,7 @@ td, th {
 
 .thumbnail-mask {
   background: rgba(52, 152, 219, 0.96);
-  width: 800px;
+  width: 850px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -951,35 +952,35 @@ td, th {
 
 #thumbnail-FMO {
   width: 600px;
-  padding: 80px 100px; }
+  padding: 80px 125px; }
 
 #thumbnail-DESMO {
   width: 650px;
-  padding: 110px 75px; }
+  padding: 110px 100px; }
 
 #thumbnail-ade {
   width: 300px;
-  padding: 10px 250px; }
+  padding: 10px 275px; }
 
 #thumbnail-mathworkers {
   width: 700px;
-  padding: 20px 50px; }
+  padding: 20px 75px; }
 
 #thumbnail-cassandra {
   width: 600px;
-  padding: 0px 100px; }
+  padding: 0px 125px; }
 
 #thumbnail-genetic {
   width: 400px;
-  padding: 0px 200px 40px 200px; }
+  padding: 0px 225px 40px 225px; }
 
 #thumbnail-scaling {
   width: 500px;
-  padding: 50px 150px; }
+  padding: 50px 175px; }
 
 #thumbnail-qchem {
   width: 500px;
-  padding: 70px 150px; }
+  padding: 70px 175px; }
 
 .fake-anchor {
   color: #34495e;
@@ -1030,7 +1031,7 @@ div.backToTop, #content-resume div.backToTop {
   background: #0a0a0a;
   color: #fefefe;
   height: 0px;
-  width: 800px;
+  width: 850px;
   margin: 0 auto;
   border-radius: 3px;
   overflow: hidden; }
@@ -1064,7 +1065,7 @@ div.backToTop, #content-resume div.backToTop {
 .line {
   margin: 3px 0px;
   height: 1px;
-  width: 800px;
+  width: 850px;
   background-color: #3498db; }
 
 .superscript {
@@ -1110,20 +1111,20 @@ div.backToTop, #content-resume div.backToTop {
   color: #3498db; }
 
 #PE-level-3, #PE-level-4, #PE-dozen {
-  padding: 10px 133px;
+  padding: 10px 158px;
   height: 438px;
   width: 534px; }
 
 #PE-level-4 {
-  padding: 10px 178px;
+  padding: 10px 203px;
   height: 333px;
   width: 444px; }
 
 #PE-dozen {
-  padding: 10px 133px;
+  padding: 10px 158px;
   height: 365px;
   width: 534px; }
 
 .reddit-img {
-  padding: 10px 100px;
+  padding: 10px 125px;
   width: 600px; }

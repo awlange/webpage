@@ -20,8 +20,8 @@
 			<div id="title_nav">
 				<h1>Adrian Lange <br><strong>scientist + developer</strong></h1>
 				<nav id="icons">
-					<div class="icon-wrapper" id="nav-home">
-						<img src="img/icon-home-small2.svg" class="icon nav-current" alt="home"/>
+					<div class="icon-wrapper nav-current" id="nav-home">
+						<img src="img/icon-home-small2.svg" class="icon" alt="home"/>
 						<p>home</p>
 					</div>
 					<div class="icon-wrapper" id="nav-science">
@@ -70,7 +70,7 @@
 						<p class="justify"> 
 I am a back-end software developer with a Ph.D. in computational/physical chemistry living in Chicago. 
 I like math, science, and technology — learning, researching, and applying them to solve difficult problems. 
-A few interesting things I have worked on include developing data models and algorithms for a large NoSQL database (Cassandra), 
+A few interesting things I have worked on include developing data models and analytics algorithms for a large NoSQL database (Cassandra), 
 improving massively parallel physics/chemistry simulations, and writing code for a leading quantum chemistry software package. 
 I'm also currently working on creating an open-source JavaScript math library.
 						 </p>
@@ -126,8 +126,11 @@ I'm also currently working on creating an open-source JavaScript math library.
 								<p class="justify">
 									This is an equation I discovered
 									to model continuum electrostatics of salty solvents characterized by a Debye screening length
-									and a dielectric constant. I called the equation the "Debye-H&uuml;ckel-like Screening Model" (DESMO)
-									because it generalizes the classic Debye-H&uuml;ckel model&mdash;a point charge centered in a spherical
+									and a dielectric constant. 
+								</p>
+								<p class="justify">
+									I called the equation the "Debye-H&uuml;ckel-like Screening Model" (DESMO).
+									It generalizes the classic Debye-H&uuml;ckel model&mdash;a point charge centered in a spherical
 									solute cavity surrounded by solvent continuum&mdash;to arbitrary charge densities and solute cavities.
 									DESMO reduces to the more familiar "Conductor-like Screening Model" (COSMO) in the limit of zero
 									salt concentration. DESMO is a simple, fast approximation to much more complicated models.
@@ -148,15 +151,18 @@ I'm also currently working on creating an open-source JavaScript math library.
 							<img src="img/FMO-MS-RMD_TOC.png" id="thumbnail-FMO" alt="FMO-MS-RMD"/>
 							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-dynamics">
 								<p class="justify">
-									This is a schematic of the model Fragment Molecular Orbital Multi-state Reactive Molecular Dynamics (FMO-MS-RMD),
-									which is a neat idea I had to combine Fragment Molecular Orbital (FMO) theory with
+									This is a schematic of the Fragment Molecular Orbital Multi-state Reactive Molecular Dynamics (FMO-MS-RMD) model.
+									It's a clever idea I had to combine Fragment Molecular Orbital (FMO) theory with
 									Prof. Greg Voth's Multi-state Empirical Valence Bond (MS-EVB) theory. 
 									FMO divides a molecular system into some
 									set of smaller fragments, but this division can be ambiguous in chemically reactive systems. 
 									MS-EVB theory deals exactly with that issue by assuming a linear combination of reactive states, 
-									like what is shown in the schematic here. Combining MS-EVB and FMO results in a new powerful
-									model that incorporates quantum electronic structure theory into the MS-EVB approach.
-									In addition, because the states and the molecular fragments can be calculated independently,
+									like what is shown in the schematic here. 
+								</p>
+								<p class="justify">	
+									Combining MS-EVB and FMO together results in a new powerful
+									model, FMO-MS-RMD, which incorporates quantum electronic structure theory into the MS-EVB approach.
+									Futhermore, because the states and the molecular fragments can be calculated independently,
 									FMO-MS-RMD can be computed in parallel to achieve considerable speedups.
 								</p>
 								<a href="file/papers/JCTC_9_4018.pdf" target="_blank">
@@ -175,9 +181,12 @@ I'm also currently working on creating an open-source JavaScript math library.
 							<img src="img/Qchem-logo.gif" id="thumbnail-qchem" alt="qchem"/>
 							<div class="thumbnail-mask thumbnail-mask-transparent" id="mask-quantum">
 									<p class="justify">
-										I am a contributing author for Q&#8209;Chem, a popular quantum chemistry software package.
+										I am a contributing author for Q&#8209;Chem, a popular quantum chemistry software package
+										used for carrying out molecular simulations.
 										I was the main author of the polarizable continuum model code and also of the internal QM/MM code.
-										These fun features are now updated and expanded by other Q&#8209;Chem authors.
+										I also implemented a handful of other unique features built into developer versions of Q-Chem,
+										such as a parallel adaptive fast multipole method code, a Connolly surface generator,
+										and a genetic algorithm based load balancer.
 									</p>
 								<a href="http://www.q-chem.com/qchem-website/about-qchem4.html" target="_blank">
 									<div class="button-read-more">
@@ -472,7 +481,7 @@ I'm also currently working on creating an open-source JavaScript math library.
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 						<div id="resume-projects">
-							<h3>projects/additional experience</h3>
+							<h3>projects &amp; additional experience</h3>
 							<div class="line"> </div>
 							<p> To see some code I have written, <a href="https://github.com/awlange" target="_blank">visit my GitHub account</a>. </p>
 							<p>
@@ -551,7 +560,7 @@ I'm also currently working on creating an open-source JavaScript math library.
 							<h3>publications</h3>
 							<div class="line"> </div>
 							<p>
-								<a href="http://scholar.google.com/citations?user=gQTKB5YAAAAJ&amp;hl=en" target="_blank">Google Scholar Statistics</a>: 370+ total citations, h-index 7
+								<a href="http://scholar.google.com/citations?user=gQTKB5YAAAAJ&amp;hl=en" target="_blank">Google Scholar Statistics</a>: 380+ total citations, h-index 7
 							</p>
 							<ol reversed="reversed" class="publication-list">
 								<li>

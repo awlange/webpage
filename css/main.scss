@@ -29,7 +29,7 @@ $palette-gray: #BDC3C7;
 // ----------------------------------------------------------------------
 //  Sizes
 //
-$page-width: 800px;
+$page-width: 850px;
 $title_nav-pad-top: 50px;
 $title_nav-height: $title_nav-pad-top + 125px;
 $side-pad: 10px;
@@ -108,6 +108,7 @@ a:link, a:visited {
   z-index: -1;
 }
 #title_nav {
+  background-color: $palette-blue;
   width: $page-width;
   height: $title_nav-height;
 }
