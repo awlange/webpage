@@ -52,7 +52,7 @@ $transition-time-fast: 0.2s;
   -webkit-transition: $transition-value;
   -moz-transition: $transition-value;
   -o-transition: $transition-value;
-  transition: $transition-value;  
+  transition: $transition-value;
 }
 
 // ----------------------------------------------------------------------
@@ -411,6 +411,7 @@ $offscreen-right: translateX($offscreen-position);
     ul {
       margin: 10px 0px 10px 3*$side-pad;
       li {
+        margin-bottom: 10px;
         ul li {
           list-style-type: none;
         }
