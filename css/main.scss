@@ -34,10 +34,10 @@ $title_nav-pad-top: 50px;
 $title_nav-height: $title_nav-pad-top + 125px;
 $side-pad: 10px;
 $icon-size: 65px;
-$development-height: 2700px;
+$development-height: 2800px;
 .content-home-height { height: 1100px; }
 .content-resume-height { height: 4400px; }
-.content-science-height { height: 2200px; }
+.content-science-height { height: 2300px; }
 .content-development-height { height: $development-height; }
 .content-contact-height { height: 300px; }
 
@@ -58,14 +58,14 @@ $transition-time-fast: 0.2s;
 // ----------------------------------------------------------------------
 // General styling
 //
-html { 
-  width: 100%; 
-  height: 100%;
+html {
+  width: 100%;
+  //height: 100%;
   min-width: $page-width;
 }
 body {
-  width: 100%; 
-  height: 100%;
+  width: 100%;
+  //height: 100%;
   font-family: 'Pontano Sans', sans-serif;
   color: $palette-black;
   background: $palette-white;
@@ -121,7 +121,7 @@ h1 {
   line-height: 0.65;
   float: left;
   strong {
-    font-size: 0.4em; 
+    font-size: 0.4em;
     font-weight: normal;
   }
 }
@@ -138,21 +138,21 @@ h1 {
   float: left;
   height: $icon-size;
   width: $icon-size;
-  margin: -15px 0px 12px 5px;
+  margin: -15px 0 12px 5px;
 }
 .icon-wrapper-right {
   position: relative;
   float: left;
   height: $icon-size;
   width: $icon-size;
-  margin: 10px 0px 12px 10px;
+  margin: 10px 0 12px 10px;
 }
 .icon {
   position: absolute;
-  top: 0px;
+  top: 0;
   height: $icon-size;
   width: $icon-size;
-  margin: 0px;
+  margin: 0;
   cursor: pointer;
   z-index: 1;
 }
@@ -166,17 +166,17 @@ h1 {
   top: -1px;
   height: $icon-size + 2px;
   width: $icon-size + 2px;
-  margin: 0px;
+  margin: 0;
   border-radius: 3px;
   background: transparent;
   cursor: pointer;
 }
 #icon-BuiltInChicago {
   position: absolute;
-  top: 0px;
+  top: 0;
   height: $icon-size;
   width: $icon-size;
-  margin: 0px;
+  margin: 0;
   border-radius: 3px;
   background: transparent;
   cursor: pointer;
@@ -184,7 +184,7 @@ h1 {
 // moving nav label
 .icon-wrapper p {
   vertical-align: middle;
-  margin: 40px 0px;
+  margin: 40px 0;
   color: $palette-white;
   font-size: 23.6833px;
   text-align: center;
@@ -196,7 +196,7 @@ $label-down: translateY(30px);
   opacity: 1;
   -webkit-transform: $label-down;
   -moz-transform: $label-down;
-  transform: $label-down; 
+  transform: $label-down;
 }
 
 // ----------------------------------------------------------------------
@@ -206,8 +206,8 @@ $label-down: translateY(30px);
   overflow: hidden;
   position: relative;
   width: $page-width;;
-  clear: both; 
-  
+  clear: both;
+
   // For height transitions
   @include css-transition($transition-time-slow, ease);
 }
@@ -245,34 +245,34 @@ $offscreen-position: 120%;
 $offscreen-left: translateX(-$offscreen-position);
 $offscreen-center: translateX(0);
 $offscreen-right: translateX($offscreen-position);
-.setToLeft {  
+.setToLeft {
   -webkit-transform: $offscreen-left;
   -moz-transform: $offscreen-left;
-  transform: $offscreen-left; 
+  transform: $offscreen-left;
 }
-.setToCenter { 
+.setToCenter {
   -webkit-transform: $offscreen-center;
   -moz-transform: $offscreen-center;
-  transform: $offscreen-center; 
+  transform: $offscreen-center;
  }
-.setToRight { 
+.setToRight {
   -webkit-transform: $offscreen-right;
   -moz-transform: $offscreen-right;
-  transform: $offscreen-right; 
+  transform: $offscreen-right;
 }
 // ----------------------------------
 @mixin offscreen-transition($motion) {
   $animation-params: $motion $transition-time-slow ease-in-out both;
   -webkit-animation: $animation-params;
   -moz-animation: $animation-params;
-  animation: $animation-params;  
-} 
+  animation: $animation-params;
+}
 // ----------------------------------
 @-webkit-keyframes moveToLeft { to { -webkit-transform: $offscreen-left; } }
 @-moz-keyframes moveToLeft { to { -moz-transform: $offscreen-left; } }
 @keyframes moveToLeft { to { transform: $offscreen-left; } }
 .content-moveToLeft {
-  @include offscreen-transition(moveToLeft); 
+  @include offscreen-transition(moveToLeft);
 }
 // ----------------------------------
 @-webkit-keyframes moveToCenter { to { -webkit-transform: $offscreen-center; } }
@@ -289,43 +289,43 @@ $offscreen-right: translateX($offscreen-position);
   @include offscreen-transition(moveToRight);
 }
 // ----------------------------------
-@-webkit-keyframes moveFromLeft { 
+@-webkit-keyframes moveFromLeft {
   from { -webkit-transform: $offscreen-left; }
-  to { -webkit-transform: $offscreen-center; } 
+  to { -webkit-transform: $offscreen-center; }
 }
-@-moz-keyframes moveFromLeft { 
-  from { -moz-transform: $offscreen-left; } 
+@-moz-keyframes moveFromLeft {
+  from { -moz-transform: $offscreen-left; }
   to { -moz-transform: $offscreen-center; }
 }
-@keyframes moveFromLeft { 
-  from { transform: $offscreen-left; } 
-  to { transform: $offscreen-center; } 
+@keyframes moveFromLeft {
+  from { transform: $offscreen-left; }
+  to { transform: $offscreen-center; }
 }
 .content-moveFromLeft {
-  @include offscreen-transition(moveFromLeft); 
+  @include offscreen-transition(moveFromLeft);
 }
 // ----------------------------------
-@-webkit-keyframes moveFromRight { 
+@-webkit-keyframes moveFromRight {
   from { -webkit-transform: $offscreen-right; }
-  to { -webkit-transform: $offscreen-center; } 
+  to { -webkit-transform: $offscreen-center; }
 }
-@-moz-keyframes moveFromRight { 
-  from { -moz-transform: $offscreen-right; } 
+@-moz-keyframes moveFromRight {
+  from { -moz-transform: $offscreen-right; }
   to { -moz-transform: $offscreen-center; }
 }
-@keyframes moveFromRight { 
+@keyframes moveFromRight {
   from { transform: $offscreen-right; }
-  to { transform: $offscreen-center; } 
+  to { transform: $offscreen-center; }
 }
 .content-moveFromRight {
-  @include offscreen-transition(moveFromRight); 
+  @include offscreen-transition(moveFromRight);
 }
 
 // ----------------------------------------------------------------------
 // Nav animation
 //
 @mixin bounce-keyframes {
-  0%   { top: 0px; }
+  0%   { top: 0; }
   5%   { top: -9px; }
   10%  { top: -16px; }
   15%  { top: -21px; }
@@ -335,7 +335,7 @@ $offscreen-right: translateX($offscreen-position);
   35%  { top: -21px; }
   40%  { top: -16px; }
   45%  { top: -9px; }
-  50%  { top: 0px; }
+  50%  { top: 0; }
   55%  { top: -3px; }
   60%  { top: -6px; }
   65%  { top: -7px; }
@@ -343,8 +343,8 @@ $offscreen-right: translateX($offscreen-position);
   75%  { top: -7px; }
   80%  { top: -6px; }
   85%  { top: -3px; }
-  90%  { top: 0px; }
-  100% { top: 0px; }
+  90%  { top: 0; }
+  100% { top: 0; }
 }
 @keyframes bounce {@include bounce-keyframes;}
 @-o-keyframes bounce {@include bounce-keyframes;}
@@ -359,26 +359,26 @@ $offscreen-right: translateX($offscreen-position);
 }
 
 @mixin wiggle-keyframes {
-  0%   { left: 0px; }
+  0%   { left: 0; }
   5%   { left: 2px; }
   10%  { left: 4px; }
   15%  { left: 8px; }
   20%  { left: 14px; }
   25%  { left: 8px; }
-  30%  { left: 0px; }
+  30%  { left: 0; }
   35%  { left: -6px; }
   40%  { left: -10px; }
   45%  { left: -7px; }
   50%  { left: -2px; }
-  55%  { left: 0px; }
+  55%  { left: 0; }
   60%  { left: 2px; }
   65%  { left: 3px; }
   70%  { left: 2px; }
-  75%  { left: 0px; }
+  75%  { left: 0; }
   80%  { left: -1px; }
   85%  { left: -2px; }
   90%  { left: -1px; }
-  100% { left: 0px; }
+  100% { left: 0; }
 }
 @keyframes wiggle {@include wiggle-keyframes;}
 @-o-keyframes wiggle {@include wiggle-keyframes;}
@@ -402,14 +402,14 @@ $offscreen-right: translateX($offscreen-position);
     }
     p {
       font-size: 1.2em;
-      margin: 30px 0px;
+      margin: 30px 0;
     }
     p.award-text {
       font-size: 1.0em;
-      margin: 30px 0px;
+      margin: 30px 0;
     }
     ul {
-      margin: 10px 0px 10px 3*$side-pad;
+      margin: 10px 0 10px 3*$side-pad;
       li {
         margin-bottom: 10px;
         ul li {
@@ -428,7 +428,7 @@ $offscreen-right: translateX($offscreen-position);
 }
 .resume-subtext {
   font-size: 16px;
-  margin: 30px 0px;
+  margin: 30px 0;
 }
 
 table {
@@ -450,10 +450,10 @@ td, th {
     }
     p {
       font-size: 1.0em;
-      margin: 30px 0px;
+      margin: 30px 0;
     }
     ul {
-      margin: 10px 0px 10px 3*$side-pad;
+      margin: 10px 0 10px 3*$side-pad;
       li {
         //font-size: 0.9em;
         ul li {
@@ -474,7 +474,7 @@ td, th {
 }
 
 .thumbnail {
-  margin: 30px 0px;
+  margin: 30px 0;
   width: $page-width;
   border-radius: 3px;
   background: transparent;
@@ -491,7 +491,7 @@ td, th {
   left: 0;
   text-align: center;
   padding-top: 30px;
-  
+
   h4 {
     background: transparent;
     color: $palette-white;
@@ -512,7 +512,7 @@ td, th {
       background: $palette-dark-black;
       color: $palette-white;
       border-radius: 3px;
-      padding: 0px 5px;
+      padding: 0 5px;
       position: relative;
       p {
         text-align: center;
@@ -525,7 +525,7 @@ td, th {
 .thumbnail-mask-transparent {
   opacity: 0;
   @include css-transition($transition-time-medium, linear);
-  
+
   h4 {
     @include css-transition($transition-time-medium, ease-in-out);
     -webkit-transform: translateY(-100px);
@@ -592,12 +592,12 @@ $mathworkers-width: 700px;
 $cassandra-width: 600px;
 #thumbnail-cassandra {
   width: $cassandra-width;
-  padding: 0px ($page-width - $cassandra-width)/2;
+  padding: 0 ($page-width - $cassandra-width)/2;
 }
 $genetic-width: 400px;
 #thumbnail-genetic {
   width: $genetic-width;
-  padding: 0px ($page-width - $genetic-width)/2 40px ($page-width - $genetic-width)/2;
+  padding: 0 ($page-width - $genetic-width)/2 40px ($page-width - $genetic-width)/2;
 }
 $scaling-width: 500px;
 #thumbnail-scaling {
@@ -616,7 +616,7 @@ $qchem-width: 500px;
 .fake-anchor {
   color: $palette-black;
   text-decoration: none;
-  cursor: pointer;  
+  cursor: pointer;
   text-align: center;
 }
 .fake-anchor:hover {
@@ -669,7 +669,7 @@ div.backToTop, #content-resume div.backToTop {
 .modal-body {
   background: $palette-real-black;
   color: $palette-white;
-  height: 0px;
+  height: 0;
   width: $page-width;
   margin: 0 auto;
   border-radius: 3px;
@@ -677,7 +677,7 @@ div.backToTop, #content-resume div.backToTop {
 }
 .modal-body-active {
   height: 500px;
-  margin-top: $title_nav-height + 1370px; // veritcal position of active modal 
+  margin-top: $title_nav-height + 1370px; // veritcal position of active modal
 }
 .modal-close {
   padding: 20px 30px;
@@ -713,7 +713,7 @@ div.backToTop, #content-resume div.backToTop {
 // Miscellaneous
 //
 .line {
-  margin: 3px 0px;
+  margin: 3px 0;
   height: 1px;
   width: $page-width;
   background-color: $palette-blue;
@@ -723,7 +723,7 @@ div.backToTop, #content-resume div.backToTop {
   bottom: 0.4em;
   font-size: 0.8em;
 }
-.underline { 
+.underline {
   text-decoration: underline;
   color: $palette-blue;
 }
