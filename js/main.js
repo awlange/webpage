@@ -80,9 +80,21 @@ $(document).ready( function(){
   for (var i=0; i < maskIds.length; i++) {
     scrollThumbnailMask(maskIds[i], maskContents[i]);
   }
-  
+
   // Modals
   modalHandler();
+
+  console.log("Oh hai!");
+  console.log("You are reading the console?! Nice.");
+  console.log("Here is a friendly turtle for your amusement:\n" +
+      "  _____     _____ \n" +
+      " /      \\  |  o |\n" +
+      "|        |/ ___\\|\n" +
+      "|_________/\n" +
+      "|_|_| |_|_|");
+  console.log("But, seriously, I suppose this means you might be interested in talking to me?");
+  console.log("Cool, cool...");
+  console.log("So, yeah, why not email me about it: adrian.w.lange@gmail.com");
 });
 
 // -------------------------------------------------

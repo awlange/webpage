@@ -14,13 +14,13 @@ fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   height: 1100px; }
 
 .content-resume-height {
-  height: 4400px; }
+  height: 5200px; }
 
 .content-science-height {
-  height: 2300px; }
+  height: 2800px; }
 
 .content-development-height {
-  height: 2800px; }
+  height: 3400px; }
 
 .content-contact-height {
   height: 300px; }
@@ -113,12 +113,11 @@ h1 {
   z-index: 1; }
 
 #contact-icons {
-  margin: 20px auto;
+  margin: 0 auto;
   height: 70px;
-  width: 140px; }
+  width: 70px; }
 
 #icon-LinkedIn {
-  position: absolute;
   top: -1px;
   height: 67px;
   width: 67px;
@@ -838,7 +837,7 @@ div.backToTop, #content-resume div.backToTop {
   transition: opacity 0.8s ease; }
 
 .modal-active {
-  height: 3015px;
+  height: 3615px;
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.8s ease;

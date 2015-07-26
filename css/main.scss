@@ -34,10 +34,10 @@ $title_nav-pad-top: 50px;
 $title_nav-height: $title_nav-pad-top + 125px;
 $side-pad: 10px;
 $icon-size: 65px;
-$development-height: 2800px;
+$development-height: 3400px;
 .content-home-height { height: 1100px; }
-.content-resume-height { height: 4400px; }
-.content-science-height { height: 2300px; }
+.content-resume-height { height: 5200px; }
+.content-science-height { height: 2800px; }
 .content-development-height { height: $development-height; }
 .content-contact-height { height: 300px; }
 
@@ -157,12 +157,12 @@ h1 {
   z-index: 1;
 }
 #contact-icons {
-  margin: 20px auto;
+  margin: 0 auto;
   height: 70px;
-  width: 140px;
+  width: 70px;
 }
 #icon-LinkedIn {
-  position: absolute;
+  //position: absolute;
   top: -1px;
   height: $icon-size + 2px;
   width: $icon-size + 2px;
