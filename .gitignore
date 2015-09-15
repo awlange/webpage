@@ -3,3 +3,5 @@ css/.sass-cache/*
 file/.DS_Store
 img/.DS_Store
 img/icon-home-small3.svg
+.idea
+css/main.css.map
