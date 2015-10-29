@@ -61,7 +61,7 @@
     h3 {
         font-weight: 100;
         font-size: 2.0em;
-        padding-top: 20px;
+        padding-top: 30px;
         color: #3498DB;
         clear: both; }
 
@@ -203,23 +203,29 @@
 
     #content-resume div div p {
         margin: 0; }
-    #content-resume div p {
+    #content-resume #resume-employment p {
         font-size: 1.2em;
         margin: 30px 0; }
+    #content-resume div p {
+        font-size: 1.2em;
+        margin: 20px 0; }
     #content-resume div p.award-text {
         font-size: 1.0em;
-        margin: 30px 0; }
+        margin: 20px 0; }
     #content-resume div ul {
-        margin: 10px 0 10px 30px; }
+        margin: 10px 0 0px 30px; }
     #content-resume div ul li {
-        margin-bottom: 10px; }
+        margin-bottom: 5px; }
     #content-resume div ul li ul li {
+        margin-bottom: 5px;
         list-style-type: none; }
     #content-resume div ol.publication-list {
         margin: 15px; }
     #content-resume div ol.publication-list li {
-        margin: 10px;
+        margin: 15px;
         font-size: 1.0em; }
+    #content-resume #resume-education ul {
+        margin: 0px 0 0px 30px; }
 
     .resume-subtext {
         font-size: 16px;
@@ -309,6 +315,9 @@
     .margin-top-negative {
         margin-top: -25px; }
 
+    .margin-top-negative2 {
+            margin-top: -35px; }
+
     .center {
         text-align: center; }
 
@@ -388,7 +397,7 @@
                     <span class="italic">University of Chicago</span>
                 </p>
                 <ul class="resume-list">
-                    <li>Optimized and developed massively parallel physics/chemistry simulations on IBM Blue Gene/Q supercomputer; increased simulation speed more than 8x, scalability to ∼0.4 million CPU cores <span class="italic">[C/C++, MPI, OpenMP, Python]</span></li>
+                    <li>Optimized massively parallel physics/chemistry simulations on IBM Blue Gene/Q supercomputer (3 on Top500); increased simulation speed over 8x, scalability to ∼0.4 million CPU cores <span class="italic">[C/C++, MPI, OpenMP, Python]</span></li>
                     <li>Implemented enhanced statistical sampling algorithms (e.g. Monte Carlo, parallel tempering) for computing energetics data</li>
                     <li>Invented novel quantum mechanical proton transport model based on fragment electronic structure theory; model development via statistical optimization techniques (simulated annealing, multivariate regression, swarm intelligence, etc.)</li>
                 </ul>
@@ -421,6 +430,7 @@
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+            <div class="spacer"></div>
             <div id="resume-education">
                 <h3>education</h3>
                 <div class="line"> </div>
@@ -453,7 +463,8 @@
                 </p>
                 <ul>
                     <li><strong>Udacity</strong>: Web Development, Programming Languages, Parallel Programming (GPU), Machine Learning</li>
-                    <li><strong>Coursera</strong>: Data Science Signature Track (R Programming, Statistics, Data Wrangling), Machine Learning, Algorithms, Databases</li>
+                    <li><strong>Coursera</strong>: Data Science Signature Track (R Programming, Statistics, Data Wrangling),
+                      Machine Learning, Algorithms, Databases, Neural Networks</li>
                 </ul>
             </div>
 
@@ -474,7 +485,7 @@
                     </tr>
                     <tr>
                         <th>Data Analysis</th>
-                        <td>pandas, R, numpy, SciPy, scikit-learn</td>
+                        <td>pandas, numpy, SciPy, scikit-learn, R, Lasagne, Theano</td>
                     </tr>
                     <tr>
                         <th>Compute Tools</th>
@@ -491,7 +502,7 @@
                     <tr>
                         <th>Machine Learning Techniques</th>
                         <td>Linear/Logistic Regression, Fourier Analysis, Clustering, k-Nearest Neighbors, Decision Trees,
-                            Random Forests, Kernel Smoothing, Bagging, Boosting, Neural Networks, SVMs</td>
+                            Random Forests, Neural Networks (MLP, CNN, RNN), SVD, PCA, Bagging, Boosting, NLP, SVMs</td>
                     </tr>
                 </table>
             </div>
@@ -502,6 +513,23 @@
                 <h3>projects &amp; additional experience</h3>
                 <div class="line"> </div>
                 <p>To see some code I have written, <a href="https://github.com/awlange" target="_blank">visit my GitHub account</a>. </p>
+                <p>
+                    <strong>BaconNet</strong> <span class="float-right">2015 &mdash; present</span><br>
+				    <span class="resume-subtext">
+                                      Convolution neural network model for classifying pictures of bacon and/or Kevin Bacon;
+                                      web app interface at <a href="http://www.isitbacon.net">isitbacon.net</a>
+                                    <span class="italic">[Python, Flask, Lasagne, Theano, HTML, CSS, JavaScript, Twitter Bootstrap]</span>
+								</span>
+                </p>
+                <p>
+                    <strong>Bueller</strong> <span class="float-right">2015</span><br>
+				    <span class="resume-subtext">
+                                    Wikipedia document web scraper and document classifier; experimenting with various approaches and models for text processing,
+                                    such as TF-IDF, latent semantic analysis, and recurrent neural networks
+                                    <span class="italic">[Python, Lasagne, Theano, HTML, BeautifulSoup]</span>
+								</span>
+                </p>
+                <div class="spacer"></div>
                 <p>
                     <strong>MathWorkersJS</strong> <span class="float-right">2014 &mdash; present</span><br>
 								<span class="resume-subtext">
@@ -546,15 +574,15 @@
                         <span class="resume-subtext">
                             Parallel interface to Q-Chem program for propagating chemically reactive proton transport
                             simulations with analytic gradients; demonstrated scalability to &gt;200 CPUs
-                            <span class="italic">[C++, C, MPI]</span>
+                            <span class="italic">[C++, C, MPI, Python]</span>
                         </span>
                 </p>
-                <p>
+                <!-- <p>
                     <strong>DESMO</strong> <span class="float-right">2011</span><br>
 								<span class="resume-subtext">
 									Highly parallel solvent electrostatics model code; genetic algorithm dynamic load balancing <span class="italic">[C++, OpenMP, MPI]</span>
 								</span>
-                </p>
+                </p> -->
             </div>
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -608,11 +636,11 @@
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
             <!--<div class="spacer"></div>-->
-            <div id="resume-publications">
+            <div id="resume-publications" class="margin-top-negative">
                 <h3>publications</h3>
                 <div class="line"> </div>
                 <p>
-                    <a href="http://scholar.google.com/citations?user=gQTKB5YAAAAJ&amp;hl=en" target="_blank">Google Scholar Statistics</a>: 470+ total citations, h-index 8
+                    <a href="http://scholar.google.com/citations?user=gQTKB5YAAAAJ&amp;hl=en" target="_blank">Google Scholar Statistics</a>: 500+ total citations, h-index 8
                 </p>
                 <ol reversed="reversed" class="publication-list">
                     <li>
