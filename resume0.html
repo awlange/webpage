@@ -1,0 +1,787 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adrian Lange | scientist + developer</title>
+    <meta name="description" content="Adrian Lange | scientist + developer">
+    <meta name="keywords" content="Adrian, Lange, PhD, scientist, developer, data, programmer, engineer, Apple, San Francisco, Bay Area, Cupertino, Argonne, Ohio State, Ph.D., resume, CV, publications, Java, python, R, C++, C, SQL, NoSQL, Cassandra, JavaScript, node.js, machine learning, math, statistics, science">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<!--
+******************************************************************************
+* Hello! Thanks for looking at my source code!                               *
+* Really, though, my resume is better viewed in a browser.                   *
+* But, feel free to check it out anyway if you enjoy source code, like me.   *
+******************************************************************************
+-->
+
+<style>
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+    pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s,
+    samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent; }
+
+    .content-resume-height {
+        height: 4600px; }
+
+    html {
+        width: 100%;
+        min-width: 850px; }
+
+    body {
+        width: 100%;
+        font-family: 'Pontano Sans', sans-serif;
+        color: #34495E;
+        background: #fefefe; }
+
+    #page-wrapper {
+        width: 850px;
+        margin: 0 auto;
+        padding: 0 50px;
+        overflow: auto; }
+
+    h2 {
+        color: #3498DB;
+        font-weight: 100;
+        font-size: 2.5em;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        text-align: center; }
+
+    h3 {
+        font-weight: 100;
+        font-size: 2.0em;
+        padding-top: 15px;
+        color: #3498DB;
+        clear: both; }
+
+    h4 {
+        font-weight: 100;
+        font-size: 2.0em; }
+
+    a:link, a:visited {
+        color: #3498DB; }
+
+    #title_nav_background {
+        margin-bottom: -175px;
+        height: 175px;
+        background-color: #3498DB;
+        z-index: -1; }
+
+    #title_nav {
+        background-color: #3498DB;
+        width: 850px;
+        height: 175px; }
+
+    #title_nav_contact {
+        padding: 50px 0 10px 0;
+        float: right; }
+
+    #title_nav_contact p, #title_nav_contact p a {
+        color: #fefefe;
+        float: right; }
+
+    h1 {
+        color: #fefefe;
+        font-size: 3.7em;
+        font-weight: 100;
+        padding: 50px 0 10px 0;
+        margin-right: 20px;
+        line-height: 0.65;
+        float: left; }
+    h1 strong {
+        font-size: 0.4em;
+        font-weight: normal; }
+
+    #icons {
+        float: right;
+        padding: 50px 0 10px 0; }
+
+    .icon-wrapper {
+        position: relative;
+        float: left;
+        height: 65px;
+        width: 65px;
+        margin: -15px 0 12px 5px; }
+
+    .icon-wrapper-right {
+        position: relative;
+        float: left;
+        height: 65px;
+        width: 65px;
+        margin: 10px 0 12px 10px; }
+
+    .icon {
+        position: absolute;
+        top: 0;
+        height: 65px;
+        width: 65px;
+        margin: 0;
+        cursor: pointer;
+        z-index: 1; }
+
+    #contact-icons {
+        margin: 20px auto;
+        height: 70px;
+        width: 140px; }
+
+    #icon-LinkedIn {
+        position: absolute;
+        top: -1px;
+        height: 67px;
+        width: 67px;
+        margin: 0;
+        border-radius: 3px;
+        background: transparent;
+        cursor: pointer; }
+
+    #icon-BuiltInChicago {
+        position: absolute;
+        top: 0;
+        height: 65px;
+        width: 65px;
+        margin: 0;
+        border-radius: 3px;
+        background: transparent;
+        cursor: pointer; }
+
+    .icon-wrapper p {
+        vertical-align: middle;
+        margin: 40px 0;
+        color: #fefefe;
+        font-size: 23.6833px;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease; }
+
+    .icon-wrapper:hover p {
+        opacity: 1;
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        transform: translateY(30px); }
+
+    #content-wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 850px;
+        clear: both;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+        transition: all 0.8s ease; }
+
+    .content {
+        position: absolute;
+        width: 850px; }
+
+    .h2-nav-wrapper {
+        height: 40px;
+        padding: 20px 0; }
+
+    .nav-secondary {
+        margin: 25px auto 20px;
+        font-size: 1.35em;
+        text-align: center; }
+    .nav-secondary a {
+        color: #34495E;
+        text-decoration: none; }
+    .nav-secondary a:hover {
+        color: #3498DB; }
+
+    #content-resume div div p {
+        margin: 0; }
+    #content-resume div p {
+        font-size: 1.2em;
+        margin: 15px 0; }
+    #content-resume div p.award-text {
+        font-size: 1.0em;
+        margin: 30px 0; }
+    #content-resume div ul {
+        margin: 5px 0 10px 30px; }
+    #content-resume #resume-employment ul {
+        margin: 30px 0 30px 30px; }
+    #content-resume div ul li {
+        margin-bottom: 5px; }
+    #content-resume div ul li ul li {
+        list-style-type: none; }
+    #content-resume div ol.publication-list {
+        margin: 15px; }
+    #content-resume div ol.publication-list li {
+        margin: 10px;
+        font-size: 1.0em; }
+
+    .resume-subtext {
+        font-size: 16px;
+        margin: 30px 0; }
+
+    table {
+        width: 100%; }
+
+    table, th, td {
+        text-align: center;
+        border: 1px solid #34495E;
+        border-collapse: collapse; }
+
+    td, th {
+        padding: 5px; }
+    th {
+        width: 200px;
+    }
+
+    #content-science div div p {
+        margin: 0; }
+    #content-science div p {
+        font-size: 1.0em;
+        margin: 30px 0; }
+    #content-science div ul {
+        margin: 10px 0 10px 30px; }
+    #content-science div ul li ul li {
+        list-style-type: none; }
+
+    .fake-anchor {
+        color: #34495E;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center; }
+
+    .fake-anchor:hover {
+        color: #3498DB; }
+
+    div.backToTop, #content-resume div.backToTop {
+        margin: 50px auto;
+        width: 100px;
+        border-radius: 3px;
+        background: #3498DB;
+        cursor: pointer; }
+    div.backToTop p, #content-resume div.backToTop p {
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+        color: #fefefe; }
+
+    .line {
+        margin: 3px 0;
+        height: 1px;
+        width: 850px;
+        background-color: #3498DB; }
+
+    .superscript {
+        position: relative;
+        bottom: 0.4em;
+        font-size: 0.8em; }
+
+    .underline {
+        text-decoration: underline;
+        color: #3498DB; }
+
+    .italic {
+        font-style: italic; }
+
+    .justify {
+        text-align: justify; }
+
+    .hidden {
+        display: none; }
+
+    .p-pad-top {
+        padding-top: 10px; }
+
+    .float-right {
+        float: right; }
+
+    .float-left {
+        float: left; }
+
+    .clear {
+        clear: both; }
+
+    .spacer {
+        height: 25px; }
+
+    .margin-top-negative {
+        margin-top: -25px; }
+
+    .center {
+        text-align: center; }
+
+    .blue-text {
+        color: #3498DB; }
+
+    .columbus {
+        margin-right: 3px; }
+
+</style>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div id="title_nav_background"> </div>
+<div id="page-wrapper">
+    <div id="title_nav">
+        <a href="http://adrianlange.com"><h1>Adrian Lange, PhD <br><strong>scientist + developer</strong></h1></a>
+        <div id="title_nav_contact">
+            <p><a href="mailto:adrianwlange@gmail.com" target="_blank">adrian.w.lange@gmail.com</a></p><br>
+            <p>1100 Fulton St, Apt 4, San Francisco, CA 94117</p><br>
+            <p>(330) 289-4955</p><br>
+            <p><a href="http://adrianlange.com" target="_blank">adrianlange.com</a></p>
+        </div>
+    </div>
+
+    <div id="content-wrapper" class="content-resume-height">
+
+        <article id="content-resume" class="content content-current">
+            <div class="spacer"></div>
+            <!--<nav class="nav-secondary">-->
+                <!--<span id="scroller-employment" class="fake-anchor">employment</span> |-->
+                <!--<span id="scroller-education" class="fake-anchor">education</span> |-->
+                <!--<span id="scroller-skills" class="fake-anchor">skills</span> |-->
+                <!--<span id="scroller-projects" class="fake-anchor">projects</span> |-->
+                <!--<span id="scroller-contributions" class="fake-anchor">contributions</span> |-->
+                <!--<span id="scroller-awards" class="fake-anchor">awards</span> |-->
+                <!--<span id="scroller-publications" class="fake-anchor">publications</span>-->
+            <!--</nav>-->
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div id="resume-employment">
+                <h3>employment</h3>
+                <div class="line"> </div>
+                <p>
+                    <strong>Big Data Engineer, iTunes Analytics</strong>
+                    <span class="float-right">May 2015 &mdash; Present</span> <br>
+                    <span class="italic">Apple, Inc.</span>
+                    <span class="float-right italic">Cupertino, CA</span> <br>
+                </p>
+                <ul>
+                    <li>Develop analytics infrastructure to generate insights into customer experiences on products such as the
+                        iTunes Store, App Store, Apple Music, and Apple TV <span class="italic">[Java, Python, Splunk, Cassandra, Hadoop, JavaScript]</span></li>
+                    <li>Utilize machine learning, statistics, and data mining to perform data analysis, segmentation, and hypothesis testing</li>
+                    <!--<li>Hadoop-related technologies such as MapReduce, Azkaban, Hive, Pig, Spark and Splunk</li>-->
+                    <!--<li>Data profiling, segmentation, and hypothesis testing</li>-->
+                </ul>
+                <p>
+                    <strong>Software Developer</strong>
+                    <span class="float-right">August 2013 &mdash; April 2015</span> <br>
+                    <span class="italic">Signal (formerly known as BrightTag)</span>
+                    <span class="float-right italic">Chicago, IL</span> <br>
+                </p>
+                <ul>
+                    <li>Developed data models, algorithms, and back-end services to build and analyze user profile networks for millions of users per day; stored in NoSQL database with billions of records (∼50 TB) <span class="italic">[Java, Cassandra, Python, Spark, Kafka, R]</span></li>
+                    <!--<li>Researched and implemented solutions for a scalable, hybrid real-time/batch process data pipeline for user segmentation <span class="italic">[Python, Java, Redis, Cassandra]</span></li>-->
+                    <li>Created real-time anomaly detection and network traffic forecasting system using Fourier analysis capable of predicting regular traffic patterns for upcoming week with &gt;90% accuracy <span class="italic">[Java, Python, Storm]</span></li>
+                    <li>Built web app to display inter-client clustering
+                        and user interaction frequency trends <span class="italic">[Python, JavaScript, Cassandra]</span></li>
+                </ul>
+                <p>
+                    <strong>Postdoctoral Appointee</strong>
+                    <span class="float-right">March 2012 &mdash; July 2013</span> <br>
+                    <span class="italic">Argonne National Laboratory Leadership Computing Facility</span>
+                    <span class="float-right italic">Chicago, IL</span> <br>
+                    <span class="italic">University of Chicago</span>
+                </p>
+                <ul class="resume-list">
+                    <li>Optimized massively parallel physics/chemistry simulations on IBM Blue Gene/Q supercomputer (3 on Top500); increased simulation speed over 8x, scalability to ∼0.4 million CPU cores <span class="italic">[C/C++, MPI, OpenMP, Python]</span></li>
+                    <li>Implemented enhanced statistical sampling algorithms (e.g. Monte Carlo, parallel tempering) for computing energetics data</li>
+                    <li>Invented novel quantum mechanical proton transport model based on fragment electronic structure theory; model development via statistical optimization techniques (simulated annealing, multivariate regression, swarm intelligence, etc.)</li>
+                </ul>
+                <p>
+                    <strong>Ph.D. Student Researcher</strong>
+                    <span class="float-right">June 2007 &mdash; March 2012</span> <br>
+                    <span class="italic">The Ohio State University</span>
+                    <span class="float-right italic columbus">Columbus, OH</span> <br>
+                </p>
+                <ul>
+                    <li>Published 10 first author journal articles (see publications); presented at 20+ professional and academic events</li>
+                    <li>Researched quantum chemistry and statistical thermodynamics; mathematical theory, computation, and algorithms</li>
+                    <li>Devised physics model for screened solvent electrostatics,
+                        geometrical algorithm for constructing continuously differentiable molecule surfaces,
+                        stochastic optimization (genetic algorithm) for load balanced numerical integrals;
+                        applications to excited electronic quantum states of DNA in simulated biological environments
+                        <span class="italic">[C/C++, Fortran, MPI, OpenMP]</span></li>
+                </ul>
+                <!--<p>-->
+                    <!--<strong>Undergraduate Microbiology Research Assistant</strong>-->
+                    <!--<span class="float-right">August 2004 &mdash; July 2006</span> <br>-->
+                    <!--<span class="italic">The Ohio State University</span>-->
+                    <!--<span class="float-right italic columbus">Columbus, OH</span> <br>-->
+                <!--</p>-->
+                <!--<ul>-->
+                    <!--<li>Conducted site-directed mutagenesis of <span class="italic">E. coli</span> transcription regulation gene <span class="italic">ops</span> via plasmid transformation</li>-->
+                    <!--<li>Analyzed mutation effects with radioactive labeled single nucleotide resolution PAGE, hemolysis and flourescence assays</li>-->
+                <!--</ul>-->
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+            <div id="resume-skills">
+                <h3>technical skills</h3>
+                <div class="line"> </div>
+                <p>Proficiency in descending order from left to right</p>
+                <table>
+                    <tr>
+                        <th>Programming Languages</th>
+                        <td>Java, Python, JavaScript, C++, C, awk, Unix/Linux shell (bash), Fortran</td>
+                    </tr>
+                    <tr>
+                        <th>Web Technologies</th>
+                        <td>HTML, CSS/SCSS, Flask, node.js, jQuery, AJAX, web workers</td>
+                    </tr>
+                    <tr>
+                        <th>Databases/Storage</th>
+                        <td>Cassandra, MySQL, Splunk, HDFS, Kafka, Redis</td>
+                    </tr>
+                    <tr>
+                        <th>Data Analysis/Modeling</th>
+                        <td>pandas, numpy, scikit-learn, SciPy, Keras, Lasagne, Theano, R</td>
+                    </tr>
+                    <tr>
+                        <th>Compute Tools</th>
+                        <td>Spark, MPI, OpenMP, Hadoop (MapReduce), PyCUDA, PyOpenCL, blas/lapack</td>
+                    </tr>
+                    <tr>
+                        <th>Productivity Tools</th>
+                        <td>git, IPython/Jupyter, vim, LaTeX, JIRA, svn</td>
+                    </tr>
+                    <tr>
+                        <th>Software Engineering</th>
+                        <td>Test driven development (units/smoke/integration), architecture design, code review, Agile</td>
+                    </tr>
+                    <tr>
+                        <th>Machine Learning Techniques</th>
+                        <td>Multivariate Regression, Neural Networks (MLP, convolution, recurrent, deep learning),
+                            Fourier Analysis, Clustering, k-NN, Random Forests, SVD, PCA, NLP, SVMs</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="spacer"></div>
+            <div id="resume-education">
+                <h3>education</h3>
+                <div class="line"> </div>
+                <p>
+                    <strong>Ph.D. Computational/Physical Chemistry</strong>
+                    <span class="float-right">June 2007 &mdash; March 2012</span> <br>
+                    <span class="italic">The Ohio State University</span>
+                    <span class="float-right italic columbus">Columbus, OH</span> <br>
+                </p>
+                <p>
+                    <strong>B.S. Chemistry with minor in Microbiology</strong>
+                    <span class="float-right">August 2003 &mdash; June 2007</span> <br>
+                    <span class="italic">The Ohio State University</span>
+                    <span class="float-right italic columbus">Columbus, OH</span> <br>
+                </p>
+                <!--<div class="spacer"></div>-->
+                <p>
+                    <strong>Formal Courses:</strong>
+                </p>
+                <ul>
+                    <!--<li><strong>Physical Sciences</strong>: Quantum Mechanics, Statistical Thermodynamics, Computational Chemistry, Chemical Physics</li>-->
+                    <!--<li><strong>Life Sciences</strong>: Biochemistry, Microbiology, Molecular Genetics</li>-->
+                    <!--<li><strong>Mathematics</strong>: Multivariable Calculus, Linear Algebra, Differential Equations</li>-->
+                    <!--<li><strong>Computer Science</strong>: Computer Programming, Numerical Methods</li>-->
+                    Quantum Mechanics, Statistical Thermodynamics, Computational Chemistry, Chemical Physics,
+                    Multivariable Calculus, Linear Algebra, Differential Equations,
+                    Computer Programming, Numerical Methods
+                </ul>
+                <p>
+                    <strong>Supplementary Online Courses:</strong>
+                </p>
+                <ul>
+                    <li><strong>Udacity</strong>: Web Development, Programming Languages, Parallel Programming (GPU/CUDA), Machine Learning</li>
+                    <li><strong>Coursera</strong>: Data Science Signature Track (R Programming, Statistics, Data Wrangling), Machine Learning, Algorithms, Databases, Neural Networks</li>
+                </ul>
+            </div>
+
+
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="spacer"></div>
+            <div id="resume-projects">
+                <h3>projects &amp; additional experience</h3>
+                <div class="line"> </div>
+                <p>To see some code I have written, <a href="https://github.com/awlange" target="_blank">visit my GitHub account</a>. </p>
+                <p>
+                    <strong>BrainSparks and Calrissian</strong> <span class="float-right">2015 &mdash; present</span><br>
+				    <span class="resume-subtext">
+                        Experimental neural network and deep learning library;
+                        SGD and backpropagation analytic gradient implemented from scratch for
+                        multi-layer perceptron, 1-D convolution net, particle network (my own invented flavor of ANN);
+                        exploring data parallelization via Spark and GPU acceleration
+                        <span class="italic">[Python, Spark, numpy, PyCUDA, PyOpenCL]</span>
+                    </span>
+                </p>
+
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+
+                <p>
+                    <strong>BaconNet</strong> <span class="float-right">2015 &mdash; present</span><br>
+				    <span class="resume-subtext">
+                          Convolution neural network model for classifying pictures of bacon and/or Kevin Bacon;
+                          web app interface for uploading and classifying pictures at <a href="http://www.isitbacon.net">isitbacon.net</a>
+                        <span class="italic">[Python, Flask, Lasagne, Theano, HTML, CSS, JavaScript, Twitter Bootstrap]</span>
+                    </span>
+                </p>
+                <p>
+                    <strong>Bueller</strong> <span class="float-right">2015</span><br>
+                    <span class="resume-subtext">
+                        Wikipedia document web scraper and document classifier; experimenting with various natural language processing approaches
+                        and models, such as TF-IDF, latent semantic analysis, etc. <span class="italic">[Python, Lasagne, Theano, HTML, BeautifulSoup]</span>
+                    </span>
+                </p>
+                <p>
+                    <strong>MathWorkersJS</strong> <span class="float-right">2014 &mdash; present</span><br>
+                    <span class="resume-subtext">
+                            Open-source parallel JavaScript math and statistics library built around HTML5
+                            Web Workers and Node.js cluster library capable of speeding up computations on multi-core devices; accompanying
+                            documentation website: <a href="http://www.mathworkersjs.org">mathworkersjs.org</a>,
+                            available for <a href="https://www.npmjs.com/package/mathworkers">install through npm</a> too
+                        <span class="italic">[JavaScript, Node.js, HTML5, CSS/SCSS, Python, Flask, Apache Server]</span>
+                    </span>
+                </p>
+                <!--<p>-->
+                    <!--<strong>Smart Alerts</strong>  <span class="float-right">2015</span><br>-->
+                                <!--<span class="resume-subtext">-->
+                                    <!--Determine if an automated server alert requires manual intervention; comparing-->
+                                    <!--implementations as neural network, random forest, support vector machine, and/or logistic regression-->
+                                    <!--<span class="italic">[Python, pandas, scikit-learn, Cassandra]</span>-->
+                                <!--</span>-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--<strong>PiPlayer</strong> <span class="float-right">2014</span><br>-->
+                        <!--<span class="resume-subtext">-->
+                            <!--Flask web app for streaming music from hard drive at home, connected through-->
+                            <!--a RaspberryPi computer. <span class="italic">[Python, Flask, JavaScript/jQuery/AJAX, HTML, CSS]</span>-->
+                        <!--</span>-->
+                <!--</p>-->
+                <p>
+                    <strong>Personal Website</strong> <span class="float-right">2013 &mdash; present</span><br>
+                        <span class="resume-subtext">
+                            Full stack coding, back-end to front-end; dynamic blog database.
+                            <span class="italic">[HTML, CSS/SCSS, JavaScript/jQuery/node.js, MySQL]</span>
+                        </span>
+                </p>
+                <p>
+                    <strong>Project Euler</strong> <span class="float-right">2013 &mdash; present</span><br>
+                        <span class="resume-subtext">
+                            Recreational mathematics and programming problems from
+                            <a href="http://projecteuler.net/" target="_blank">Project Euler</a>;
+                            currently solved more than <a href="http://projecteuler.net/profile/awgl.png" target="_blank">110 problems</a>
+                            <span class="italic">[Python, C++]</span>
+                        </span>
+                </p>
+                <p>
+                    <strong>FMO-MS-RMD</strong> <span class="float-right">2013</span><br>
+                        <span class="resume-subtext">
+                            Parallel interface to Q-Chem program for propagating chemically reactive proton transport
+                            simulations with analytic gradients; demonstrated scalability to &gt;200 CPUs
+                            <span class="italic">[C++, C, MPI]</span>
+                        </span>
+                </p>
+                <!--<p>
+                    <strong>DESMO</strong> <span class="float-right">2011</span><br>
+								<span class="resume-subtext">
+									Highly parallel solvent electrostatics model code; genetic algorithm dynamic load balancing <span class="italic">[C++, OpenMP, MPI]</span>
+								</span>
+                </p>-->
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="spacer"></div>
+            <div id="resume-contributions" class="margin-top-negative">
+                <h3>open source &amp; community contributions</h3>
+                <div class="line"> </div>
+                <p>
+                    <a href="https://github.com/datastax/python-driver" target="_blank"><strong>Cassandra Python Driver</strong></a> <span class="float-right">2014</span><br>
+                                <span class="resume-subtext">
+                                    Simple error handling for input server connection list <span class="italic">[Python]</span>
+                                </span>
+                </p>
+                <p>
+                    <a href="http://www.q-chem.com/qchem-website/about-qchem4.html" target="_blank"><strong>Q-Chem</strong></a> <span class="float-right">2007 &mdash; 2014</span><br>
+								<span class="resume-subtext">
+									Lead author of PCM solvent modeling, QM/MM, parallel linear algebra solvers, and Fast Multipole
+                                    Method code; software design committee; 7th author of 161 co-authors on
+                                    <a href="http://adrianlange.com/file/papers/qchem4_0.pdf">software white paper</a> <span class="italic">[C++, C, Fortran]</span>
+								</span>
+                </p>
+                <p>
+                    <a href="http://lammps.sandia.gov/" target="_blank"><strong>LAMMPS</strong></a> <span class="float-right">2013</span><br>
+								<span class="resume-subtext">
+									Multi-copy communication interface to open-source molecular dynamics software for
+                                    parallel tempering/replica exchange
+                                    (<a href="https://github.com/awlange/lammps_ensembles" target="_blank">LAMMPS Ensembles</a>);
+                                    optimized compute kernel for pairwise interactions <span class="italic">[C++, C, MPI, OpenMP, Python]</span>
+								</span>
+                </p>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="spacer"></div>
+            <div id="resume-awards" class="margin-top-negative">
+                <h3>honors &amp; awards</h3>
+                <div class="line"> </div>
+                <p class="award-text">
+                    Chair's Prime Choice in Computational Division at American Chemical Society Conference<span class="float-right">2013</span><br>
+                    Presidential Fellowship from The Ohio State University Graduate School ($33,150) <span class="float-right">2012</span><br>
+                    Chemical Computing Group Research Excellence Award from American Chemical Society ($1,150) <span class="float-right">2012</span><br>
+                    Travel Fellowship to present at American Conference on Theoretical Chemistry ($600) <span class="float-right">2011</span><br>
+                    Selected to attend Telluride School on Theoretical Chemistry ($850) <span class="float-right">2011</span><br>
+                    U.S. Department of Energy Merit Scholarship for top poster presentation ($300) <span class="float-right">2010</span><br>
+                    3rd place (out of ∼30) at Ohio State University Denman Undergraduate Research Forum ($300) <span class="float-right">2006</span><br>
+                    American Society for Microbiology Undergraduate Research Fellowship ($4,000) <span class="float-right">2006</span><br>
+                    Ohio State Arts &amp; Sciences Undergraduate Honors Research Scholarship ($3,500) <span class="float-right">2006</span><br>
+                </p>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div id="resume-publications">
+                <h3>publications</h3>
+                <div class="line"> </div>
+                <p>
+                    <a href="http://scholar.google.com/citations?user=gQTKB5YAAAAJ&amp;hl=en" target="_blank">Google Scholar Statistics</a>: 500+ total citations, h-index 8
+                </p>
+                <ol reversed="reversed" class="publication-list">
+                    <li>
+                        <strong>Adrian W. Lange</strong>.
+                        Whitepaper: <span class="blue-text underline">Particle Networks: A Variation on Multilayer Perceptrons with Spatial Pairwise Kernels</span>
+                        (in preparation).
+                    </li>
+                    <li>
+                        Yihan Shao, Zhengting Gan, Evgeny Epifanovsky, Andrew T.B. Gilbert, Michael Wormit, Joerg Kussmann, <strong>Adrian W. Lange</strong> <span class="italic">et al.</span>
+                        <a href="http://www.tandfonline.com/doi/abs/10.1080/00268976.2014.952696#.VEnf9ovF8pw" target="_blank">Advances in molecular quantum chemistry contained
+                            in the Q-Chem 4 program package</a>
+                        <span class="italic">Mol. Phys.</span> 1-32 (2014).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/qchem4_0.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        John M. Herbert and <strong>Adrian W. Lange</strong>.
+                        Book chapter: <span class="blue-text underline">Polarizable Continuum Models for (Bio)Molecular Electrostatics: Basic Theory and Recent Developments for Macromolecules and Simulations</span>
+                        (2014).
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong> and Gregory A. Voth.
+                        <a href="http://pubs.acs.org/doi/abs/10.1021/ct400516x" target="_blank">Multi-state Approach to Chemical Reactivity in Fragment Based Quantum Chemistry Calculations</a>
+                        <span class="italic">J. Chem. Theory Comput.</span> 9, 4018-4025 (2013).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/JCTC_9_4018.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong>, Gard Nelson, Christopher Knight, and Gregory A. Voth.
+                        <a href="http://www.osti.gov/scitech/biblio/1079773" target="_blank">Multiscale Molecular Simulations at the Petascale (Parallelization of Reactive Force Field Model for Blue Gene/Q): ALCF-2 Early Science Program Technical Report</a>
+                        <span class="italic">Argonne National Laboratory</span> (2013).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/76578.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong> and John M. Herbert.
+                        <a href="http://pubs.acs.org/doi/abs/10.1021/ct300493y" target="_blank">Improving generalized Born models by exploiting connections to polarizable continuum models. II. Corrections for salt effects.</a>
+                        <span class="italic">J. Chem. Theory Comput.</span> 8, 4381-4392 (2012).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/JCTC_8_4381.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong> and John M. Herbert.
+                        <a href="http://pubs.acs.org/doi/abs/10.1021/ct300111m" target="_blank">Improving generalized Born models by exploiting connections to polarizable continuum models. I. An improved effective Coulomb operator.</a>
+                        <span class="italic">J. Chem. Theory Comput.</span> 8, 1999-2011 (2012).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/JCTC_8_1999.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong> and John M. Herbert.
+                        <a href="http://scitation.aip.org/content/aip/journal/jcp/134/20/10.1063/1.3592372" target="_blank">A Simple Polarizable Continuum Solvation Model for Electrolyte Solutions.</a>
+                        <span class="italic">J. Chem. Phys.</span> 134, 204110 (2011).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/JCP_134_204110.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong> and John M. Herbert.
+                        <a href="http://www.sciencedirect.com/science/article/pii/S0009261411005367" target="_blank">Symmetric Versus Asymmetric Discretization of the Integral Equations in Polarizable Continuum Solvation Models.</a>
+                        <span class="italic">Chem. Phys. Lett.</span> 509, 77 (2011).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/CPL_509_77.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong> and John M. Herbert.
+                        <a href="http://scitation.aip.org/content/aip/journal/jcp/134/11/10.1063/1.3567490" target="_blank">Response to “Comment on ‘A Smooth, Nonsingular, and Faithful Discretization Scheme for Polarizable Continuum Models: The Switching/Gaussian Approach."’.</a>
+                        <span class="italic">J. Chem. Phys.</span> 134, 117102 (2011).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/JCP_134_117102.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong> and John M. Herbert.
+                        <a href="http://scitation.aip.org/content/aip/journal/jcp/133/24/10.1063/1.3511297" target="_blank">A Smooth, Nonsingular, and Faithful Discretization Scheme for Polarizable Continuum Models: The Switching/Gaussian Approach.</a>
+                        <span class="italic">J. Chem. Phys.</span> 133, 244111 (2010).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/JCP_133_244111.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong> and John M. Herbert.
+                        <a href="http://pubs.acs.org/doi/abs/10.1021/jz900282c" target="_blank">Polarizable Continuum Reaction-ﬁeld Solvation Models Affording Smooth Potential Energy Surfaces.</a>
+                        <span class="italic">J. Phys. Chem. Lett.</span> 1, 556-561 (2010).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/JPCL_1_556.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong> and John M. Herbert.
+                        <a href="http://pubs.acs.org/doi/abs/10.1021/ja808998q" target="_blank">Both Intra- and Interstrand Charge-Transfer Excited States in Aqueous B-DNA Are Present at Energies Comparable to or Just Above the
+                            <span class="superscript">1</span>&pi;&pi;<span class="superscript">*</span>
+                            Excitonic Bright States.</a>
+                        <span class="italic">J. Am. Chem. Soc.</span> 131, 3913-3922 (2009).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/JACS_131_3913.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian W. Lange</strong>, Mary A. Rohrdanz, and John M. Herbert.
+                        <a href="http://pubs.acs.org/doi/abs/10.1021/jp802058k" target="_blank">Charge-Transfer Excited States in a <span>&pi;</span>-Stacked Adenine Dimer, As Predicted Using Long-Range-Corrected Time-Dependent Density Functional Theory.</a>
+                        <span class="italic">J. Phys. Chem. B</span> 112, 6304 (2008).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/JPCB_112_6304.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                    <li>
+                        <strong>Adrian Lange</strong> and John M. Herbert.
+                        <a href="http://pubs.acs.org/doi/abs/10.1021/ct700125v" target="_blank">Simple Methods to Reduce Charge-Transfer Contamination in Time-Dependent Density-Functional Calculations of Clusters and Liquids.</a>
+                        <span class="italic">J. Chem. Theory Comput.</span> 3, 1680 (2007).
+                        <!--<br>-->
+                        <!--<a href="http://adrianlange.com/file/papers/JCTC_3_1680.pdf" target="_blank">View PDF</a>-->
+                    </li>
+                </ol>
+            </div>
+
+        </article>
+
+    </div>
+</div>
+
+</body>
+</html>
