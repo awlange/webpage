@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------
 //  Color palette
 //
-$palette-white: #fefefe;
+$palette-white: #ffffff;
 $palette-blue: #3498DB;
 $palette-black: #34495E;
 $palette-dark-black: #2C3E50;
@@ -56,10 +56,6 @@ h1 {
   height: $icon-size;
   width: $icon-size;
   z-index: 1;
-}
-
-.center-text {
-  text-align: center;
 }
 
 .hidden { display: none; }
@@ -142,6 +138,30 @@ h1 {
 
 
 // ----------------------------------------------------------------------
+// Spinner lazy loading
+//
+
+.spinner {
+  display: block;
+  margin: 40px auto;
+  height: 80px;
+  width: 80px;
+}
+
+.thumbnail-wrapper {
+  width: 100%;
+}
+
+
+// ----------------------------------------------------------------------
+// Image sizes
+//
+
+#thumbnail-ade {
+  padding: 0 10%;
+}
+
+// ----------------------------------------------------------------------
 // Miscellaneous
 //
 
@@ -167,6 +187,35 @@ h2 {
   text-align: center;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
   height: 80px;
 }
+
+.spacer {
+  height: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+a, a:visited {
+  color: $palette-blue;
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: $palette-blue;
+  border-color: $palette-blue;
+  //text-transform: lowercase;
+}
+

@@ -9,9 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link href="css/main_new.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/skeleton.css" type="text/css">
+    <link rel="stylesheet" href="css/spinner.css" type="text/css">
+    <link rel="stylesheet" href="css/main_new.css" type="text/css"/>
 
     <link rel="icon" href="favicon.ico">
 </head>
@@ -39,22 +40,22 @@
         <div class="container">
             <div class="row">
                 <div class="two columns">
-                    <a class="navbar-link" href="#home"><p class="center-text">home</p></a>
+                    <a class="navbar-link" href="#home"><p class="text-center">home</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#science"><p class="center-text">science</p></a>
+                    <a class="navbar-link" href="#science"><p class="text-center">science</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#dev"><p class="center-text">development</p></a>
+                    <a class="navbar-link" href="#dev"><p class="text-center">development</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#resume"><p class="center-text">r&eacute;sum&eacute;</p></a>
+                    <a class="navbar-link" href="#resume"><p class="text-center">r&eacute;sum&eacute;</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#contact"><p class="center-text">contact</p></a>
+                    <a class="navbar-link" href="#contact"><p class="text-center">contact</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#blog"><p class="center-text">blog</p></a>
+                    <a class="navbar-link" href="#blog"><p class="text-center">blog</p></a>
                 </div>
             </div>
         </div>
@@ -119,7 +120,7 @@
 
             <div class="row">
                 <div class="offset-by-three two columns"><p class="text-center">neural networks</p></div>
-                <div class="two columns"><p class="text-center">excited electrons</p></div>
+                <div class="two columns"><a href="#science-electrons" class="text-center">excited electrons</a></div>
                 <div class="two columns"><p class="text-center">solvent modeling</p></div>
             </div>
             <div class="row">
@@ -127,13 +128,38 @@
                 <div class="three columns"><p class="text-center">quantum chemistry</p></div>
             </div>
 
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
             <div class="row">
                 <div class="twelve columns">
-                    <h4 class="section-title">science</h4>
-                    <div class="line"></div>
-                    <p>Exciting text!</p>
+                    <h4 id="science-electrons" class="section-title">excited electrons in DNA</h4>
+                    <div class="line"> </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="six columns">
+                    <div class="thumbnail-wrapper not-loaded">
+                        <div class="spinner"><div></div></div>
+                        <img src="" id="thumbnail-ade" alt="adenine dimer" class="u-full-width hidden"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        As part of my dissertation, I studied excited electrons in DNA using quantum chemistry simulations.
+                        The red-blue blob here is a depiction of how the three dimensional
+                        wave (or, orbital) of an electron spreads out between two adenine molecules when it is excited by
+                        ultraviolet light. The red and blue indicates the phase of the electron wave. The adenine
+                        dimer is somewhat hidden by the orbital, but the dimer is in the stacking geometry found in biological DNA
+                        and surrounded by water, serving as a model to understand electronic excitation in solvated DNA.
+                    </p>
+                    <a href="file/papers/JACS_131_3913.pdf" target="_blank" class="center">
+                        <button>read more</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
         </div>
     </section>
 

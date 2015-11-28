@@ -1,6 +1,6 @@
 header {
   background-color: #3498DB;
-  color: #fefefe;
+  color: #ffffff;
   padding-top: 80px;
   padding-bottom: 40px; }
 
@@ -24,9 +24,6 @@ h1 strong {
   width: 75px;
   z-index: 1; }
 
-.center-text {
-  text-align: center; }
-
 .hidden {
   display: none; }
 
@@ -36,15 +33,15 @@ h1 strong {
 .navbar-small {
   width: 100%;
   background: #3498DB;
-  color: #fefefe;
+  color: #ffffff;
   z-index: 99; }
 
 .navbar-link, .navbar-link:hover {
   text-decoration: none;
-  color: #fefefe; }
+  color: #ffffff; }
 
 .navbar-link.active {
-  color: #fefefe; }
+  color: #ffffff; }
 
 @media (min-width: 550px) {
   .navbar-small {
@@ -58,7 +55,7 @@ h1 strong {
     width: 100%;
     height: 5.5rem;
     background: #3498DB;
-    color: #fefefe;
+    color: #ffffff;
     z-index: 99; }
 
   .navbar-spacer {
@@ -78,10 +75,10 @@ h1 strong {
 
   .navbar-link a {
     text-decoration: none;
-    color: #fefefe; }
+    color: #ffffff; }
 
   .navbar-link.active, .navbar-link:hover {
-    color: #fefefe; }
+    color: #ffffff; }
 
   .has-docked-nav .navbar {
     position: fixed;
@@ -94,6 +91,18 @@ h1 strong {
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
     width: 80%; } }
+.spinner {
+  display: block;
+  margin: 40px auto;
+  height: 80px;
+  width: 80px; }
+
+.thumbnail-wrapper {
+  width: 100%; }
+
+#thumbnail-ade {
+  padding: 0 10%; }
+
 h2 {
   text-align: center;
   color: #3498DB;
@@ -112,7 +121,29 @@ h2 {
 .text-center {
   text-align: center; }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 footer {
   height: 80px; }
+
+.spacer {
+  height: 20px; }
+
+.hidden {
+  display: none; }
+
+a, a:visited {
+  color: #3498DB;
+  text-decoration: none; }
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3498DB;
+  border-color: #3498DB; }
 
 /*# sourceMappingURL=main_new.css.map */
