@@ -3,7 +3,8 @@
 //
 $palette-white: #ffffff;
 $palette-blue: #3498DB;
-$palette-black: #34495E;
+//$palette-black: #34495E;
+$palette-black: #222222;
 $palette-dark-black: #2C3E50;
 $palette-real-black: #0a0a0a;
 $palette-blue-transparent: rgba(52, 152, 219, 0.96);
@@ -151,12 +152,32 @@ h1 {
 
 
 // ----------------------------------------------------------------------
-// Image sizes
+// Special image sizes
 //
 
 #thumbnail-ade {
   padding: 0 10%;
 }
+
+
+// ----------------------------------------------------------------------
+// Footer
+//
+
+footer {
+  background-color: $palette-blue;
+  height: 100%;
+  margin-top: 40px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.footnote {
+  padding: 10px 0;
+  font-size: smaller;
+  color: $palette-white;
+}
+
 
 // ----------------------------------------------------------------------
 // Miscellaneous
@@ -190,11 +211,6 @@ h2 {
   margin-right: auto;
 }
 
-footer {
-  height: 80px;
-  margin: 100px 0;
-}
-
 .spacer {
   height: 20px;
 }
@@ -206,6 +222,9 @@ footer {
 a.blue, a.blue:visited, a.blue:active {
   color: $palette-blue;
   text-decoration: none;
+}
+a.blue:hover {
+  color: $palette-black;
 }
 
 button {
@@ -224,7 +243,4 @@ button {
 .italic { font-style: italic; }
 .justify { text-align: justify; }
 
-.footnote {
-  padding: 10px 0;
-  font-size: smaller;
-}
+

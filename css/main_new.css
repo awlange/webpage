@@ -99,6 +99,18 @@ h1 strong {
 #thumbnail-ade {
   padding: 0 10%; }
 
+footer {
+  background-color: #3498DB;
+  height: 100%;
+  margin-top: 40px;
+  padding-top: 100px;
+  padding-bottom: 60px; }
+
+.footnote {
+  padding: 10px 0;
+  font-size: smaller;
+  color: #ffffff; }
+
 h2 {
   text-align: center;
   color: #3498DB;
@@ -122,10 +134,6 @@ h2 {
   margin-left: auto;
   margin-right: auto; }
 
-footer {
-  height: 80px;
-  margin: 100px 0; }
-
 .spacer {
   height: 20px; }
 
@@ -135,6 +143,9 @@ footer {
 a.blue, a.blue:visited, a.blue:active {
   color: #3498DB;
   text-decoration: none; }
+
+a.blue:hover {
+  color: #222222; }
 
 button {
   display: block;
@@ -153,9 +164,5 @@ button {
 
 .justify {
   text-align: justify; }
-
-.footnote {
-  padding: 10px 0;
-  font-size: smaller; }
 
 /*# sourceMappingURL=main_new.css.map */
