@@ -45,7 +45,7 @@
                     <a class="navbar-link" href="#science"><p class="center-text">science</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#dev"><p class="center-text">dev</p></a>
+                    <a class="navbar-link" href="#dev"><p class="center-text">development</p></a>
                 </div>
                 <div class="two columns">
                     <a class="navbar-link" href="#resume"><p class="center-text">r&eacute;sum&eacute;</p></a>
@@ -65,29 +65,32 @@
         <div class="container">
             <ul class="navbar-list">
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#home"><p>home</p></a>
+                    <a class="navbar-link" href="#content-home">home</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#science"><p>science</p></a>
+                    <a class="navbar-link" href="#content-science">science</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#dev"><p>dev</p></a>
+                    <a class="navbar-link" href="#content-development">development</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#resume"><p>r&eacute;sum&eacute;</p></a>
+                    <a class="navbar-link" href="#content-resume">r&eacute;sum&eacute;</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#contact"><p>contact</p></a>
+                    <a class="navbar-link" href="#content-contact">contact</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#blog"><p>blog</p></a>
+                    <a class="navbar-link" href="#blog">blog</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <section id="home">
+    <!-- Content sections -->
+    <section id="content-home">
         <div class="container">
+            <h2>home</h2>
+
             <div class="row">
                 <div class="twelve columns">
                     <h4 class="section-title">about me</h4>
@@ -99,20 +102,31 @@
                     </p>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
             <div class="row">
                 <div class="twelve columns">
                     <h4 class="section-title">latest blog entries</h4>
                     <div class="line"></div>
+                    ((SUMMARIES))
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="science">
+    <section id="content-science">
         <div class="container">
+            <h2>science</h2>
+
+            <div class="row">
+                <div class="offset-by-three two columns"><p class="text-center">neural networks</p></div>
+                <div class="two columns"><p class="text-center">excited electrons</p></div>
+                <div class="two columns"><p class="text-center">solvent modeling</p></div>
+            </div>
+            <div class="row">
+                <div class="offset-by-three three columns"><p class="text-center">reactive dynamics</p></div>
+                <div class="three columns"><p class="text-center">quantum chemistry</p></div>
+            </div>
+
             <div class="row">
                 <div class="twelve columns">
                     <h4 class="section-title">science</h4>
@@ -123,8 +137,20 @@
         </div>
     </section>
 
-    <section id="dev">
+    <section id="content-development">
         <div class="container">
+            <h2>development</h2>
+
+            <div class="row">
+                <div class="offset-by-three two columns"><p class="text-center">brainsparks &amp; calrissian</p></div>
+                <div class="two columns"><p class="text-center">parallel math library</p></div>
+                <div class="two columns"><p class="text-center">data network modeling</p></div>
+            </div>
+            <div class="row">
+                <div class="offset-by-two four columns"><p class="text-center">genetic algorithm load balancer</p></div>
+                <div class="four columns"><p class="text-center">massively parallel computing</p></div>
+            </div>
+
             <div class="row">
                 <div class="twelve columns">
                     <h4 class="section-title">development</h4>
@@ -135,8 +161,10 @@
         </div>
     </section>
 
-    <section id="resume">
+    <section id="content-resume">
         <div class="container">
+            <h2>r&eacute;sum&eacute;</h2>
+
             <div class="row">
                 <div class="twelve columns">
                     <h4 class="section-title">r&eacute;sum&eacute;</h4>
@@ -147,8 +175,10 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="content-contact">
         <div class="container">
+            <h2>contact</h2>
+
             <div class="row">
                 <div class="twelve columns">
                     <h4 class="section-title">contact</h4>
@@ -159,9 +189,11 @@
         </div>
     </section>
 
+    <footer></footer>
+
     <!-- Scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>');</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>');</script>
     <script src="js/site.js"></script>
 </body>
 </html>
