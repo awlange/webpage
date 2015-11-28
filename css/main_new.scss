@@ -14,7 +14,7 @@ $palette-gray: #BDC3C7;
 // ----------------------------------------------------------------------
 //  Sizes
 //
-$icon-size: 75px;
+$icon-size: 50px;
 
 
 // ----------------------------------------------------------------------
@@ -43,7 +43,7 @@ h1 {
 }
 
 .icon-wrapper {
-  width: 20%;
+  //width: 20%;
   margin: 0 auto;
   cursor: pointer;
   h5 {
@@ -58,7 +58,6 @@ h1 {
   z-index: 1;
 }
 
-.hidden { display: none; }
 
 // Borrowed from Skeleton page
 
@@ -80,7 +79,6 @@ h1 {
   color: $palette-white;
 }
 
-// 750px
 @media (min-width: 550px) {
   .navbar-small {
     display: none;
@@ -132,7 +130,6 @@ h1 {
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
     width: 80%;
-    //width: 100%;
   }
 }
 
@@ -195,6 +192,7 @@ h2 {
 
 footer {
   height: 80px;
+  margin: 100px 0;
 }
 
 .spacer {
@@ -205,7 +203,7 @@ footer {
   display: none;
 }
 
-a, a:visited {
+a.blue, a.blue:visited, a.blue:active {
   color: $palette-blue;
   text-decoration: none;
 }
@@ -216,6 +214,17 @@ button {
   margin-right: auto;
   color: $palette-blue;
   border-color: $palette-blue;
-  //text-transform: lowercase;
+  text-transform: lowercase;
 }
 
+.underline {
+  text-decoration: underline;
+  color: $palette-blue;
+}
+.italic { font-style: italic; }
+.justify { text-align: justify; }
+
+.footnote {
+  padding: 10px 0;
+  font-size: smaller;
+}

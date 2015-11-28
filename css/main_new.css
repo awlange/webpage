@@ -12,20 +12,16 @@ h1 strong {
   background-color: #3498DB; }
 
 .icon-wrapper {
-  width: 20%;
   margin: 0 auto;
   cursor: pointer; }
   .icon-wrapper h5 {
-    width: 75px;
+    width: 50px;
     text-align: center; }
 
 .icon {
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
   z-index: 1; }
-
-.hidden {
-  display: none; }
 
 .navbar {
   display: none; }
@@ -127,7 +123,8 @@ h2 {
   margin-right: auto; }
 
 footer {
-  height: 80px; }
+  height: 80px;
+  margin: 100px 0; }
 
 .spacer {
   height: 20px; }
@@ -135,7 +132,7 @@ footer {
 .hidden {
   display: none; }
 
-a, a:visited {
+a.blue, a.blue:visited, a.blue:active {
   color: #3498DB;
   text-decoration: none; }
 
@@ -144,6 +141,21 @@ button {
   margin-left: auto;
   margin-right: auto;
   color: #3498DB;
-  border-color: #3498DB; }
+  border-color: #3498DB;
+  text-transform: lowercase; }
+
+.underline {
+  text-decoration: underline;
+  color: #3498DB; }
+
+.italic {
+  font-style: italic; }
+
+.justify {
+  text-align: justify; }
+
+.footnote {
+  padding: 10px 0;
+  font-size: smaller; }
 
 /*# sourceMappingURL=main_new.css.map */
