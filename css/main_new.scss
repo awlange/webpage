@@ -9,3 +9,239 @@ $palette-real-black: #0a0a0a;
 $palette-blue-transparent: rgba(52, 152, 219, 0.96);
 $palette-black-transparent: rgba(11, 11, 11, 0.8);
 $palette-gray: #BDC3C7;
+
+
+// ----------------------------------------------------------------------
+//  Sizes
+//
+$icon-size: 75px;
+
+
+// ----------------------------------------------------------------------
+//  Header
+//
+header {
+  background-color: $palette-blue;
+  color: $palette-white;
+  padding-top: 100px;
+}
+
+h1 {
+  strong {
+    font-size: 50%;
+    font-weight: normal;
+  }
+}
+
+
+// ----------------------------------------------------------------------
+// Nav icons
+//
+nav {
+  padding-top: 40px;
+}
+
+#icons {
+  background-color: $palette-blue;
+}
+
+.icon-wrapper {
+  width: 20%;
+  margin: 0 auto;
+  cursor: pointer;
+  h5 {
+    width: $icon-size;
+    text-align: center;
+  }
+}
+
+.icon {
+  height: $icon-size;
+  width: $icon-size;
+  z-index: 1;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.hidden { display: none; }
+
+// Borrowed from Skeleton page
+
+.navbar {
+  display: none;
+}
+
+.navbar-small {
+  width: 100%;
+  background: $palette-blue;
+  color: $palette-white;
+  z-index: 99;
+}
+.navbar-link, .navbar-link:hover {
+  text-decoration: none;
+  color: $palette-white;
+}
+.navbar-link.active {
+  color: $palette-white;
+}
+
+// 750px
+@media (min-width: 550px) {
+  .navbar-small {
+    display: none;
+  }
+}
+
+/* Larger than phone */
+@media (min-width: 550px) {
+  /* Navbar */
+  //.navbar {
+  //  border-top-width: 0;
+  //}
+  .navbar,
+  .navbar-spacer {
+    display: block;
+    width: 100%;
+    height: 5.5rem;
+    background: $palette-blue;
+    color: $palette-white;
+    z-index: 99;
+  }
+  .navbar-spacer {
+    display: none;
+  }
+  //.navbar > .container {
+  //  width: 100%;
+  //}
+  .navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  .navbar-item {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+    a h5, a p {
+      padding-right: 20px;
+    }
+  }
+  .navbar-link {
+    text-decoration: none;
+    color: $palette-white;
+  }
+  .navbar-link.active, .navbar-link:hover {
+    color: $palette-white;
+  }
+  .has-docked-nav .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .has-docked-nav .navbar-spacer {
+    display: block;
+  }
+  /* Re-overiding the width 100% declaration to match size of % based container */
+  .has-docked-nav .navbar > .container {
+    width: 80%;
+    //width: 100%;
+  }
+
+  /* Popover */
+  .popover.open {
+    display: block;
+  }
+  .popover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    top: 92%;
+    left: -50%;
+    -webkit-filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
+    -moz-filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
+  }
+  .popover-item:first-child .popover-link:after,
+  .popover-item:first-child .popover-link:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .popover-item:first-child .popover-link:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+  .popover-item:first-child .popover-link:before {
+    border-color: rgba(238, 238, 238, 0);
+    border-bottom-color: #eee;
+    border-width: 11px;
+    margin-left: -11px;
+  }
+  .popover-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .popover-item {
+    padding: 0;
+    margin: 0;
+  }
+  .popover-link {
+    position: relative;
+    color: #222;
+    display: block;
+    padding: 8px 20px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.0rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: .1rem;
+  }
+  .popover-item:first-child .popover-link {
+    border-radius: 4px 4px 0 0;
+  }
+  .popover-item:last-child .popover-link {
+    border-radius: 0 0 4px 4px;
+    border-bottom-width: 0;
+  }
+  .popover-link:hover {
+    color: #fff;
+    background: #33C3F0;
+  }
+  .popover-link:hover,
+  .popover-item:first-child .popover-link:hover:after {
+    border-bottom-color: #33C3F0;
+  }
+}
+
+
+// ----------------------------------------------------------------------
+// Miscellaneous
+//
+
+.section-title {
+  color: $palette-blue;
+  margin-top: 60px;
+}
+
+.line {
+  margin: -20px 0 20px 0;
+  height: 1px;
+  width: 100%;
+  background-color: $palette-blue;
+}
+
