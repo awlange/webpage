@@ -211,6 +211,67 @@ footer {
 
 
 // ----------------------------------------------------------------------
+// Links
+//
+
+a.blue, a.blue:visited, a.blue:active {
+  color: $palette-blue;
+  text-decoration: none;
+}
+a.blue:hover {
+  color: $palette-black;
+}
+
+.link, .link:visited, .link:active {
+  color: $palette-blue;
+  text-decoration: underline;
+}
+.link:hover {
+  text-decoration: underline;
+  color: $palette-black;
+}
+
+article p {
+  a, a:visited, a:active {
+    color: $palette-blue;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: $palette-black;
+    text-decoration: underline;
+  }
+}
+
+
+// ----------------------------------------------------------------------
+// Buttons
+//
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: $palette-blue;
+  border-color: $palette-blue;
+  //text-transform: lowercase;
+}
+
+button.small-button {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0;
+  float: none;
+  height: 20px;
+  line-height: 20px;
+}
+
+button.blog-button {
+  //margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+
+// ----------------------------------------------------------------------
 // Miscellaneous
 //
 
@@ -223,7 +284,6 @@ h2 {
 .section-title {
   color: $palette-blue;
   margin-top: 40px;
-  //text-align: center;
 }
 
 .line {
@@ -253,52 +313,6 @@ h2 {
 
 .hidden {
   display: none;
-}
-
-a.blue, a.blue:visited, a.blue:active {
-  color: $palette-blue;
-  text-decoration: none;
-}
-a.blue:hover {
-  color: $palette-black;
-}
-
-.link, .link:visited, .link:active {
-  color: $palette-blue;
-  text-decoration: underline;
-}
-.link:hover {
-  text-decoration: underline;
-  color: $palette-black;
-}
-
-//ol li {
-//  a, a:visited, a:active {
-//    color: $palette-blue;
-//    text-decoration: underline;
-//  }
-//  a:hover {
-//    text-decoration: underline;
-//    color: $palette-black;
-//  }
-//}
-
-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color: $palette-blue;
-  border-color: $palette-blue;
-  //text-transform: lowercase;
-}
-
-button.small-button {
-  display: inline-block;
-  padding: 0 10px;
-  margin: 0;
-  float: none;
-  height: 20px;
-  line-height: 20px;
 }
 
 .underline {

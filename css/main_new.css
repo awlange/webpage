@@ -135,6 +135,46 @@ footer {
   font-size: smaller;
   color: #ffffff; }
 
+a.blue, a.blue:visited, a.blue:active {
+  color: #3498DB;
+  text-decoration: none; }
+
+a.blue:hover {
+  color: #222222; }
+
+.link, .link:visited, .link:active {
+  color: #3498DB;
+  text-decoration: underline; }
+
+.link:hover {
+  text-decoration: underline;
+  color: #222222; }
+
+article p a, article p a:visited, article p a:active {
+  color: #3498DB;
+  text-decoration: underline; }
+article p a:hover {
+  color: #222222;
+  text-decoration: underline; }
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3498DB;
+  border-color: #3498DB; }
+
+button.small-button {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0;
+  float: none;
+  height: 20px;
+  line-height: 20px; }
+
+button.blog-button {
+  margin-bottom: 50px; }
+
 h2 {
   text-align: center;
   color: #3498DB;
@@ -166,36 +206,6 @@ h2 {
 
 .hidden {
   display: none; }
-
-a.blue, a.blue:visited, a.blue:active {
-  color: #3498DB;
-  text-decoration: none; }
-
-a.blue:hover {
-  color: #222222; }
-
-.link, .link:visited, .link:active {
-  color: #3498DB;
-  text-decoration: underline; }
-
-.link:hover {
-  text-decoration: underline;
-  color: #222222; }
-
-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color: #3498DB;
-  border-color: #3498DB; }
-
-button.small-button {
-  display: inline-block;
-  padding: 0 10px;
-  margin: 0;
-  float: none;
-  height: 20px;
-  line-height: 20px; }
 
 .underline {
   text-decoration: underline;
