@@ -79,8 +79,6 @@ $(document).ready(function() {
             && rect.top <= (window.innerHeight || document.documentElement.clientHeight);
     }
 
-
-
     init();
 
 });

@@ -263,6 +263,26 @@ a.blue:hover {
   color: $palette-black;
 }
 
+.link, .link:visited, .link:active {
+  color: $palette-blue;
+  text-decoration: underline;
+}
+.link:hover {
+  text-decoration: underline;
+  color: $palette-black;
+}
+
+ol li {
+  a, a:visited, a:active, link, link:visited, link:active {
+    color: $palette-blue;
+    text-decoration: underline;
+  }
+  a:hover, link:hover {
+    text-decoration: underline;
+    color: $palette-black;
+  }
+}
+
 button {
   display: block;
   margin-left: auto;
