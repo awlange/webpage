@@ -1,5 +1,10 @@
 var images = {
-  "thumbnail-ade": "img/ade2orbital.png"
+    "thumbnail-ade": "img/ade2orbital.png",
+    "thumbnail-DESMO": "img/eqDESMOfull.png",
+    "thumbnail-FMO": "img/FMO-MS-RMD_TOC.png",
+    "thumbnail-qchem": "img/Qchem-logo.gif",
+    "thumbnail-mathworkers": "img/mathworkers.png",
+    "thumbnail-cassandra": "img/cassandra.png"
 };
 
 $(document).ready(function() {
@@ -21,11 +26,12 @@ $(document).ready(function() {
         $(document).off("scroll");
         var target = this.hash,
             menu = target;
-        $target = $(target);
+        var $target = $(target);
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - 80
-        }, 800, 'swing', function () {
+        }, 400,  // scroll time
+            'swing', function() {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
@@ -61,10 +67,8 @@ $(document).ready(function() {
                     $img.attr("src", images[$img.attr("id")]).fadeIn("slow").removeClass("hidden");
                     $this.removeClass("not-loaded");
                 }
-            }, 500);
+            }, 500); // impression time
         });
-
-
     }
 
     function elementInViewport(el) {
@@ -72,6 +76,8 @@ $(document).ready(function() {
         return rect.top >= 0 && rect.left >= 0
             && rect.top <= (window.innerHeight || document.documentElement.clientHeight);
     }
+
+
 
     init();
 

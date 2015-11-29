@@ -23,6 +23,13 @@ h1 strong {
   width: 50px;
   z-index: 1; }
 
+.nav-wrapper {
+  width: 100%;
+  text-align: center; }
+
+.nav-wrapper ul {
+  display: inline-block; }
+
 .navbar {
   display: none; }
 
@@ -96,8 +103,17 @@ h1 strong {
 .thumbnail-wrapper {
   width: 100%; }
 
+.thumbnail {
+  margin-top: 5%;
+  padding: 25% 0; }
+
 #thumbnail-ade {
-  padding: 0 10%; }
+  margin-top: 5%;
+  padding: 0 15%; }
+
+#thumbnail-qchem, #thumbnail-cassandra {
+  margin-top: 5%;
+  padding: 5% 0; }
 
 footer {
   background-color: #3498DB;
@@ -114,11 +130,11 @@ footer {
 h2 {
   text-align: center;
   color: #3498DB;
-  margin-top: 60px; }
+  margin-top: 100px; }
 
 .section-title {
   color: #3498DB;
-  margin-top: 20px; }
+  margin-top: 40px; }
 
 .line {
   margin: -20px 0 20px 0;
@@ -137,6 +153,9 @@ h2 {
 .spacer {
   height: 20px; }
 
+.spacer-big {
+  height: 100px; }
+
 .hidden {
   display: none; }
 
@@ -152,8 +171,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   color: #3498DB;
-  border-color: #3498DB;
-  text-transform: lowercase; }
+  border-color: #3498DB; }
 
 .underline {
   text-decoration: underline;

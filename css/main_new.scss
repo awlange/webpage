@@ -59,6 +59,15 @@ h1 {
   z-index: 1;
 }
 
+.nav-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-wrapper ul {
+  display: inline-block;
+}
+
 
 // Borrowed from Skeleton page
 
@@ -155,9 +164,21 @@ h1 {
 // Special image sizes
 //
 
-#thumbnail-ade {
-  padding: 0 10%;
+.thumbnail {
+  margin-top: 5%;
+  padding: 25% 0;
 }
+
+#thumbnail-ade {
+  margin-top: 5%;
+  padding: 0 15%;
+}
+
+#thumbnail-qchem, #thumbnail-cassandra {
+  margin-top: 5%;
+  padding: 5% 0;
+}
+
 
 
 // ----------------------------------------------------------------------
@@ -186,12 +207,13 @@ footer {
 h2 {
   text-align: center;
   color: $palette-blue;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .section-title {
   color: $palette-blue;
-  margin-top: 20px;
+  margin-top: 40px;
+  //text-align: center;
 }
 
 .line {
@@ -215,6 +237,10 @@ h2 {
   height: 20px;
 }
 
+.spacer-big {
+  height: 100px;
+}
+
 .hidden {
   display: none;
 }
@@ -233,7 +259,7 @@ button {
   margin-right: auto;
   color: $palette-blue;
   border-color: $palette-blue;
-  text-transform: lowercase;
+  //text-transform: lowercase;
 }
 
 .underline {

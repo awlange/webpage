@@ -22,12 +22,12 @@
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
-                    <h1>Adrian Lange</h1>
+                    <h1 class="text-center">Adrian Lange</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="twelve columns">
-                    <h5>scientist + developer</h5>
+                    <h5 class="text-center">scientist + developer</h5>
                 </div>
             </div>
         </div>
@@ -43,10 +43,10 @@
                     <a class="navbar-link" href="#home"><p class="text-center">home</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#science"><p class="text-center">science</p></a>
+                    <a class="navbar-link" href="#dev"><p class="text-center">development</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#dev"><p class="text-center">development</p></a>
+                    <a class="navbar-link" href="#science"><p class="text-center">science</p></a>
                 </div>
                 <div class="two columns">
                     <a class="navbar-link" href="#resume"><p class="text-center">r&eacute;sum&eacute;</p></a>
@@ -64,15 +64,16 @@
     <!-- Bigger screen nav -->
     <nav class="navbar">
         <div class="container">
-            <ul class="navbar-list">
+            <div class="nav-wrapper">
+            <ul class="navbar-list center">
                 <li class="navbar-item">
                     <a class="navbar-link" href="#content-home">home</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#content-science">science</a>
+                    <a class="navbar-link" href="#content-development">development</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#content-development">development</a>
+                    <a class="navbar-link" href="#content-science">science</a>
                 </li>
                 <li class="navbar-item">
                     <a class="navbar-link" href="#content-resume">r&eacute;sum&eacute;</a>
@@ -84,6 +85,7 @@
                     <a class="navbar-link" href="#blog">blog</a>
                 </li>
             </ul>
+            </div>
         </div>
     </nav>
 
@@ -91,15 +93,22 @@
     <section id="content-home">
         <div class="container">
             <h2>home</h2>
+            <!--<div class="line"></div>-->
 
             <div class="row">
                 <div class="twelve columns">
                     <h4 class="section-title">about me</h4>
                     <div class="line"></div>
-                    <p>
-                        I am a data engineer/scientist with a Ph.D. in computational quantum chemistry.
+                    <p class="justify">
+                        I am a data engineer/scientist with a Ph.D. in computational quantum chemistry,
                         I enjoy machine learning, parallel computing, web programming, physics and chemistry,
                         and all things data science.
+                    </p>
+                    <p class="justify">
+                        I work at Apple on the data side of a variety of famous products, but my background is filled
+                        with many other interesting computational and scientific research endeavors that are just a
+                        little less well-known. I also maintain a few hobby coding projects that I work on
+                        whenever I find some spare time and energy.
                     </p>
                 </div>
             </div>
@@ -114,6 +123,141 @@
         </div>
     </section>
 
+    <section id="content-development">
+        <div class="container">
+            <h2>development</h2>
+
+            <div class="row">
+                <div class="offset-by-two three columns"><a href="#development-brainsparks" class="text-center blue">brainsparks &amp; calrissian</a></div>
+                <div class="three columns"><a href="#development-mathworkers" class="text-center blue">parallel math library</a></div>
+                <div class="three columns"><a href="#development-cassandra" class="text-center blue">data network modeling</a></div>
+            </div>
+            <div class="row">
+                <div class="offset-by-three three columns"><a href="#development-genetic" class="text-center blue">genetic algorithm</a></div>
+                <div class="three columns"><a href="#development-scaling" class="text-center blue">massively parallel computing</a></div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 id="development-brainsparks" class="section-title">brainsparks &amp; calrissian</h4>
+                    <div class="line"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <p>placeholder</p>
+                    <!--<div class="thumbnail-wrapper not-loaded">-->
+                    <!--<div class="spinner"><div></div></div>-->
+                    <!--<img src="" id="thumbnail-ade" alt="adenine dimer" class="u-full-width hidden"/>-->
+                    <!--</div>-->
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        Coming soon!
+                    </p>
+                    <a href="#" target="_blank" class="center blue">
+                        <button>read more</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 id="development-mathworkers" class="section-title">parallel JavaScript math library</h4>
+                    <div class="line"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <div class="thumbnail-wrapper not-loaded">
+                        <div class="spinner"><div></div></div>
+                        <img src="" id="thumbnail-mathworkers" alt="mathworkers" class="u-full-width hidden thumbnail"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        I am writing a parallel JavaScript math and statistics library built around HTML5
+                        Web Workers and the Node.js cluster library.
+                        The project is called MathWorkersJS, and it's open-source.
+                        MathWorkersJS is my personal hobby project I'm doing for fun but also to potentially
+                        make a useful tool for the web community.
+                    </p>
+                    <p class="justify">
+                        The motivation behind MathWorkersJS is to introduce some degree of
+                        multi-core parallelism into JavaScript mathematical computations, whether
+                        they are client-side/in-browser or server-side.
+                        While other good JavaScript math libraries exist, none (as far as I know)
+                        seem to take advantage of the fairly new feature of HTML5 to
+                        spawn Web Workers to help with CPU intensive computations.
+                        There seems to be a similar void for parallelism in Node.js with these libraries, too.
+                        That's where MathWorkersJS comes in.
+                    </p>
+                    <p class="justify">
+                        So far in tests,
+                        I have been able to demonstrate 2-3x speedups with 4 workers for some common
+                        linear algebra operations, like matrix-matrix multiplies.
+                        More to come in the future!
+                    </p>
+                    <p>
+                        JavaScript, HTML5, Node.js
+                    </p>
+                    <a href="https://github.com/awlange/mathworkers" target="_blank" class="center blue">
+                        <button>view on GitHub</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 id="development-cassandra" class="section-title">data network modeling with Cassandra</h4>
+                    <div class="line"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <div class="thumbnail-wrapper not-loaded">
+                        <div class="spinner"><div></div></div>
+                        <img src="" id="thumbnail-cassandra" alt="cassandra" class="u-full-width hidden thumbnail"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        At Signal, I developed a back-end Java web app that interfaces with
+                        a large Cassandra database which contains billions of records related
+                        to clients' user data. Cassandra is usually conceptualized as one or more
+                        rings of nodes (drawn here in red), and each node is responsible for managing
+                        a portion of the full data stored on disk. We used multiple rings to
+                        support multi-region availability of our data.
+                    </p>
+                    <p class="justify">
+                        I played a significant role in developing some of the data models
+                        as well as providing data analysis using Cassandra.
+                        For instance, the data arrives to the system from various sources
+                        (<span class="italic">e.g.</span>, web, mobile, offline), and
+                        clients would ideally like a complete view of all these channels in real time.
+                        The solution I helped to create is a dynamic network of client user data
+                        (drawn here in blue and green)
+                        stored on Cassandra via the Java web app. This feature is the engine
+                        behind much of the new product development at Signal.
+                    </p>
+                    <p>
+                        Java, Python, Cassandra, R
+                    </p>
+                    <a href="http://www.signal.co/products/fuse/" target="_blank" class="center blue">
+                        <button>read more</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section id="content-science">
         <div class="container">
             <h2>science</h2>
@@ -124,8 +268,34 @@
                 <div class="two columns"><a href="#science-solvent" class="text-center blue"><p>solvent modeling</p></a></div>
             </div>
             <div class="row">
-                <div class="offset-by-three three columns"><a href="#science-dynamics" class="text-center blue"><p>reactive dynamics</p></a></div>
-                <div class="three columns"><a href="#science-quantum" class="text-center blue"><p>quantum chemistry</p></a></div>
+                <div class="offset-by-three three columns"><a href="#science-dynamics" class="text-center blue"><p>reactive molecular dynamics</p></a></div>
+                <div class="three columns"><a href="#science-quantum" class="text-center blue"><p>quantum chemistry software</p></a></div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 id="science-neural" class="section-title">experimental neural networks</h4>
+                    <div class="line"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <p>placeholder</p>
+                    <!--<div class="thumbnail-wrapper not-loaded">-->
+                    <!--<div class="spinner"><div></div></div>-->
+                    <!--<img src="" id="thumbnail-ade" alt="adenine dimer" class="u-full-width hidden"/>-->
+                    <!--</div>-->
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        Coming soon!
+                    </p>
+                    <a href="#" target="_blank" class="center blue">
+                        <button>read more</button>
+                    </a>
+                </div>
             </div>
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -146,8 +316,10 @@
                 <div class="six columns">
                     <p class="justify">
                         As part of my dissertation, I studied excited electrons in DNA using quantum chemistry simulations.
+                    </p>
+                    <p class="justify">
                         The red-blue blob here is a depiction of how the three dimensional
-                        wave (or, orbital) of an electron spreads out between two adenine molecules when it is excited by
+                        wave of an excited electron (or, exciton) spreads out between two adenine molecules when it is excited by
                         ultraviolet light. The red and blue indicates the phase of the electron wave. The adenine
                         dimer is somewhat hidden by the orbital, but the dimer is in the stacking geometry found in biological DNA
                         and surrounded by water, serving as a model to understand electronic excitation in solvated DNA.
@@ -160,30 +332,107 @@
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-        </div>
-    </section>
-
-    <section id="content-development">
-        <div class="container">
-            <h2>development</h2>
-
             <div class="row">
-                <div class="offset-by-three two columns"><p class="text-center">brainsparks &amp; calrissian</p></div>
-                <div class="two columns"><p class="text-center">parallel math library</p></div>
-                <div class="two columns"><p class="text-center">data network modeling</p></div>
+                <div class="twelve columns">
+                    <h4 id="science-solvent" class="section-title">solvent electrostatics modeling</h4>
+                    <div class="line"> </div>
+                </div>
             </div>
             <div class="row">
-                <div class="offset-by-two four columns"><p class="text-center">genetic algorithm load balancer</p></div>
-                <div class="four columns"><p class="text-center">massively parallel computing</p></div>
+                <div class="six columns">
+                    <div class="thumbnail-wrapper not-loaded">
+                        <div class="spinner"><div></div></div>
+                        <img src="" id="thumbnail-DESMO" alt="DESMO" class="u-full-width hidden thumbnail"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        This is an equation I discovered
+                        to model continuum electrostatics of salty solvents characterized by a Debye screening length
+                        and a dielectric constant.
+                    </p>
+                    <p class="justify">
+                        I called the equation the "Debye-H&uuml;ckel-like Screening Model" (DESMO).
+                        It generalizes the classic Debye-H&uuml;ckel model&mdash;a point charge centered in a spherical
+                        solute cavity surrounded by solvent continuum&mdash;to arbitrary charge densities and solute cavity shapes.
+                        DESMO also reduces to the more familiar "Conductor-like Screening Model" (COSMO) in the limit of zero
+                        salt concentration.
+                    </p>
+                    <p class="justify">
+                        DESMO is a simple, fast approximation to much more complicated models.
+                    </p>
+                    <a href="file/papers/JCP_134_204110.pdf" target="_blank" class="center blue">
+                        <button>read more</button>
+                    </a>
+                </div>
             </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
             <div class="row">
                 <div class="twelve columns">
-                    <h4 class="section-title">development</h4>
-                    <div class="line"></div>
-                    <p>Exciting text!</p>
+                    <h4 id="science-dynamics" class="section-title">reactive molecular dynamics</h4>
+                    <div class="line"> </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="six columns">
+                    <div class="thumbnail-wrapper not-loaded">
+                        <div class="spinner"><div></div></div>
+                        <img src="" id="thumbnail-FMO" alt="FMO-MS-RMD" class="u-full-width hidden thumbnail"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        This is a schematic of the Fragment Molecular Orbital Multi-state Reactive Molecular Dynamics (FMO-MS-RMD) model.
+                        It's a clever idea I had to combine Fragment Molecular Orbital (FMO) theory with
+                        Prof. Greg Voth's Multi-state Empirical Valence Bond (MS-EVB) theory.
+                        FMO divides a molecular system into some
+                        set of smaller fragments, but such division can be ambiguous in chemically reactive systems.
+                        MS-EVB theory deals exactly with that issue by assuming a linear combination of reactive states,
+                        like what is shown in the schematic here.
+                    </p>
+                    <p class="justify">
+                        Combining MS-EVB and FMO together results in a new powerful
+                        model, FMO-MS-RMD, which incorporates quantum electronic structure theory into the MS-EVB approach.
+                        Futhermore, because the states and the molecular fragments can be calculated independently,
+                        FMO-MS-RMD can be computed in parallel to achieve considerable speedups.
+                    </p>
+                    <a href="file/papers/JCTC_9_4018.pdf" target="_blank" class="center blue">
+                        <button>read more</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 id="science-quantum" class="section-title">reactive molecular dynamics</h4>
+                    <div class="line"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <div class="thumbnail-wrapper not-loaded">
+                        <div class="spinner"><div></div></div>
+                        <img src="" id="thumbnail-qchem" alt="qchem" class="u-full-width hidden thumbnail"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        I am a contributing author for Q&#8209;Chem, a popular quantum chemistry software package
+                        used for carrying out molecular simulations.
+                        I was the main author of the polarizable continuum model code and also of the internal QM/MM code.
+                        I also implemented a handful of other unique features built into developer versions of Q-Chem,
+                        such as a parallel adaptive fast multipole method code and a Connolly surface generator.
+                    </p>
+                    <a href="http://www.q-chem.com/qchem-website/about-qchem4.html" target="_blank" class="center blue">
+                        <button>read more</button>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -212,6 +461,8 @@
                     <p class="text-center"><a href="https://github.com/awlange" target="_blank" class="blue">GitHub</a></p>
                 </div>
             </div>
+
+            <div class="spacer-big"></div>
         </div>
     </section>
 
