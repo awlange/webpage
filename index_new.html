@@ -40,19 +40,19 @@
         <div class="container">
             <div class="row">
                 <div class="two columns">
-                    <a class="navbar-link" href="#home"><p class="text-center">home</p></a>
+                    <a class="navbar-link" href="#content-home"><p class="text-center">home</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#dev"><p class="text-center">development</p></a>
+                    <a class="navbar-link" href="#content-development"><p class="text-center">development</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#science"><p class="text-center">science</p></a>
+                    <a class="navbar-link" href="#content-science"><p class="text-center">science</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#resume"><p class="text-center">r&eacute;sum&eacute;</p></a>
+                    <a class="navbar-link" href="#content-resume"><p class="text-center">r&eacute;sum&eacute;</p></a>
                 </div>
                 <div class="two columns">
-                    <a class="navbar-link" href="#contact"><p class="text-center">contact</p></a>
+                    <a class="navbar-link" href="#content-contact"><p class="text-center">contact</p></a>
                 </div>
                 <div class="two columns">
                     <a class="navbar-link" href="#blog"><p class="text-center">blog</p></a>
@@ -93,7 +93,6 @@
     <section id="content-home">
         <div class="container">
             <h2>home</h2>
-            <!--<div class="line"></div>-->
 
             <div class="row">
                 <div class="twelve columns">
@@ -128,13 +127,13 @@
             <h2>development</h2>
 
             <div class="row">
-                <div class="offset-by-two three columns"><a href="#development-brainsparks" class="text-center blue">brainsparks &amp; calrissian</a></div>
-                <div class="three columns"><a href="#development-mathworkers" class="text-center blue">parallel math library</a></div>
-                <div class="three columns"><a href="#development-cassandra" class="text-center blue">data network modeling</a></div>
+                <div class="offset-by-three two columns"><a href="#development-brainsparks" class="text-center blue"><p>brainsparks &amp; calrissian</p></a></div>
+                <div class="two columns"><a href="#development-mathworkers" class="text-center blue"><p>parallel math library</p></a></div>
+                <div class="two columns"><a href="#development-cassandra" class="text-center blue"><p>data network modeling</p></a></div>
             </div>
             <div class="row">
-                <div class="offset-by-three three columns"><a href="#development-genetic" class="text-center blue">genetic algorithm</a></div>
-                <div class="three columns"><a href="#development-scaling" class="text-center blue">massively parallel computing</a></div>
+                <div class="offset-by-three three columns"><a href="#development-genetic" class="text-center blue"><p>genetic algorithm load balancer</p></a></div>
+                <div class="three columns"><a href="#development-scaling" class="text-center blue"><p>massively parallel computing</p></a></div>
             </div>
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -202,7 +201,7 @@
                         linear algebra operations, like matrix-matrix multiplies.
                         More to come in the future!
                     </p>
-                    <p>
+                    <p class="text-center">
                         JavaScript, HTML5, Node.js
                     </p>
                     <a href="https://github.com/awlange/mathworkers" target="_blank" class="center blue">
@@ -246,11 +245,91 @@
                         stored on Cassandra via the Java web app. This feature is the engine
                         behind much of the new product development at Signal.
                     </p>
-                    <p>
+                    <p class="text-center">
                         Java, Python, Cassandra, R
                     </p>
                     <a href="http://www.signal.co/products/fuse/" target="_blank" class="center blue">
                         <button>read more</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 id="development-genetic" class="section-title">genetic algorithm load balancing</h4>
+                    <div class="line"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <div class="thumbnail-wrapper not-loaded">
+                        <div class="spinner"><div></div></div>
+                        <img src="" id="thumbnail-genetic" alt="genetic" class="u-full-width hidden"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        The molecule shown here is part of an implicit solvent
+                        calculation based on a parallel fast multipole method, which
+                        runs faster when atoms belonging to a given node are spatially close to each
+                        other and also far away from atoms belonging to other nodes. The fitness function for the
+                        genetic algorithm reflects that, and it also tends to ensure that no nodes have
+                        far more/less work than other nodes.
+                    </p>
+                    <p class="justify">
+                        The molecule depicted is a single stranded DNA polyadenine, and each sphere represents an atom.
+                        Spheres are colored by which node is responsible for its computation.
+                        (There are 4 nodes in this example.)
+                        The run starts with a randomized distribution of the atoms across the 4 nodes,
+                        which is essentially the worst load balance.
+                        Remarkably, the genetic algorithm finds a solution
+                        that is very close to the ideal solution for this system.
+                    </p>
+                    <p class="text-center">
+                        C++, MPI, OpenMP
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=5U9J3zKKbOI" target="_blank" class="center blue">
+                        <button>watch video</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 id="development-scaling" class="section-title">massively parallel computing</h4>
+                    <div class="line"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <div class="thumbnail-wrapper not-loaded">
+                        <div class="spinner"><div></div></div>
+                        <img src="" id="thumbnail-scaling" alt="scaling" class="u-full-width hidden"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        My primary focus as a postdoc was to improve the scalability of a code on
+                        the 3rd fastest supercomputer in the world (at the time), Mira,
+                        the Blue Gene/Q machine at Argonne National Laboratory Leadership Computing Facility.
+                    </p>
+                    <p class="justify">
+                        I managed to do this well for a specialized molecular dynamics code used to simulate proton transport.
+                        The original code scaled to only about 64 nodes, but I turned it into one
+                        that scales to 24,576 nodes (393,216 cores). To accomplish this, I built up a replica exchange external driver to
+                        the molecular dynamics code LAMMPS, exposed some untapped parallelism in the multi-state proton transport calculations,
+                        multithreaded several compute-intensive loops, and did plenty of other little code optimizations. I also managed to
+                        contribute a handful of lines of code to the open-source LAMMPS software package during this time.
+                    </p>
+                    <p class="text-center">
+                        C++, C, MPI, OpenMP
+                    </p>
+                    <a href="https://www.alcf.anl.gov/files/MiraCon_030613_0.pdf" target="_blank" class="center blue">
+                        <button>view presentation</button>
                     </a>
                 </div>
             </div>

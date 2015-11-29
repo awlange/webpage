@@ -115,6 +115,14 @@ h1 strong {
   margin-top: 5%;
   padding: 5% 0; }
 
+#thumbnail-genetic {
+  margin-top: 10%;
+  padding: 0 10%; }
+
+#thumbnail-scaling {
+  margin-top: 15%;
+  padding: 0% 5%; }
+
 footer {
   background-color: #3498DB;
   height: 100%;

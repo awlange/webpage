@@ -4,7 +4,9 @@ var images = {
     "thumbnail-FMO": "img/FMO-MS-RMD_TOC.png",
     "thumbnail-qchem": "img/Qchem-logo.gif",
     "thumbnail-mathworkers": "img/mathworkers.png",
-    "thumbnail-cassandra": "img/cassandra.png"
+    "thumbnail-cassandra": "img/cassandra.png",
+    "thumbnail-genetic": "img/genetic.png",
+    "thumbnail-scaling": "img/scalingGraph.png"
 };
 
 $(document).ready(function() {
