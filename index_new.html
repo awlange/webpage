@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <header>
+    <header id="header">
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
@@ -104,9 +104,10 @@
                         and all things data science.
                     </p>
                     <p class="justify">
-                        I work at Apple on the data side of a variety of famous products, but my background is filled
-                        with many other interesting computational and scientific research endeavors that are just a
-                        little less well-known. I also maintain a few hobby coding projects that I work on
+                        I work at Apple on the data/back-end side of a variety of famous products,
+                        but my background is filled with several other interesting computational and scientific
+                        research endeavors that are just a little less well-known.
+                        I also maintain a few hobby coding and research projects that I work on
                         whenever I find some spare time and energy.
                     </p>
                 </div>
@@ -132,8 +133,8 @@
                 <div class="two columns"><a href="#development-cassandra" class="text-center blue"><p>data network modeling</p></a></div>
             </div>
             <div class="row">
-                <div class="offset-by-three three columns"><a href="#development-genetic" class="text-center blue"><p>genetic algorithm load balancer</p></a></div>
-                <div class="three columns"><a href="#development-scaling" class="text-center blue"><p>massively parallel computing</p></a></div>
+                <div class="offset-by-three three columns"><a href="#development-scaling" class="text-center blue"><p>massively parallel computing</p></a></div>
+                <div class="three columns"><a href="#development-genetic" class="text-center blue"><p>genetic algorithm load balancer</p></a></div>
             </div>
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -258,6 +259,44 @@
 
             <div class="row">
                 <div class="twelve columns">
+                    <h4 id="development-scaling" class="section-title">massively parallel computing</h4>
+                    <div class="line"> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <div class="thumbnail-wrapper not-loaded">
+                        <div class="spinner"><div></div></div>
+                        <img src="" id="thumbnail-scaling" alt="scaling" class="u-full-width hidden"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="justify">
+                        My primary focus as a postdoc was to improve the scalability of a code on
+                        the 3rd fastest supercomputer in the world (at the time), Mira,
+                        the Blue Gene/Q machine at Argonne National Laboratory Leadership Computing Facility.
+                    </p>
+                    <p class="justify">
+                        I managed to do this well for a specialized molecular dynamics code used to simulate proton transport.
+                        The original code scaled to only about 64 nodes, but I turned it into one
+                        that scales to 24,576 nodes (393,216 cores). To accomplish this, I built up a replica exchange external driver to
+                        the molecular dynamics code LAMMPS, exposed some untapped parallelism in the multi-state proton transport calculations,
+                        multithreaded several compute-intensive loops, and did plenty of other little code optimizations. I also managed to
+                        contribute a handful of lines of code to the open-source LAMMPS software package during this time.
+                    </p>
+                    <p class="text-center">
+                        C++, C, MPI, OpenMP
+                    </p>
+                    <a href="https://www.alcf.anl.gov/files/MiraCon_030613_0.pdf" target="_blank" class="center blue">
+                        <button>view presentation</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div class="row">
+                <div class="twelve columns">
                     <h4 id="development-genetic" class="section-title">genetic algorithm load balancing</h4>
                     <div class="line"> </div>
                 </div>
@@ -292,44 +331,6 @@
                     </p>
                     <a href="https://www.youtube.com/watch?v=5U9J3zKKbOI" target="_blank" class="center blue">
                         <button>watch video</button>
-                    </a>
-                </div>
-            </div>
-
-            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-            <div class="row">
-                <div class="twelve columns">
-                    <h4 id="development-scaling" class="section-title">massively parallel computing</h4>
-                    <div class="line"> </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="six columns">
-                    <div class="thumbnail-wrapper not-loaded">
-                        <div class="spinner"><div></div></div>
-                        <img src="" id="thumbnail-scaling" alt="scaling" class="u-full-width hidden"/>
-                    </div>
-                </div>
-                <div class="six columns">
-                    <p class="justify">
-                        My primary focus as a postdoc was to improve the scalability of a code on
-                        the 3rd fastest supercomputer in the world (at the time), Mira,
-                        the Blue Gene/Q machine at Argonne National Laboratory Leadership Computing Facility.
-                    </p>
-                    <p class="justify">
-                        I managed to do this well for a specialized molecular dynamics code used to simulate proton transport.
-                        The original code scaled to only about 64 nodes, but I turned it into one
-                        that scales to 24,576 nodes (393,216 cores). To accomplish this, I built up a replica exchange external driver to
-                        the molecular dynamics code LAMMPS, exposed some untapped parallelism in the multi-state proton transport calculations,
-                        multithreaded several compute-intensive loops, and did plenty of other little code optimizations. I also managed to
-                        contribute a handful of lines of code to the open-source LAMMPS software package during this time.
-                    </p>
-                    <p class="text-center">
-                        C++, C, MPI, OpenMP
-                    </p>
-                    <a href="https://www.alcf.anl.gov/files/MiraCon_030613_0.pdf" target="_blank" class="center blue">
-                        <button>view presentation</button>
                     </a>
                 </div>
             </div>
@@ -426,7 +427,7 @@
                 </div>
                 <div class="six columns">
                     <p class="justify">
-                        This is an equation I discovered
+                        This is an equation I derived
                         to model continuum electrostatics of salty solvents characterized by a Debye screening length
                         and a dielectric constant.
                     </p>
@@ -526,7 +527,7 @@
                 <div class="two columns"><a href="#resume-projects" class="text-center blue"><p>projects</p></a></div>
             </div>
             <div class="row">
-                <div class="offset-by-three two columns"><a href="#resume-contributions" class="text-center blue"><p>contributions</p></a></div>
+                <div class="offset-by-two two columns"><a href="#resume-contributions" class="text-center blue"><p>contributions</p></a></div>
                 <div class="two columns"><a href="#resume-awards" class="text-center blue"><p>honors &amp; awards</p></a></div>
                 <div class="two columns"><a href="#resume-publications" class="text-center blue"><p>publications</p></a></div>
                 <div class="two columns"><a href="#resume-download" class="text-center blue"><p>download</p></a></div>
@@ -584,12 +585,147 @@
                     <div class="twelve columns">
                         <h4 id="resume-projects" class="section-title">projects</h4>
                         <div class="line"> </div>
+                        <p>To see some code I have written, <a href="https://github.com/awlange" target="_blank" class="link">visit my GitHub account</a>.</p>
+                    </div>
+                </div>
+
+                <!-- === -->
+
+                <div class="row">
+                    <div class="nine columns">
+                        <a href="https://github.com/awlange/brainsparks" target="_blank" class="link">
+                            <p>BrainSparks and Calrissian</p>
+                        </a>
+                    </div>
+                    <div class="three columns">
+                        <p class="u-pull-right">2015 &mdash; present</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="twelve columns">
+                        <p class="resume-subtext">
+                            Experimental neural network and deep learning library;
+                            SGD and backpropagation analytic gradient implemented from scratch for
+                            multi-layer perceptron, 1-D convolution net, particle network (my own invented flavor of ANN);
+                            exploring data parallelization via Spark and GPU acceleration
+                            <span class="italic">[Python, Spark, numpy, PyCUDA, PyOpenCL]</span>
+                        </p>
                     </div>
                 </div>
+
+                <!-- === -->
+
+                <div class="row">
+                    <div class="nine columns">
+                        <a href="http://www.isitbacon.net" target="_blank" class="link">
+                            <p>BaconNet</p>
+                        </a>
+                    </div>
+                    <div class="three columns">
+                        <p class="u-pull-right">2015</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <p class="resume-subtext">
+                            Convolution neural network model for distinguishing between pictures of bacon and/or Kevin Bacon;
+                            web app interface for uploading and classifying pictures:
+                            <a href="http://www.isitbacon.net" target="_blank" class="link">isitbacon.net</a>
+                            <span class="italic">[Python, Flask, Lasagne, Theano, HTML, CSS, JavaScript, Twitter Bootstrap]</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- === -->
+
+                <div class="row">
+                    <div class="nine columns">
+                        <a href="http://www.mathworkersjs.org" target="_blank" class="link">
+                            <p>MathWorkersJS</p>
+                        </a>
+                    </div>
+                    <div class="three columns">
+                        <p class="u-pull-right">2014 &mdash; present</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <p class="resume-subtext">
+                            Open-source parallel JavaScript math and statistics library built around HTML5
+                            Web Workers and Node.js cluster library capable of speeding up computations on multi-core devices; accompanying
+                            documentation website: <a href="http://www.mathworkersjs.org" class="link">mathworkersjs.org</a>,
+                            available for install <a href="https://www.npmjs.com/package/mathworkers" class="link">on npm</a>
+                            <span class="italic">[JavaScript, Node.js, HTML5, CSS/SCSS, Python, Flask, Apache Server]</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- === -->
+
+                <div class="row">
+                    <div class="nine columns">
+                        <a href="#header" target="_blank" class="link">
+                            <p>Personal Website</p>
+                        </a>
+                    </div>
+                    <div class="three columns">
+                        <p class="u-pull-right">2013 &mdash; present</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <p class="resume-subtext">
+                            Full stack coding, back-end to front-end; dynamic blog database.
+                            <span class="italic">[HTML, CSS/SCSS, JavaScript/jQuery/Node.js, MySQL, Skeleton]</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- === -->
+
+                <div class="row">
+                    <div class="nine columns">
+                        <a href="http://projecteuler.net/profile/awgl.png" target="_blank" class="link">
+                            <p>Project Euler</p>
+                        </a>
+                    </div>
+                    <div class="three columns">
+                        <p class="u-pull-right">2013 &mdash; present</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <p class="resume-subtext">
+                            Recreational mathematics and programming problems from
+                            <a href="http://projecteuler.net/" target="_blank" class="link">Project Euler</a>;
+                            currently solved more than <a href="http://projecteuler.net/profile/awgl.png" target="_blank" class="link">110 problems</a>
+                            <span class="italic">[Python, C++]</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- === -->
+
+                <div class="row">
+                    <div class="nine columns">
+                        <a href="https://github.com/awlange/fmo-ms-rmd" target="_blank" class="link">
+                            <p>FMO-MS-RMD</p>
+                        </a>
+                    </div>
+                    <div class="three columns">
+                        <p class="u-pull-right">2013</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="twelve columns">
+                        <p class="resume-subtext">
+                            Parallel interface to Q-Chem program for propagating chemically reactive proton transport
+                            simulations with analytic gradients; demonstrated scalability to &gt;200 CPUs
+                            <span class="italic">[C++, C, MPI]</span>
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -639,9 +775,8 @@
                         <p class="resume-subtext">
                             Lead author of PCM solvent modeling, QM/MM, parallel linear algebra solvers, and Fast Multipole
                             Method code; software design committee; 7th author of 161 co-authors on
-                            <a href="http://adrianlange.com/file/papers/qchem4_0.pdf" target="_blank" class="link">
-                                software white paper
-                            </a> <span class="italic">[C++, C, Fortran]</span>
+                            <a href="http://adrianlange.com/file/papers/qchem4_0.pdf" target="_blank" class="link">software white paper</a>
+                            <span class="italic">[C++, C, Fortran]</span>
                         </p>
                     </div>
                 </div>
@@ -740,11 +875,11 @@
                             </li>
                             <li>
                                 Yihan Shao, Zhengting Gan, Evgeny Epifanovsky, Andrew T.B. Gilbert, Michael Wormit, Joerg Kussmann, <strong>Adrian W. Lange</strong> <span class="italic">et al.</span>
-                                <a href="http://www.tandfonline.com/doi/abs/10.1080/00268976.2014.952696#.VEnf9ovF8pw" target="_blank">Advances in molecular quantum chemistry contained
+                                <a href="http://www.tandfonline.com/doi/abs/10.1080/00268976.2014.952696#.VEnf9ovF8pw" target="_blank" class="link">Advances in molecular quantum chemistry contained
                                     in the Q-Chem 4 program package</a>
                                 <span class="italic">Mol. Phys.</span> 1-32 (2014).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/qchem4_0.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/qchem4_0.pdf" target="_blank"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 John M. Herbert and <strong>Adrian W. Lange</strong>.
@@ -753,89 +888,89 @@
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong> and Gregory A. Voth.
-                                <a href="http://pubs.acs.org/doi/abs/10.1021/ct400516x" target="_blank">Multi-state Approach to Chemical Reactivity in Fragment Based Quantum Chemistry Calculations</a>
+                                <a href="http://pubs.acs.org/doi/abs/10.1021/ct400516x" target="_blank" class="link">Multi-state Approach to Chemical Reactivity in Fragment Based Quantum Chemistry Calculations</a>
                                 <span class="italic">J. Chem. Theory Comput.</span> 9, 4018-4025 (2013).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/JCTC_9_4018.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/JCTC_9_4018.pdf" target="_blank"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong>, Gard Nelson, Christopher Knight, and Gregory A. Voth.
-                                <a href="http://www.osti.gov/scitech/biblio/1079773" target="_blank">Multiscale Molecular Simulations at the Petascale (Parallelization of Reactive Force Field Model for Blue Gene/Q): ALCF-2 Early Science Program Technical Report</a>
+                                <a href="http://www.osti.gov/scitech/biblio/1079773" target="_blank" class="link">Multiscale Molecular Simulations at the Petascale (Parallelization of Reactive Force Field Model for Blue Gene/Q): ALCF-2 Early Science Program Technical Report</a>
                                 <span class="italic">Argonne National Laboratory</span> (2013).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/76578.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/76578.pdf" target="_blank"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong> and John M. Herbert.
-                                <a href="http://pubs.acs.org/doi/abs/10.1021/ct300493y" target="_blank">Improving generalized Born models by exploiting connections to polarizable continuum models. II. Corrections for salt effects.</a>
+                                <a href="http://pubs.acs.org/doi/abs/10.1021/ct300493y" target="_blank" class="link">Improving generalized Born models by exploiting connections to polarizable continuum models. II. Corrections for salt effects.</a>
                                 <span class="italic">J. Chem. Theory Comput.</span> 8, 4381-4392 (2012).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/JCTC_8_4381.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/JCTC_8_4381.pdf" target="_blank"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong> and John M. Herbert.
-                                <a href="http://pubs.acs.org/doi/abs/10.1021/ct300111m" target="_blank">Improving generalized Born models by exploiting connections to polarizable continuum models. I. An improved effective Coulomb operator.</a>
+                                <a href="http://pubs.acs.org/doi/abs/10.1021/ct300111m" target="_blank" class="link">Improving generalized Born models by exploiting connections to polarizable continuum models. I. An improved effective Coulomb operator.</a>
                                 <span class="italic">J. Chem. Theory Comput.</span> 8, 1999-2011 (2012).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/JCTC_8_1999.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/JCTC_8_1999.pdf" target="_blank"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong> and John M. Herbert.
-                                <a href="http://scitation.aip.org/content/aip/journal/jcp/134/20/10.1063/1.3592372" target="_blank">A Simple Polarizable Continuum Solvation Model for Electrolyte Solutions.</a>
+                                <a href="http://scitation.aip.org/content/aip/journal/jcp/134/20/10.1063/1.3592372" target="_blank" class="link">A Simple Polarizable Continuum Solvation Model for Electrolyte Solutions.</a>
                                 <span class="italic">J. Chem. Phys.</span> 134, 204110 (2011).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/JCP_134_204110.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/JCP_134_204110.pdf" target="_blank"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong> and John M. Herbert.
-                                <a href="http://www.sciencedirect.com/science/article/pii/S0009261411005367" target="_blank">Symmetric Versus Asymmetric Discretization of the Integral Equations in Polarizable Continuum Solvation Models.</a>
+                                <a href="http://www.sciencedirect.com/science/article/pii/S0009261411005367" target="_blank" class="link">Symmetric Versus Asymmetric Discretization of the Integral Equations in Polarizable Continuum Solvation Models.</a>
                                 <span class="italic">Chem. Phys. Lett.</span> 509, 77 (2011).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/CPL_509_77.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/CPL_509_77.pdf" target="_blank"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong> and John M. Herbert.
-                                <a href="http://scitation.aip.org/content/aip/journal/jcp/134/11/10.1063/1.3567490" target="_blank">Response to “Comment on ‘A Smooth, Nonsingular, and Faithful Discretization Scheme for Polarizable Continuum Models: The Switching/Gaussian Approach."’.</a>
+                                <a href="http://scitation.aip.org/content/aip/journal/jcp/134/11/10.1063/1.3567490" target="_blank" class="link">Response to “Comment on ‘A Smooth, Nonsingular, and Faithful Discretization Scheme for Polarizable Continuum Models: The Switching/Gaussian Approach."’.</a>
                                 <span class="italic">J. Chem. Phys.</span> 134, 117102 (2011).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/JCP_134_117102.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/JCP_134_117102.pdf" target="_blank"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong> and John M. Herbert.
-                                <a href="http://scitation.aip.org/content/aip/journal/jcp/133/24/10.1063/1.3511297" target="_blank">A Smooth, Nonsingular, and Faithful Discretization Scheme for Polarizable Continuum Models: The Switching/Gaussian Approach.</a>
+                                <a href="http://scitation.aip.org/content/aip/journal/jcp/133/24/10.1063/1.3511297" target="_blank" class="link">A Smooth, Nonsingular, and Faithful Discretization Scheme for Polarizable Continuum Models: The Switching/Gaussian Approach.</a>
                                 <span class="italic">J. Chem. Phys.</span> 133, 244111 (2010).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/JCP_133_244111.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/JCP_133_244111.pdf" target="_blank" class="blue"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong> and John M. Herbert.
-                                <a href="http://pubs.acs.org/doi/abs/10.1021/jz900282c" target="_blank">Polarizable Continuum Reaction-ﬁeld Solvation Models Affording Smooth Potential Energy Surfaces.</a>
+                                <a href="http://pubs.acs.org/doi/abs/10.1021/jz900282c" target="_blank" class="link">Polarizable Continuum Reaction-ﬁeld Solvation Models Affording Smooth Potential Energy Surfaces.</a>
                                 <span class="italic">J. Phys. Chem. Lett.</span> 1, 556-561 (2010).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/JPCL_1_556.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/JPCL_1_556.pdf" target="_blank" class="blue"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong> and John M. Herbert.
-                                <a href="http://pubs.acs.org/doi/abs/10.1021/ja808998q" target="_blank">Both Intra- and Interstrand Charge-Transfer Excited States in Aqueous B-DNA Are Present at Energies Comparable to or Just Above the
+                                <a href="http://pubs.acs.org/doi/abs/10.1021/ja808998q" target="_blank" class="link">Both Intra- and Interstrand Charge-Transfer Excited States in Aqueous B-DNA Are Present at Energies Comparable to or Just Above the
                                     <span class="superscript">1</span>&pi;&pi;<span class="superscript">*</span>
                                     Excitonic Bright States.</a>
                                 <span class="italic">J. Am. Chem. Soc.</span> 131, 3913-3922 (2009).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/JACS_131_3913.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/JACS_131_3913.pdf" target="_blank" class="blue"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian W. Lange</strong>, Mary A. Rohrdanz, and John M. Herbert.
-                                <a href="http://pubs.acs.org/doi/abs/10.1021/jp802058k" target="_blank">Charge-Transfer Excited States in a <span>&pi;</span>-Stacked Adenine Dimer, As Predicted Using Long-Range-Corrected Time-Dependent Density Functional Theory.</a>
+                                <a href="http://pubs.acs.org/doi/abs/10.1021/jp802058k" target="_blank" class="link">Charge-Transfer Excited States in a <span>&pi;</span>-Stacked Adenine Dimer, As Predicted Using Long-Range-Corrected Time-Dependent Density Functional Theory.</a>
                                 <span class="italic">J. Phys. Chem. B</span> 112, 6304 (2008).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/JPCB_112_6304.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/JPCB_112_6304.pdf" target="_blank" class="blue"><button class="small-button">View PDF</button></a>
                             </li>
                             <li>
                                 <strong>Adrian Lange</strong> and John M. Herbert.
-                                <a href="http://pubs.acs.org/doi/abs/10.1021/ct700125v" target="_blank">Simple Methods to Reduce Charge-Transfer Contamination in Time-Dependent Density-Functional Calculations of Clusters and Liquids.</a>
+                                <a href="http://pubs.acs.org/doi/abs/10.1021/ct700125v" target="_blank" class="link">Simple Methods to Reduce Charge-Transfer Contamination in Time-Dependent Density-Functional Calculations of Clusters and Liquids.</a>
                                 <span class="italic">J. Chem. Theory Comput.</span> 3, 1680 (2007).
                                 <br>
-                                <a href="http://adrianlange.com/file/papers/JCTC_3_1680.pdf" target="_blank">View PDF</a>
+                                <a href="http://adrianlange.com/file/papers/JCTC_3_1680.pdf" target="_blank" class="blue"><button class="small-button">View PDF</button></a>
                             </li>
                         </ol>
                     </div>

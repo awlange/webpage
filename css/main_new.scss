@@ -272,16 +272,16 @@ a.blue:hover {
   color: $palette-black;
 }
 
-ol li {
-  a, a:visited, a:active, link, link:visited, link:active {
-    color: $palette-blue;
-    text-decoration: underline;
-  }
-  a:hover, link:hover {
-    text-decoration: underline;
-    color: $palette-black;
-  }
-}
+//ol li {
+//  a, a:visited, a:active {
+//    color: $palette-blue;
+//    text-decoration: underline;
+//  }
+//  a:hover {
+//    text-decoration: underline;
+//    color: $palette-black;
+//  }
+//}
 
 button {
   display: block;
@@ -290,6 +290,15 @@ button {
   color: $palette-blue;
   border-color: $palette-blue;
   //text-transform: lowercase;
+}
+
+button.small-button {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0;
+  float: none;
+  height: 20px;
+  line-height: 20px;
 }
 
 .underline {
