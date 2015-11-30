@@ -104,11 +104,12 @@
                         and all things data science.
                     </p>
                     <p class="justify">
-                        I work at Apple on the data/back-end side of a variety of famous products,
+                        I work at Apple on the data stack/back-end of a variety of famous products,
                         but my background is filled with several other interesting computational and scientific
-                        research endeavors that are just a little less well-known.
+                        research endeavors that are just a bit less well-known.
                         I also maintain a few hobby coding and research projects that I work on
-                        whenever I find some spare time and energy.
+                        whenever I find some spare time and energy, such as an experimental neural network code
+                        and a parallel JavaScript library for math and stats.
                     </p>
                 </div>
             </div>
@@ -666,6 +667,12 @@
                             <br>
                             <span class="italic">The Ohio State University</span>
                             <span class="u-pull-right italic">Columbus, OH</span>
+                            <br>
+                            Dissertation:
+                            <a href="https://etd.ohiolink.edu/!etd.send_file?accession=osu1329752615&disposition=attachment" target="_blank" class="link">
+                                Multi-layer Methods for Quantum Chemistry in the Condensed Phase: Combining Density
+                                Functional Theory, Molecular Mechanics, and Continuum Solvation Models
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -676,15 +683,14 @@
                             <span class="u-pull-right">August 2003 &mdash; June 2007</span>
                             <br>
                             <span class="italic">The Ohio State University</span>
-                            <span class="u-pull-right italic">Columbus, OH</span> <br>
+                            <span class="u-pull-right italic">Columbus, OH</span>
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="twelve columns">
-                        <p>
-                            <strong>Formal Courses:</strong>
-                        </p>
+                        <strong>Formal Courses:</strong>
+                        <br>
                         <ul>
                             <!--<li><strong>Physical Sciences</strong>: Quantum Mechanics, Statistical Thermodynamics, Computational Chemistry, Chemical Physics</li>-->
                             <!--<li><strong>Life Sciences</strong>: Biochemistry, Microbiology, Molecular Genetics</li>-->
@@ -698,9 +704,8 @@
                 </div>
                 <div class="row">
                     <div class="twelve columns">
-                        <p>
-                            <strong>Supplementary Online Courses:</strong>
-                        </p>
+                        <strong>Supplementary Online Courses:</strong>
+                        <br>
                         <ul>
                             <li><strong>Udacity</strong>: Web Development, Programming Languages, Parallel Programming (GPU/CUDA), Machine Learning</li>
                             <li><strong>Coursera</strong>: Data Science Signature Track (R Programming, Statistics, Data Wrangling), Machine Learning, Algorithms, Databases, Neural Networks</li>
@@ -732,7 +737,7 @@
                         </tr>
                         <tr>
                             <td>Web Technologies</td>
-                            <td>HTML, CSS/SCSS, Flask, Node.js, jQuery, AJAX, web workers</td>
+                            <td>HTML, CSS/SCSS, Flask, Node.js, jQuery, Jinja, AJAX, web workers</td>
                         </tr>
                         <tr>
                             <td>Databases/Storage</td>
@@ -740,11 +745,11 @@
                         </tr>
                         <tr>
                             <td>Data Analysis/Modeling</td>
-                            <td>pandas, numpy, scikit-learn, SciPy, Keras, Lasagne, Theano, R</td>
+                            <td>pandas, numpy, scikit-learn, SciPy, Keras, Lasagne, R</td>
                         </tr>
                         <tr>
                             <td>Compute Tools</td>
-                            <td>Spark, MPI, OpenMP, Hadoop (MapReduce), PyCUDA, PyOpenCL, blas/lapack</td>
+                            <td>Spark, MPI, OpenMP, Hadoop (MapReduce), blas/lapack</td>
                         </tr>
                         <tr>
                             <td>Productivity Tools</td>
@@ -759,6 +764,10 @@
                             <td>Linear/Logistic Regression, Neural Networks (MLP, autoencoder, convolution, recurrent, deep learning),
                                 Fourier Analysis, Clustering, k-NN, Random Forests, SVD, PCA, NLP, SVMs</td>
                         </tr>
+                        <tr>
+                            <td>Dabblings</td>
+                            <td>Julia, Theano, CUDA, PyCUDA, PyOpenCL, x86 assembly</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -768,7 +777,7 @@
             <div>
                 <div class="row">
                     <div class="twelve columns">
-                        <h4 id="resume-projects" class="section-title">projects</h4>
+                        <h4 id="resume-projects" class="section-title">projects &amp; additional experience</h4>
                         <div class="line"> </div>
                         <p>To see some code I have written, <a href="https://github.com/awlange" target="_blank" class="link">visit my GitHub account</a>.</p>
                     </div>
@@ -1184,7 +1193,7 @@
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
-                    <img src="img/icon-science-small2.svg" class="icon center" alt="science"/>
+                    <img src="img/icon-science-small2.svg" class="icon center" alt="science" id="flask"/>
                     <p class="text-center footnote">Adrian Lange 2015</p>
                 </div>
             </div>
@@ -1196,16 +1205,16 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.4.min.js"><\/script>');</script>
     <script src="js/site.js"></script>
 
-    <!--&lt;!&ndash; Analytics &ndash;&gt;-->
-    <!--<script type="text/javascript">-->
-        <!--var _gaq = _gaq || [];-->
-        <!--_gaq.push(['_setAccount', 'UA-46269729-1']);-->
-        <!--_gaq.push(['_trackPageview']);-->
-        <!--(function() {-->
-            <!--var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;-->
-            <!--ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';-->
-            <!--var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);-->
-        <!--})();-->
-    <!--</script>-->
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-46269729-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
 </html>

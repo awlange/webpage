@@ -175,12 +175,38 @@ button.small-button {
 button.blog-button {
   margin-bottom: 50px; }
 
+#flask {
+  cursor: pointer; }
+
+.tip {
+  -webkit-animation: tip 1s ease;
+  -moz-animation: tip 1s ease;
+  animation: tip 1s ease; }
+
+@-moz-keyframes tip {
+  50% {
+    -moz-transform: rotate(60deg); }
+  100% {
+    -moz-transform: rotate(0deg); } }
+@-webkit-keyframes tip {
+  50% {
+    -webkit-transform: rotate(60deg); }
+  100% {
+    -webkit-transform: rotate(0deg); } }
+@keyframes tip {
+  50% {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
 h2 {
   text-align: center;
   color: #3498DB;
   margin-top: 100px; }
 
 .section-title {
+  text-align: center;
   color: #3498DB;
   margin-top: 40px; }
 

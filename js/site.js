@@ -15,12 +15,14 @@ $(document).ready(function() {
     var $nav = $('.navbar'),
         $body = $('body'),
         $window = $(window),
+        $flask = $('#flask'),
         navOffsetTop = $nav.offset().top;
 
     function init() {
         $window.on('scroll', onScroll);
         $window.on('resize', resize);
         $('a[href^="#"]').on('click', smoothScroll);
+        $flask.on('click', tipFlask);
     }
 
     function smoothScroll(e) {
@@ -74,7 +76,7 @@ $(document).ready(function() {
                     $img.attr("src", images[$img.attr("id")]).fadeIn("slow").removeClass("hidden");
                     $this.removeClass("not-loaded");
                 }
-            }, 500); // impression time
+            }, 300); // impression time
         });
     }
 
@@ -82,6 +84,18 @@ $(document).ready(function() {
         var rect = el.getBoundingClientRect();
         return rect.top >= 0 && rect.left >= 0
             && rect.top <= (window.innerHeight || document.documentElement.clientHeight);
+    }
+
+    function tipFlask() {
+        $flask.addClass("tip");
+        setTimeout(function() {
+            $flask.removeClass("tip");
+        }, 1100);
+        // log flask click
+        $.ajax({
+            type: "GET",
+            url: "/nav?n=flask"
+        });
     }
 
     init();
