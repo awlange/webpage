@@ -30,10 +30,15 @@ $(document).ready(function() {
             menu = target;
         var $target = $(target);
 
+        // log nav click
+        $.ajax({
+            type: "GET",
+            url: "/nav?n=" + target.substring(1, target.length)
+        });
+
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - 80
-        }, 400,  // scroll time
-            'swing', function() {
+        }, 400, 'swing', function() {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
