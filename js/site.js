@@ -40,7 +40,7 @@ $(document).ready(function() {
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top - 80
-        }, 400, 'swing', function() {
+        }, 10, 'swing', function() {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
@@ -72,11 +72,14 @@ $(document).ready(function() {
                 if (elementInViewport(el)) {
                     var $spinner = $this.children("div");
                     var $img = $this.children("img");
-                    $spinner.addClass("hidden");
-                    $img.attr("src", images[$img.attr("id")]).fadeIn("slow").removeClass("hidden");
+                    $img.attr("src", images[$img.attr("id")]).load(function() {
+                        // Remove spinner, fade in image once loaded
+                        $spinner.addClass("hidden");
+                        $img.fadeIn("slow").removeClass("hidden");
+                    });
                     $this.removeClass("not-loaded");
                 }
-            }, 300); // impression time
+            }, 50); // impression time
         });
     }
 
