@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Adrian Lange | scientist + developer</title>
+    <meta name="description" content="Adrian Lange | scientist + developer">
+    <meta name="author" content="Adrian Lange">
+    <meta name="keywords" content="Adrian, Lange, scientist, developer, data, engineer, Apple, San Francisco, Bay Area, Cupertino, Argonne, Ohio State, PhD, Ph.D., resume, CV, publications, Java, python, R, C++, C, SQL, NoSQL, Cassandra, JavaScript, node.js, machine learning, deep learning, math, statistics, science">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="/css/skeleton.css" type="text/css">
+    <link rel="stylesheet" href="/css/spinner.css" type="text/css">
+    <link rel="stylesheet" href="/css/main_new.css" type="text/css"/>
+
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <h2>particle networks</h2>
+            <p class="justify">
+                This is the <em>secret</em> web page about particle networks!
+            </p>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <video src="particle_network_1.webm" controls>
+                    </video>
+                    <p>
+                        A particle network being fit with RPROP to the MNIST digits data set.
+                        Architecture is 784 input units (white), 32 hidden units (blue), and 10 output units (red).
+                        Hyperbolic tangent activation functions and softmax output layer with categorical cross
+                        entropy loss function. The final fit is about 93% accurate.
+                        This particle network model has 3388 adjustable parameters, whereas the corresponding
+                        Multi-layer perceptron model has 25450 adjustable parameters, an 86% savings!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 class="section-title">summary</h4>
+                    <div class="line"></div>
+
+                    <p class="justify">
+                        A particle network (PN) is a variant of the classic Multi-layer Perceptron (MLP). The main
+                        distinguishing feature is that PNs conceptualize units (or nodes) in a neural network as a
+                        particle with a charge and phase residing in some space. Particles interact in a pairwise fashion
+                        to implicitly constitute the matrix elements of inter-unit connections, as opposed to the
+                        weights found in MLPs. Otherwise, information traverses the PN layer by layer and transformed
+                        via activation functions just like in MLPs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 class="section-title">code</h4>
+                    <div class="line"></div>
+                    <p class="justify">
+                        The code for PNs is part of my neural network sandbox code, Calrissian, which is the main
+                        engine in part of a parent project, BrainSparks, which I am using to explore parallelization
+                        of neural networks. All the code for BrainSparks and Calrissian is
+                        <a href="https://github.com/awlange/brainsparks">on my GitHub account here.</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 class="section-title">draft manuscript</h4>
+                    <div class="line"></div>
+                    <p class="justify">
+                        I am working on writing a draft manuscript to document PNs. If things go well,
+                        I might publish it. It is incomplete at the moment, but
+                        <a href="pn_draft.pdf">you can read it here</a>. Therein, you'll find the current formulation
+                        of the PN model and its analytic backpropagation gradient.
+                    </p>
+                </div>
+            </div>
+
+            <div class="spacer-big"></div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-2.1.4.min.js"><\/script>');</script>
+    <script src="/js/site.js"></script>
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-46269729-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>
