@@ -21,9 +21,25 @@
     <section>
         <div class="container">
             <h2>particle networks</h2>
-            <p class="justify">
+            <p class="center text-center">
                 This is the <em>secret</em> web page about particle networks!
             </p>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 class="section-title">summary</h4>
+                    <div class="line"></div>
+
+                    <p class="justify">
+                        A particle network (PN) is a variant of the classic Multi-layer Perceptron (MLP). The main
+                        distinguishing feature is that PNs conceptualize units (or nodes) in a neural network as a
+                        particle with a charge and phase residing in some space. Particles interact in a pairwise fashion
+                        to implicitly constitute the matrix elements of inter-unit connections, as opposed to the
+                        weights found in MLPs. Otherwise, information traverses the PN layer by layer and transformed
+                        via activation functions just like in MLPs.
+                    </p>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="twelve columns">
@@ -42,19 +58,27 @@
 
             <div class="row">
                 <div class="twelve columns">
-                    <h4 class="section-title">summary</h4>
+                    <img src="mnist_fields.png" width="900px" class="center"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h4 class="section-title">field visualization</h4>
                     <div class="line"></div>
 
                     <p class="justify">
-                        A particle network (PN) is a variant of the classic Multi-layer Perceptron (MLP). The main
-                        distinguishing feature is that PNs conceptualize units (or nodes) in a neural network as a
-                        particle with a charge and phase residing in some space. Particles interact in a pairwise fashion
-                        to implicitly constitute the matrix elements of inter-unit connections, as opposed to the
-                        weights found in MLPs. Otherwise, information traverses the PN layer by layer and transformed
-                        via activation functions just like in MLPs.
+                        Here's a neat visualization! (Sorry it's a little small... you might want to download it or right-click, open it in a new tab) 
+                        For the MNIST data set, this is the average vector field of activations produced
+                        by the hidden layer in a 784-16-10 particle network for each category of digit. The network's particles here are restrcited to 2-dimensional space
+                        and bear a 2-dimensional dipole moment (no charge). The red dots are the final layer's nodes, along with their dipoles.
+                        A node is more activated the more that its dipole aligns with the activation field. It's then interesting to compare the activation
+                        fields. For example, the field for 3 is rather similar to that for 8, which kind of makes sense, considering that the two digits look similar.
+                        I'd like to think this might help in undertanding what's going on in a neural network.
                     </p>
                 </div>
             </div>
+
 
             <div class="row">
                 <div class="twelve columns">
@@ -76,7 +100,8 @@
                     <p class="justify">
                         I am working on writing a draft manuscript to document PNs. If things go well,
                         I might publish it. It is incomplete at the moment, but
-                        <a href="pn_draft.pdf">you can read it here</a>. Therein, you'll find the current formulation
+                        <a href="pn_draft_4.pdf">you can read it here</a>. (And <a href="pn_draft.pdf">here's an older slightly different version</a>) 
+                        There, you'll find the current formulation
                         of the PN model and its analytic backpropagation gradient.
                     </p>
                 </div>
